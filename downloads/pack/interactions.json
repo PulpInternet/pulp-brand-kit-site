@@ -1,0 +1,336 @@
+{
+  "kit": "Pulp Brand Kit 2026",
+  "version": "v6d-LibreFranklin",
+  "inputs": [
+    "touch",
+    "mouse",
+    "trackpad",
+    "keyboard",
+    "pen"
+  ],
+  "components": [
+    {
+      "id": "skip-link",
+      "element": "a",
+      "purpose": "Jump past the bar to the content",
+      "states": [
+        "hidden",
+        "focus-visible"
+      ],
+      "keys": "Tab shows it; Enter follows it",
+      "touch": "Not shown",
+      "aria": "First focusable element",
+      "motion": []
+    },
+    {
+      "id": "mode-switch",
+      "element": "fieldset of 3 radio inputs",
+      "purpose": "Light, dark or mono",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "checked"
+      ],
+      "keys": "Arrows move and choose; Tab leaves",
+      "touch": "Tap a mode",
+      "aria": "radiogroup named Color mode; checked state",
+      "motion": [
+        "mode-change"
+      ]
+    },
+    {
+      "id": "nav-link",
+      "element": "a",
+      "purpose": "Go to a section",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "current"
+      ],
+      "keys": "Tab, Enter",
+      "touch": "Tap",
+      "aria": "aria-current=page on the current section",
+      "motion": [
+        "link-underline"
+      ]
+    },
+    {
+      "id": "menu-button",
+      "element": "button",
+      "purpose": "Open the phone menu sheet",
+      "states": [
+        "rest",
+        "focus-visible",
+        "expanded"
+      ],
+      "keys": "Enter or Space opens",
+      "touch": "Tap",
+      "aria": "aria-expanded, aria-controls the sheet",
+      "motion": [
+        "dialog-open",
+        "dialog-close"
+      ]
+    },
+    {
+      "id": "sheet",
+      "element": "dialog",
+      "purpose": "The full map on phones",
+      "states": [
+        "closed",
+        "open"
+      ],
+      "keys": "Escape closes; focus trapped; focus returns to the menu button",
+      "touch": "Tap outside or the close button",
+      "aria": "aria-modal, labelled by its title",
+      "motion": [
+        "dialog-open",
+        "dialog-close"
+      ]
+    },
+    {
+      "id": "button",
+      "element": "button or a styled as one",
+      "purpose": "One primary action per view; secondary as outline",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "active",
+        "disabled",
+        "busy"
+      ],
+      "keys": "Enter or Space",
+      "touch": "Tap",
+      "aria": "aria-busy while sending; disabled only when the reason is shown",
+      "motion": [
+        "press"
+      ]
+    },
+    {
+      "id": "plate",
+      "element": "button wrapping a figure",
+      "purpose": "Show what a plate measures",
+      "states": [
+        "rest",
+        "previewed",
+        "pinned"
+      ],
+      "keys": "Focus previews; Enter pins; Escape clears",
+      "touch": "First tap previews and pins; tap elsewhere clears",
+      "aria": "aria-pressed for pinned; aria-describedby its label",
+      "motion": [
+        "plate-focus"
+      ]
+    },
+    {
+      "id": "contact-trigger",
+      "element": "button",
+      "purpose": "Open the contact modal",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "active"
+      ],
+      "keys": "Enter or Space",
+      "touch": "Tap",
+      "aria": "aria-haspopup=dialog",
+      "motion": [
+        "press"
+      ]
+    },
+    {
+      "id": "contact-modal",
+      "element": "dialog",
+      "purpose": "Ask what someone is trying to understand",
+      "states": [
+        "closed",
+        "open",
+        "sending",
+        "done",
+        "error"
+      ],
+      "keys": "Escape closes; focus trapped; focus returns to the trigger",
+      "touch": "Tap outside or the close button",
+      "aria": "aria-modal, labelled by its title, live region for status",
+      "motion": [
+        "dialog-open",
+        "dialog-close",
+        "form-status"
+      ]
+    },
+    {
+      "id": "field",
+      "element": "input or textarea with a label",
+      "purpose": "Collect one answer",
+      "states": [
+        "rest",
+        "focus-visible",
+        "invalid",
+        "valid"
+      ],
+      "keys": "Type; Tab moves on",
+      "touch": "Tap",
+      "aria": "aria-invalid and aria-describedby the error text",
+      "motion": []
+    },
+    {
+      "id": "footer-link",
+      "element": "a",
+      "purpose": "Reach any page",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible"
+      ],
+      "keys": "Tab, Enter",
+      "touch": "Tap",
+      "aria": "Grouped by section, each group a nav with a name",
+      "motion": [
+        "link-underline"
+      ]
+    },
+    {
+      "id": "search-trigger",
+      "element": "button",
+      "purpose": "Open search",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "active"
+      ],
+      "keys": "Enter or Space; the slash key from anywhere outside a field",
+      "touch": "Tap",
+      "aria": "aria-haspopup=dialog, aria-keyshortcuts=/",
+      "motion": [
+        "press"
+      ]
+    },
+    {
+      "id": "search",
+      "element": "dialog with a combobox and a listbox",
+      "purpose": "One search for pages, papers, stories and docs",
+      "states": [
+        "closed",
+        "open",
+        "busy",
+        "empty"
+      ],
+      "keys": "Type to search; Up and Down move; Enter opens; Escape closes; focus returns to the trigger",
+      "touch": "Tap a result; tap outside closes",
+      "aria": "role=combobox with aria-expanded, aria-controls the listbox, aria-activedescendant; results grouped with role=group and a name; result count in a live region",
+      "motion": [
+        "dialog-open",
+        "dialog-close"
+      ]
+    },
+    {
+      "id": "filter-chip",
+      "element": "button with aria-pressed",
+      "purpose": "Narrow a list by topic, year or status",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "pressed"
+      ],
+      "keys": "Tab between chips; Enter or Space toggles",
+      "touch": "Tap toggles",
+      "aria": "aria-pressed; the group is labelled; the result count is a live region",
+      "motion": [
+        "press"
+      ]
+    },
+    {
+      "id": "record-row",
+      "element": "summary of a details element, upgraded by script to a button",
+      "purpose": "Open a paper, talk, role, campaign or person in a floating modal; without script it expands in place",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "active"
+      ],
+      "keys": "Enter or Space opens",
+      "touch": "Tap opens",
+      "aria": "aria-haspopup=dialog; the modal is labelled by the record's title and sets the URL hash",
+      "motion": [
+        "press",
+        "dialog-open"
+      ]
+    },
+    {
+      "id": "details-modal",
+      "element": "dialog",
+      "purpose": "A record's details without leaving the list",
+      "states": [
+        "closed",
+        "open"
+      ],
+      "keys": "Escape closes; focus trapped; focus returns to the row",
+      "touch": "Tap outside or the close button",
+      "aria": "aria-modal, labelled by its title; the hash opens it on load",
+      "motion": [
+        "dialog-open",
+        "dialog-close"
+      ]
+    },
+    {
+      "id": "toc",
+      "element": "nav with links",
+      "purpose": "Move through a long read",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "current",
+        "expanded"
+      ],
+      "keys": "Tab, Enter",
+      "touch": "Tap; below 1280 it is a disclosure at the top",
+      "aria": "nav named Contents; aria-current=location on the part in view",
+      "motion": [
+        "link-underline"
+      ]
+    },
+    {
+      "id": "copy-button",
+      "element": "button",
+      "purpose": "Copy a code sample or a citation",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "done"
+      ],
+      "keys": "Enter or Space",
+      "touch": "Tap",
+      "aria": "The label changes to Copied in a live region for 2 s",
+      "motion": [
+        "press",
+        "form-status"
+      ]
+    },
+    {
+      "id": "short-form",
+      "element": "form with one field and a button",
+      "purpose": "Subscribe, join the list, request access",
+      "states": [
+        "rest",
+        "sending",
+        "done",
+        "error",
+        "invalid"
+      ],
+      "keys": "Enter sends",
+      "touch": "Tap the button",
+      "aria": "The field is labelled; the status line is a live region",
+      "motion": [
+        "form-status"
+      ]
+    }
+  ]
+}

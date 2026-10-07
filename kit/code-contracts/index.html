@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Code contracts · Pulp Brand Kit</title>
+<meta name="description" content="The CSS, animation and interaction contracts.  brand_lint.py  checks every stylesheet against them.">
+<link rel="icon" href="../../assets/marks/pulp-api-small-noir.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../../site.css">
+<script>try{var m=localStorage.getItem('pulp:mode');if(m)document.documentElement.setAttribute('data-mode',m)}catch(e){}document.documentElement.setAttribute('data-js','')</script>
+</head>
+<body data-root="../../">
+<a class="k-skip" href="#main">Skip to content</a>
+<header class="k-bar"><div class="k-wrap k-bar__in">
+  <a class="k-mark" href="../../index.html" aria-label="Pulp Brand Kit, home"><svg class="k-wordmark" viewBox="0 0 336 72" width="88" height="19" role="img" aria-label="Pulp" focusable="false"><path d="M0 34.2594C0 25.0345 0.147994 18.6957 0.147994 9.47083C0.147994 2.45887 2.67722 0.0528935 9.94206 0.0400275C19.8303 0.0400275 29.7186 -0.0500344 39.6068 0.0400275C47.2195 0.0606495 54.5819 2.64239 60.4041 7.33295C66.2263 12.0235 70.137 18.5237 71.451 25.6948C75.1238 44.106 59.8811 58.6446 40.2795 59.0563C38.1539 59.0563 19.8034 58.8376 18.754 59.2235C17.4894 60.1885 5.46207 72.0896 3.18845 71.9995C0.914823 71.9094 0.376689 68.7701 0.376689 68.7701C0.376689 68.7701 0 66.1069 0 64.7817C0 55.5568 0 46.3447 0 37.1327V34.2594Z" fill="currentColor"/><path d="M114.739 0.013698H140.167C141.169 0.013698 142.17 0.013698 143.172 0.013698C147.269 0.255015 149.863 2.74441 149.902 6.9103C149.992 14.3784 150.069 20.9447 149.902 28.4001C149.786 33.7472 149.991 39.2467 148.823 44.3906C146.981 52.6334 142.205 59.9473 135.367 64.9994C128.528 70.0514 120.082 72.5051 111.567 71.9134C103.171 71.3023 95.2552 67.8039 89.1939 62.0251C83.1325 56.2463 79.3076 48.5515 78.3825 40.2755C77.7403 34.4966 78.1128 28.6161 78.0614 22.7864C78.0614 17.9601 77.9587 13.1337 78.0614 8.32009C78.0614 2.56659 80.6299 0.0645307 86.3062 0.0264281C95.7453 -0.0243754 105.236 0.013698 114.739 0.013698Z" fill="currentColor"/><path d="M200.716 20.156C200.701 16.2899 200.686 12.4215 200.686 8.55356C200.647 2.54191 196.67 0 187.443 0H170.164C159.996 0.0381289 156.313 2.41482 156.313 9.07466C156.274 18.2637 156.078 54.2193 156 63.0143C156 70.8435 157.822 72 169.713 72H211.167C212.969 72 218.513 71.9746 220.296 71.8475C225.233 71.4789 227.603 70.1317 227.78 66.9289C228.073 61.7179 228.073 56.4943 227.78 51.296C227.584 48.1567 225.37 46.8349 220.531 46.5172C215.462 46.2483 210.371 46.1889 205.29 46.3393C201.607 46.5045 200.686 45.7165 200.686 43.3525C200.766 36.5829 200.753 29.8173 200.728 23.0511L200.716 20.156Z" fill="currentColor"/><path d="M234 34.2594C234 25.0345 234.148 18.6957 234.148 9.47083C234.148 2.45887 236.677 0.0528935 243.942 0.0400275C253.83 0.0400275 263.719 -0.0500344 273.607 0.0400275C281.22 0.0606495 288.582 2.64239 294.404 7.33295C300.226 12.0235 304.137 18.5237 305.451 25.6948C309.124 44.106 293.881 58.6446 274.28 59.0563C272.154 59.0563 253.803 58.8376 252.754 59.2235C251.489 60.1885 239.462 72.0896 237.188 71.9995C234.915 71.9094 234.377 68.7701 234.377 68.7701C234.377 68.7701 234 66.1069 234 64.7817C234 55.5568 234 46.3447 234 37.1327V34.2594Z" fill="currentColor"/><path d="M315.989 12V1.36778H312V0H321.516V1.36778H317.527V12H315.989Z" fill="currentColor"/><path d="M323.391 12V0H325.953L329.686 9.93921H329.705L333.493 0H336V12H334.444L334.481 1.03951H334.444L330.272 12H329.028L324.855 1.03951H324.819L324.855 12H323.391Z" fill="currentColor"/></svg><span class="k-mark__kit">Brand Kit</span></a>
+  <nav class="k-nav" aria-label="Main"><a href="../../kit/" aria-current=page>Kit</a><a href="../../boards/">Boards</a><a href="../../rules/">Rules</a><a href="../../colors/">Colors</a><a href="../../social/">Social</a><a href="../../downloads/">Downloads</a></nav>
+  <div class="k-bar__end">
+    <fieldset class="k-modes" data-modes><legend>Mode</legend><label><input type="radio" name="mode-bar" value="light">Light</label><label><input type="radio" name="mode-bar" value="dark">Dark</label><label><input type="radio" name="mode-bar" value="mono">Mono</label></fieldset>
+    <a class="k-icon-btn" href="../../search/index.html" data-open-search aria-label="Search the kit" aria-haspopup="dialog"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg></a>
+    <button class="k-icon-btn k-menu-btn" type="button" data-open-menu aria-label="Menu" aria-haspopup="dialog" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+  </div>
+</div></header>
+<main id="main" tabindex="-1">
+<div class="k-wrap k-doc"><aside class="k-toc" aria-label="On this page"><details open><summary class="k-label">On this page</summary><ol><li><a href="#the-cascade">The cascade</a></li><li><a href="#names">Names</a></li><li><a href="#mode-roles">Mode roles</a></li><li><a href="#never">Never</a></li><li><a href="#rules">Rules</a></li><li><a href="#contract">Contract</a></li><li><a href="#rules_1">Rules</a></li><li><a href="#contract_1">Contract</a></li><li><a href="#rules_2">Rules</a></li><li><a href="#contract_2">Contract</a></li><li><a href="#boards">Boards</a></li></ol></details></aside><article class="k-prose"><p class="k-label">14 · The kit</p><h1 class="k-h1">Code contracts</h1>
+<p>The CSS, animation and interaction contracts. <code>brand_lint.py</code> checks every stylesheet against them.</p>
+<h2 id="the-cascade">The cascade</h2>
+<pre class="k-code"><code class="language-css">@layer reset, tokens, base, layout, components, utilities;
+</code></pre>
+<h2 id="names">Names</h2>
+<div class="k-table"><table>
+<thead>
+<tr>
+<th>Prefix</th>
+<th>For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Prefix"><code>p-</code></td>
+<td data-label="For">pulp</td>
+</tr>
+<tr>
+<td data-label="Prefix"><code>tw2-</code></td>
+<td data-label="For">thinkwell</td>
+</tr>
+<tr>
+<td data-label="Prefix"><code>td-</code></td>
+<td data-label="For">typodojo</td>
+</tr>
+<tr>
+<td data-label="Prefix"><code>u-</code></td>
+<td data-label="For">utility</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="mode-roles">Mode roles</h2>
+<p>The only custom properties a mode sets, on <code>html[data-mode]</code>:</p>
+<p><code>--c-ground</code>, <code>--c-type</code>, <code>--c-muted</code>, <code>--c-line</code>, <code>--c-band</code>, <code>--c-card</code>, <code>--c-btn-bg</code>, <code>--c-btn-fg</code>, <code>--c-link</code>, <code>--c-plate</code>, <code>--c-print</code>, <code>--c-scrim</code>, <code>--c-glow</code>, <code>--c-feature</code>, <code>--c-feature-type</code>, <code>--c-feature-muted</code>, <code>--c-feature-ink</code>, <code>--c-feature-print</code>, <code>--c-photo-ground</code>, <code>--c-photo-type</code>, <code>--c-photo-filter</code>, <code>--c-thread</code>, <code>--c-dye</code>, <code>--c-api</code>, <code>--c-api-far</code>, <code>--c-scheme</code>.</p>
+<h2 id="never">Never</h2>
+<p><code>!important</code>, <code>.is-*</code> state classes, <code>outline: none</code>, <code>transition: none</code>, raw values outside <code>tokens.css</code>, and hover styles outside <code>@media (hover: hover) and (pointer: fine)</code>. State lives in <code>aria-*</code> and <code>data-state</code>.</p>
+<h2 id="rules">Rules</h2>
+<div class="k-table"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Scope</th>
+<th>Checked by</th>
+<th>Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="ID"><code>R-ANIM-01</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">lint</td>
+<td data-label="Rule">Every animation and transition is listed in motion.json with its trigger, what moves, duration, easing, loop and reduced-motion behavior. @keyframes names match motion.json ids.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-ANIM-02</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">lint</td>
+<td data-label="Rule">Durations and easings only through var(--dur-<em>) and var(--ease-</em>).</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-ANIM-03</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">lint</td>
+<td data-label="Rule">Only opacity, transform, colors, box-shadow, background-size, underline thickness and outline color may animate. Never width, height, top, left or margin.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-ANIM-04</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">lint</td>
+<td data-label="Rule">Under prefers-reduced-motion, transforms stop and fades stay at 120 ms. Never transition: none.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-ANIM-05</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">review</td>
+<td data-label="Rule">Scroll-triggered motion runs once per element per visit, through IntersectionObserver, never a scroll listener. Content is visible without JavaScript.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-ANIM-06</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">review</td>
+<td data-label="Rule">The robot blinks at most three times a visit, at least 8 s apart, only while the hero is in view and the page is idle.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="contract">Contract</h2>
+<p>From <code>pack/contracts.ts</code>.</p>
+<pre class="k-code"><code class="language-ts">type MotionId = 'highlight-sweep' | 'section-reveal' | 'plate-focus'
+  | 'robot-peek' | 'robot-blink' | 'dialog-open' | 'dialog-close'
+  | 'mode-change' | 'press' | 'link-underline' | 'form-status'
+  | 'photo-drift';
+
+type Animatable = 'opacity' | 'transform' | 'color' | 'background-color'
+  | 'border-color' | 'box-shadow' | 'background-size'
+  | 'text-decoration-thickness' | 'outline-color';
+
+type MotionSpec = {
+  id: MotionId;                    // also the @keyframes name
+  trigger: string;
+  what: string;                    // Animatable properties only
+  duration: 'quick' | 'settle' | 'breath' | 'loader' | 'scroll';
+  easing: 'arrive' | 'leave' | 'scroll';   // scroll: tied to scroll, not time
+  loop: 'never' | string;          // loaders and the capped blink only
+  reduced: string;                 // never 'transition: none'
+  endsOnStill: true;
+  trigger_api?: 'IntersectionObserver';  // scroll: once, never a listener
+};
+</code></pre>
+<h2 id="rules_1">Rules</h2>
+<div class="k-table"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Scope</th>
+<th>Checked by</th>
+<th>Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="ID"><code>R-INTX-01</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">review</td>
+<td data-label="Rule">Every interactive component is listed in interactions.json with its element, states, keyboard path, touch path, ARIA and motion ids.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-INTX-02</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">review</td>
+<td data-label="Rule">Native elements first: a button for actions, a link for navigation, a labeled input for answers. A role only where nothing native fits.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-INTX-03</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">review</td>
+<td data-label="Rule">Dialogs and sheets move focus in, trap it, close on Escape, outside click and the close button, and return focus to the control that opened them.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-INTX-04</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">review</td>
+<td data-label="Rule">The mode switch is a group of three radios. It follows the system first, then remembers the choice, and changes colors only.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-INTX-05</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">review</td>
+<td data-label="Rule">Forms check a field when it is left and when the form is sent, never on every key. Errors say what to do, in words with Akira red beside them; done says what happened, with Alan Green beside it.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-INTX-06</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">review</td>
+<td data-label="Rule">Keyboard order follows reading order, and a skip link comes first.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="contract_1">Contract</h2>
+<p>From <code>pack/contracts.ts</code>.</p>
+<pre class="k-code"><code class="language-ts">// Input and Pointer: see motion above
+type State = 'rest' | 'hover' | 'focus-visible' | 'active' | 'disabled'
+  | 'busy' | 'checked' | 'current' | 'expanded' | 'previewed'
+  | 'pinned' | 'open' | 'closed' | 'sending' | 'done' | 'error'
+  | 'invalid' | 'valid' | 'hidden' | 'empty' | 'pressed';
+
+type Interaction = {
+  id: string;                      // interactions.json
+  element: string;                 // native first
+  purpose: string;
+  states: State[];
+  keys: string;                    // the keyboard path
+  touch: string;                   // the touch path, never hover-only
+  aria: string;
+  motion: MotionId[];              // motion.json ids
+};
+
+type Dialog = Interaction &amp; {
+  trapsFocus: true; closesOn: ['Escape', 'outside', 'close'];
+  returnsFocusTo: 'opener'; desktop: 'modal'; phone: 'sheet';
+};
+</code></pre>
+<h2 id="rules_2">Rules</h2>
+<div class="k-table"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Scope</th>
+<th>Checked by</th>
+<th>Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="ID"><code>R-CSS-01</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">lint</td>
+<td data-label="Rule">Every value comes from a custom property defined in tokens.css. No raw colors, sizes or durations outside the tokens layer.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-CSS-02</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">lint</td>
+<td data-label="Rule">Every rule sits in a cascade layer, declared once in this order: reset, tokens, base, layout, components, utilities.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-CSS-03</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">lint</td>
+<td data-label="Rule">No !important.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-CSS-04</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">lint</td>
+<td data-label="Rule">Mode is one attribute on html: data-mode light, dark or mono. A mode block may only reassign the --c-* color roles, so the switch test holds in code.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-CSS-05</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">lint</td>
+<td data-label="Rule">Hover styles live inside @media (hover: hover) and (pointer: fine). The same information is reachable on focus and tap.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-CSS-06</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">lint</td>
+<td data-label="Rule">Focus is shown with :focus-visible: a 2 px ring in the type color, 2 px out. An outline is never removed without that ring.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-CSS-07</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">lint</td>
+<td data-label="Rule">State lives in aria-* or data-state attributes, never in ad hoc classes such as .is-open or .active.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-CSS-08</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">lint</td>
+<td data-label="Rule">Component classes carry their property's prefix: p- for Pulp, tw2- for Thinkwell, td- for typodojo, u- for utilities.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-CSS-09</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">review</td>
+<td data-label="Rule">Layout uses grid and flex with gap, and logical properties (padding-inline, margin-block).</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-CSS-10</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">lint</td>
+<td data-label="Rule">Breakpoints are min-width 560, 768, 1024 and 1280 px. Components may use container queries instead.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-CSS-11</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">lint</td>
+<td data-label="Rule">z-index and font stacks only through var(--z-<em>) and var(--f-</em>).</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-CSS-12</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">review</td>
+<td data-label="Rule">No layout shift: plates and images declare their aspect ratio, and fonts swap.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-CSS-13</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">lint</td>
+<td data-label="Rule">The host guard. A page sets its ground, type color, color scheme and reading font once more on html and body, outside the layers, because a host page's unlayered styles (a CMS, an embed, the claude.ai artifact frame) beat every layer. Values come only from tokens. It is the one rule allowed outside a layer.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="contract_2">Contract</h2>
+<p>From <code>pack/contracts.ts</code>.</p>
+<pre class="k-code"><code class="language-ts">// tokens.css is generated from tokens.json. Everything else reads it.
+// @layer reset, tokens, base, layout, components, utilities;
+// &lt;html data-mode=&quot;light | dark | mono&quot;&gt;, the Mode type above
+
+type ColorRole = `--c-${'ground' | 'type' | 'muted' | 'line' | 'band'
+  | 'card' | 'btn-bg' | 'btn-fg' | 'link' | 'plate' | 'print' | 'scrim'
+  | 'glow' | 'feature' | 'feature-type' | 'feature-muted' | 'feature-ink'
+  | 'feature-print' | 'photo-ground' | 'photo-type' | 'photo-filter'
+  | 'thread' | 'dye' | 'api' | 'api-far' | 'scheme'}`;            // the only vars a mode sets
+
+type Palette = `--pulp-${string}`;          // fixed in every mode
+type SpaceVar = `--s-${Space}`;
+type RadiusVar = '--r-0' | '--r-6' | '--r-pill';
+type MotionVar = '--dur-quick' | '--dur-settle' | '--dur-breath'
+  | '--dur-loader' | '--ease-arrive' | '--ease-leave';
+type Other = '--z-rail' | '--z-bar' | '--z-modal' | '--f-display'
+  | '--f-reading' | '--col' | '--frame' | '--gutter' | '--tap';
+
+type Selector = `.p-${string}` | `.u-${string}`   // Pulp, utilities
+  | `[data-state=&quot;${string}&quot;]` | `[aria-${string}]`;
+type Breakpoint = 560 | 768 | 1024 | 1280;  // min-width only
+type HoverOnly = '@media (hover: hover) and (pointer: fine)';
+type Banned = '!important' | '.is-*' | 'outline: none' | 'transition: none';
+</code></pre>
+<h2 id="boards">Boards</h2>
+<hr />
+<p>Pulp Brand Kit 2026, v6d-LibreFranklin. Generated from <code>generator/</code>; edit the source, then run <code>make</code>.</p><h2 id="boards">Boards</h2><ul class="k-boards"><li class="k-board" id="b-K14-01"><a class="k-board__btn" href="../../img/boards/K14-01-1600.webp" data-board data-title="K14-01 · CSS architecture" data-src="../../img/boards/K14-01-1600.webp"><img src="../../img/boards/K14-01-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="K14-01: CSS architecture"><span class="k-board__label"><span class="k-label">K14-01</span><span>CSS architecture</span></span></a></li><li class="k-board" id="b-K14-02"><a class="k-board__btn" href="../../img/boards/K14-02-1600.webp" data-board data-title="K14-02 · CSS contract" data-src="../../img/boards/K14-02-1600.webp"><img src="../../img/boards/K14-02-480.webp" width="480" height="315" loading="lazy" decoding="async" alt="K14-02: CSS contract"><span class="k-board__label"><span class="k-label">K14-02</span><span>CSS contract</span></span></a></li><li class="k-board" id="b-K14-03"><a class="k-board__btn" href="../../img/boards/K14-03-1600.webp" data-board data-title="K14-03 · Every animation" data-src="../../img/boards/K14-03-1600.webp"><img src="../../img/boards/K14-03-480.webp" width="480" height="364" loading="lazy" decoding="async" alt="K14-03: Every animation"><span class="k-board__label"><span class="k-label">K14-03</span><span>Every animation</span></span></a></li><li class="k-board" id="b-K14-04"><a class="k-board__btn" href="../../img/boards/K14-04-1600.webp" data-board data-title="K14-04 · Animation contract" data-src="../../img/boards/K14-04-1600.webp"><img src="../../img/boards/K14-04-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="K14-04: Animation contract"><span class="k-board__label"><span class="k-label">K14-04</span><span>Animation contract</span></span></a></li><li class="k-board" id="b-K14-05"><a class="k-board__btn" href="../../img/boards/K14-05-1600.webp" data-board data-title="K14-05 · Every interaction" data-src="../../img/boards/K14-05-1600.webp"><img src="../../img/boards/K14-05-480.webp" width="480" height="522" loading="lazy" decoding="async" alt="K14-05: Every interaction"><span class="k-board__label"><span class="k-label">K14-05</span><span>Every interaction</span></span></a></li><li class="k-board" id="b-K14-06"><a class="k-board__btn" href="../../img/boards/K14-06-1600.webp" data-board data-title="K14-06 · Interaction contract" data-src="../../img/boards/K14-06-1600.webp"><img src="../../img/boards/K14-06-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="K14-06: Interaction contract"><span class="k-board__label"><span class="k-label">K14-06</span><span>Interaction contract</span></span></a></li></ul><nav class="k-pager" aria-label="Previous and next"><a href="../machine-pack/index.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg><span><span class="k-label">Previous</span>Machine pack</span></a><a class="k-pager__next" href="../website/index.html"><span><span class="k-label">Next</span>The website</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></nav></article></div>
+</main>
+<footer class="k-foot"><div class="k-wrap">
+  <nav class="k-foot__nav" aria-label="Footer"><a href="../../kit/">Kit</a><a href="../../boards/">Boards</a><a href="../../rules/">Rules</a><a href="../../colors/">Colors</a><a href="../../social/">Social</a><a href="../../downloads/">Downloads</a><a href="../../search/index.html">Search</a></nav>
+  <div class="k-foot__end"><svg class="k-wordmark" viewBox="0 0 336 72" width="72" height="15" role="img" aria-label="Pulp" focusable="false"><path d="M0 34.2594C0 25.0345 0.147994 18.6957 0.147994 9.47083C0.147994 2.45887 2.67722 0.0528935 9.94206 0.0400275C19.8303 0.0400275 29.7186 -0.0500344 39.6068 0.0400275C47.2195 0.0606495 54.5819 2.64239 60.4041 7.33295C66.2263 12.0235 70.137 18.5237 71.451 25.6948C75.1238 44.106 59.8811 58.6446 40.2795 59.0563C38.1539 59.0563 19.8034 58.8376 18.754 59.2235C17.4894 60.1885 5.46207 72.0896 3.18845 71.9995C0.914823 71.9094 0.376689 68.7701 0.376689 68.7701C0.376689 68.7701 0 66.1069 0 64.7817C0 55.5568 0 46.3447 0 37.1327V34.2594Z" fill="currentColor"/><path d="M114.739 0.013698H140.167C141.169 0.013698 142.17 0.013698 143.172 0.013698C147.269 0.255015 149.863 2.74441 149.902 6.9103C149.992 14.3784 150.069 20.9447 149.902 28.4001C149.786 33.7472 149.991 39.2467 148.823 44.3906C146.981 52.6334 142.205 59.9473 135.367 64.9994C128.528 70.0514 120.082 72.5051 111.567 71.9134C103.171 71.3023 95.2552 67.8039 89.1939 62.0251C83.1325 56.2463 79.3076 48.5515 78.3825 40.2755C77.7403 34.4966 78.1128 28.6161 78.0614 22.7864C78.0614 17.9601 77.9587 13.1337 78.0614 8.32009C78.0614 2.56659 80.6299 0.0645307 86.3062 0.0264281C95.7453 -0.0243754 105.236 0.013698 114.739 0.013698Z" fill="currentColor"/><path d="M200.716 20.156C200.701 16.2899 200.686 12.4215 200.686 8.55356C200.647 2.54191 196.67 0 187.443 0H170.164C159.996 0.0381289 156.313 2.41482 156.313 9.07466C156.274 18.2637 156.078 54.2193 156 63.0143C156 70.8435 157.822 72 169.713 72H211.167C212.969 72 218.513 71.9746 220.296 71.8475C225.233 71.4789 227.603 70.1317 227.78 66.9289C228.073 61.7179 228.073 56.4943 227.78 51.296C227.584 48.1567 225.37 46.8349 220.531 46.5172C215.462 46.2483 210.371 46.1889 205.29 46.3393C201.607 46.5045 200.686 45.7165 200.686 43.3525C200.766 36.5829 200.753 29.8173 200.728 23.0511L200.716 20.156Z" fill="currentColor"/><path d="M234 34.2594C234 25.0345 234.148 18.6957 234.148 9.47083C234.148 2.45887 236.677 0.0528935 243.942 0.0400275C253.83 0.0400275 263.719 -0.0500344 273.607 0.0400275C281.22 0.0606495 288.582 2.64239 294.404 7.33295C300.226 12.0235 304.137 18.5237 305.451 25.6948C309.124 44.106 293.881 58.6446 274.28 59.0563C272.154 59.0563 253.803 58.8376 252.754 59.2235C251.489 60.1885 239.462 72.0896 237.188 71.9995C234.915 71.9094 234.377 68.7701 234.377 68.7701C234.377 68.7701 234 66.1069 234 64.7817C234 55.5568 234 46.3447 234 37.1327V34.2594Z" fill="currentColor"/><path d="M315.989 12V1.36778H312V0H321.516V1.36778H317.527V12H315.989Z" fill="currentColor"/><path d="M323.391 12V0H325.953L329.686 9.93921H329.705L333.493 0H336V12H334.444L334.481 1.03951H334.444L330.272 12H329.028L324.855 1.03951H324.819L324.855 12H323.391Z" fill="currentColor"/></svg><span class="k-label">Brand Kit · v6d-LibreFranklin · EST. 2026 · Brooklyn, New York</span><fieldset class="k-modes" data-modes><legend>Mode</legend><label><input type="radio" name="mode-foot" value="light">Light</label><label><input type="radio" name="mode-foot" value="dark">Dark</label><label><input type="radio" name="mode-foot" value="mono">Mono</label></fieldset></div>
+</div></footer>
+<dialog class="k-dialog k-search" id="search" aria-label="Search the kit">
+  <form class="k-search__form" method="get" action="../../search/index.html" role="search">
+    <label class="k-sr" for="q">Search the kit</label>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg><input id="q" name="q" type="search" placeholder="Search colors, rules, boards, posts" autocomplete="off">
+    <button class="k-icon-btn" type="button" data-close aria-label="Close search"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+  </form>
+  <p class="k-search__count k-muted" role="status" aria-live="polite"></p>
+  <ol class="k-results"></ol>
+</dialog>
+<dialog class="k-dialog k-sheet" id="menu" aria-label="Menu">
+  <div class="k-sheet__head"><span class="k-label">Menu</span><button class="k-icon-btn" type="button" data-close aria-label="Close menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
+  <nav aria-label="Menu"><a href="../../kit/">Kit</a><a href="../../boards/">Boards</a><a href="../../rules/">Rules</a><a href="../../colors/">Colors</a><a href="../../social/">Social</a><a href="../../downloads/">Downloads</a><a href="../../search/index.html">Search</a></nav>
+  <fieldset class="k-modes" data-modes><legend>Mode</legend><label><input type="radio" name="mode-sheet" value="light">Light</label><label><input type="radio" name="mode-sheet" value="dark">Dark</label><label><input type="radio" name="mode-sheet" value="mono">Mono</label></fieldset>
+</dialog>
+<dialog class="k-dialog k-viewer" id="viewer" aria-label="Board">
+  <div class="k-viewer__head"><p class="k-viewer__title"></p><a class="k-icon-btn" data-full href="#" aria-label="Open the full image"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg></a><button class="k-icon-btn" type="button" data-close aria-label="Close"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
+  <div class="k-viewer__img"><img alt=""></div>
+</dialog>
+<script src="../../site.js"></script>
+</body>
+</html>

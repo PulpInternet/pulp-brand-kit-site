@@ -1,0 +1,623 @@
+{
+  "kit": "Pulp Brand Kit 2026",
+  "version": "v6d-LibreFranklin",
+  "site": "pulp-site3",
+  "sections": [
+    {
+      "id": "home",
+      "title": "Home",
+      "note": "The landing page, built as site/index.html (pulp-site3).",
+      "pages": [
+        {
+          "path": "/",
+          "title": "Home",
+          "purpose": "Say what Pulp is, why it matters, and where to go next, in the voice of a short essay.",
+          "audience": "Everyone: customers, investors, researchers, students, press",
+          "modules": [
+            "Hero: We help humans understand humans, the one Highlighter block, the gum robot cropped off the edge",
+            "What we do: research, products, publishing",
+            "Technology doesn\u2019t make you a better thinker: habits do",
+            "Walking away solves nothing: where we stand on AI",
+            "Three ways we look at people: from afar, up close, from every angle, three plates",
+            "What you can hold us to: quality, reliability, value; data literacy, verified people, credible references",
+            "What we make: Thinkwell, typodojo, the platform, Pulp101",
+            "Research: accepted at INFORMS and ASA in 2026, talks at the University of Florida and Emory",
+            "From one person to a whole public: reflection, one to one, one to many, many to many",
+            "CTA band with the robot\u2019s peek: tell us what you\u2019re trying to understand"
+          ],
+          "action": "Get in touch (opens the contact modal)",
+          "visual": "Gum robot hero, three plates, one Highlighter block"
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "title": "Research",
+      "note": "Where Pulp shows its work. Every number has a source and a unit.",
+      "pages": [
+        {
+          "path": "/research",
+          "title": "Research",
+          "purpose": "One page that shows what Pulp studies and the newest work first.",
+          "audience": "Researchers, investors, journalists, students",
+          "modules": [
+            "What we study: reasoning, persuasion, attention, metacognition",
+            "Newest papers and data stories",
+            "Methods in one paragraph, linked",
+            "Talks and seminars",
+            "Collaborate with us"
+          ],
+          "action": "Read the newest paper",
+          "visual": "Data storytelling plate"
+        },
+        {
+          "path": "/research/papers",
+          "title": "Papers",
+          "purpose": "Every paper with its exact status, so nothing is overclaimed.",
+          "audience": "Researchers and reviewers",
+          "modules": [
+            "List with status labels: accepted, presented, under review, published",
+            "Abstract, authors and co-authors, venue, year",
+            "PDF and citation in one click",
+            "Filter by topic and year"
+          ],
+          "action": "Download the PDF",
+          "visual": "None; type only"
+        },
+        {
+          "path": "/research/stories",
+          "title": "Data stories",
+          "purpose": "Long reads that turn research into something anyone can follow.",
+          "audience": "General readers, students, press",
+          "modules": [
+            "From Stone to Screen",
+            "How people ask, and what it costs to understand them",
+            "Understand first: how Pulp cuts the electricity AI uses",
+            "Each story: reading time, sources, the data files"
+          ],
+          "action": "Read a story",
+          "visual": "One accent per part, as in From Stone to Screen"
+        },
+        {
+          "path": "/research/methods",
+          "title": "Methods",
+          "purpose": "How Pulp measures conversation, in plain language with the precise terms one step away.",
+          "audience": "Technical buyers, researchers, reviewers",
+          "modules": [
+            "Rules first, models second: cheap, checkable steps before any model call",
+            "48 parameters: 8 channels by 6 dimensions, on a scale from -1 to +1",
+            "Abstentions are empty, never zero",
+            "The mixed-subjects guarantee: what it promises and what it does not",
+            "Glossary in a floating panel"
+          ],
+          "action": "Read the methods paper",
+          "visual": "Critical decisions plate"
+        },
+        {
+          "path": "/research/talks",
+          "title": "Talks",
+          "purpose": "Where the team has spoken and where it will speak next.",
+          "audience": "Universities, conference organizers, press",
+          "modules": [
+            "Seminars at the University of Florida",
+            "Emory MSBA speaking event",
+            "Accepted at INFORMS 2026 and the ASA 2026 roundtable",
+            "Invite us to speak"
+          ],
+          "action": "Invite us",
+          "visual": "In Person photographs, real people only, consent on file"
+        }
+      ]
+    },
+    {
+      "id": "products",
+      "title": "Products",
+      "note": "Every product placed on the dial, each in its own voice.",
+      "pages": [
+        {
+          "path": "/products",
+          "title": "Products",
+          "purpose": "Show the family on one page, from the most playful to the most precise.",
+          "audience": "Customers and investors",
+          "modules": [
+            "The dial: typodojo, Pulp, Thinkwell",
+            "One card per product with its own mark and endorsement",
+            "Suade, marked Coming"
+          ],
+          "action": "Choose a product",
+          "visual": "Each product's own mark"
+        },
+        {
+          "path": "/products/thinkwell",
+          "title": "Thinkwell",
+          "purpose": "Introduce Thinkwell and hand off to its own site.",
+          "audience": "Government relations and public affairs teams",
+          "modules": [
+            "See the world through conversation",
+            "From the widget to the five rooms of Thinkwell Web",
+            "Plans by name, with what each includes and no prices",
+            "A Pulp product"
+          ],
+          "action": "Visit Thinkwell",
+          "visual": "Thinkwell running, never a drawing of it"
+        },
+        {
+          "path": "/products/typodojo",
+          "title": "typodojo",
+          "purpose": "Introduce the dojo as a Pulp special project and hand off.",
+          "audience": "Designers, students, hobbyists",
+          "modules": [
+            "Draw letters by hand, make a real font, share or sell it",
+            "The provenance labels: drawn by hand, AI-assisted, uploaded",
+            "typodojo.js, for developers: ships in Loosethreads",
+            "A Pulp special project"
+          ],
+          "action": "Visit typodojo",
+          "visual": "typodojo's own ink prints"
+        },
+        {
+          "path": "/products/suade",
+          "title": "Suade",
+          "purpose": "Hold the place for the structured-discussion product.",
+          "audience": "Early followers",
+          "modules": [
+            "What it is, in two lines",
+            "Marked Coming",
+            "Join the list"
+          ],
+          "action": "Join the list",
+          "visual": "None until designed"
+        }
+      ]
+    },
+    {
+      "id": "platform",
+      "title": "Platform",
+      "note": "What developers build on. Documentation lives at pulp.com.ai/docs. No prices.",
+      "pages": [
+        {
+          "path": "/platform",
+          "title": "Platform",
+          "purpose": "Explain the platform: two SDKs on the P.U.L.P. engine, one for the server and one for the web.",
+          "audience": "Developers and technical buyers",
+          "modules": [
+            "P.U.L.P.: one parameterized language for people and machines",
+            "The Pulp API, the server SDK: Radiance, Windfall, TrueAura, Groundwater",
+            "Loosethreads, the web SDK: weftConversations, WarpDisplays, DyeMedia, BightInteractions, and typodojo.js",
+            "MCP access",
+            "Read the docs"
+          ],
+          "action": "Read the docs",
+          "visual": "Machine health plate"
+        },
+        {
+          "path": "/platform/api",
+          "title": "Pulp API",
+          "purpose": "The server SDK. Name its four modules and what each does, in one line each.",
+          "audience": "Developers",
+          "modules": [
+            "Radiance: references, rhetorical mass and persuasive force",
+            "Windfall: rewards, moderation and social media connectivity",
+            "TrueAura: stateful persona modeling and persuasive resonance, scored against an objective",
+            "Groundwater, machine health: websoil (SEO, interaction data, the top level), domaincrust, codemantle, servercore",
+            "Request access (form in a floating modal)"
+          ],
+          "action": "Request access",
+          "visual": "Code shown as text, never a picture of code"
+        },
+        {
+          "path": "/platform/loosethreads",
+          "title": "Loosethreads",
+          "purpose": "The web SDK: every interactive, multimedia part, so one experience works on every device.",
+          "audience": "Front-end developers and partners",
+          "modules": [
+            "weftConversations: threads of every kind: comments, chats, email",
+            "WarpDisplays: every media object: video, audio, text, images, PDF",
+            "DyeMedia: AI-generated multimedia",
+            "BightInteractions: shortcuts, bindings and macros, by device and input",
+            "typodojo.js: the dojo's drawing and font tools, documented with typodojo",
+            "Targets: web, desktop, mobile"
+          ],
+          "action": "Read the SDK docs",
+          "visual": "Components running, in all three modes"
+        },
+        {
+          "path": "/platform/mcp",
+          "title": "MCP",
+          "purpose": "Explain how AI assistants reach Pulp safely.",
+          "audience": "Developers and Thinkwell admins",
+          "modules": [
+            "What an assistant can do with it",
+            "What each Thinkwell plan includes",
+            "Scopes and permissions"
+          ],
+          "action": "Read the MCP docs",
+          "visual": "None; type only"
+        }
+      ]
+    },
+    {
+      "id": "work",
+      "title": "What we do",
+      "note": "Thirteen pages from one template: capabilities, solutions and industries. Each has one plate.",
+      "pages": [
+        {
+          "path": "/work",
+          "title": "What we do",
+          "purpose": "Let a visitor find their need by what, how, or who.",
+          "audience": "Customers",
+          "modules": [
+            "Three lenses: capabilities, solutions, industries",
+            "Every page as a plate with one line",
+            "Talk to us"
+          ],
+          "action": "Pick a page",
+          "visual": "Thirteen plates, one each"
+        },
+        {
+          "path": "/work/capabilities/*",
+          "title": "Capabilities, 4 pages",
+          "purpose": "Human interfaces, Critical decisions, Persona engine, Machine health.",
+          "audience": "Technical buyers",
+          "modules": [
+            "The plate, with what it measures on hover",
+            "What it measures, in plain words",
+            "An example from a real use, labeled",
+            "Which products use it",
+            "Related solutions and industries"
+          ],
+          "action": "Talk to us",
+          "visual": "The page's own plate"
+        },
+        {
+          "path": "/work/solutions/*",
+          "title": "Solutions, 4 pages",
+          "purpose": "Workforce optimization, Data storytelling, Persuasive intelligence, Custom AI and ML.",
+          "audience": "Buyers with a problem to solve",
+          "modules": [
+            "The problem, in their words",
+            "How Pulp approaches it",
+            "What you get and when",
+            "Proof: papers, stories, or a labeled sample"
+          ],
+          "action": "Talk to us",
+          "visual": "The page's own plate"
+        },
+        {
+          "path": "/work/industries/*",
+          "title": "Industries, 5 pages",
+          "purpose": "Policy and governance, Marketing and media, Consulting and management, Finance and markets, Public engagement.",
+          "audience": "Buyers by sector",
+          "modules": [
+            "What changes in this field",
+            "Two or three uses, each with a plain example",
+            "Products that fit",
+            "Compliance notes where the field needs them"
+          ],
+          "action": "Talk to us",
+          "visual": "The page's own plate"
+        }
+      ]
+    },
+    {
+      "id": "pulp101",
+      "title": "Pulp101",
+      "note": "The official blog and the apprenticeship showcase.",
+      "pages": [
+        {
+          "path": "/pulp101",
+          "title": "Pulp101",
+          "purpose": "The blog: what the team and apprentices are learning, one claim at a time.",
+          "audience": "Students, mentors, readers",
+          "modules": [
+            "Newest posts",
+            "Tags: research, methods, apprenticeship, products, events",
+            "Subscribe"
+          ],
+          "action": "Read the newest post",
+          "visual": "Published by Pulp"
+        },
+        {
+          "path": "/pulp101/apprenticeship",
+          "title": "Apprenticeship",
+          "purpose": "Show the Pulp AI Apprenticeship: mentors from industry and academia working with students.",
+          "audience": "Students, mentors, universities",
+          "modules": [
+            "How it works",
+            "100+ practitioners across 15+ campuses",
+            "Projects and outcomes",
+            "Apply or mentor"
+          ],
+          "action": "Apply",
+          "visual": "In Person photographs"
+        },
+        {
+          "path": "/pulp101/campuses",
+          "title": "Campus partners",
+          "purpose": "List campuses and what partnership involves.",
+          "audience": "University staff",
+          "modules": [
+            "Partner campuses",
+            "What a partner gets and gives",
+            "Start a partnership"
+          ],
+          "action": "Start a partnership",
+          "visual": "In Person photographs"
+        },
+        {
+          "path": "/pulp101/campaigns",
+          "title": "Campaigns",
+          "purpose": "Live Thinkwell engagement campaigns run with the Pulp101 community.",
+          "audience": "Students and the public",
+          "modules": [
+            "Open campaigns",
+            "How verification works",
+            "Results when a campaign closes"
+          ],
+          "action": "Take part",
+          "visual": "Thinkwell running"
+        }
+      ]
+    },
+    {
+      "id": "company",
+      "title": "Company",
+      "note": "Who we are. The gum robot lives on About.",
+      "pages": [
+        {
+          "path": "/company/about",
+          "title": "About",
+          "purpose": "Tell the story: years of research, incorporated in 2026, Brooklyn.",
+          "audience": "Investors, press, candidates",
+          "modules": [
+            "The story, short",
+            "The gum robot with the line dither, the one place it is used",
+            "EST. 2026, Brooklyn, New York"
+          ],
+          "action": "Meet the team",
+          "visual": "About plate: the robot, engraved"
+        },
+        {
+          "path": "/company/team",
+          "title": "Team",
+          "purpose": "The people, and the colors they chose.",
+          "audience": "Investors, candidates, press",
+          "modules": [
+            "Each person: name, role, photo (consent on file), their color",
+            "Advisors and partners"
+          ],
+          "action": "See open roles",
+          "visual": "Real photographs, never dithered"
+        },
+        {
+          "path": "/company/commitments",
+          "title": "Commitments",
+          "purpose": "What Pulp promises and how it can be checked.",
+          "audience": "Customers, investors, the public",
+          "modules": [
+            "Quality, reliability, value",
+            "Data literacy and misinformation",
+            "Verified people, without exposing who they are",
+            "Credible references for media and notable people",
+            "How to hold us to it"
+          ],
+          "action": "Read the policies",
+          "visual": "Critical decisions plate"
+        },
+        {
+          "path": "/company/brand",
+          "title": "Brand",
+          "purpose": "The public brand page: the dial, the marks, merch, how to use them.",
+          "audience": "Press, partners, fans",
+          "modules": [
+            "The dial",
+            "Download the marks",
+            "Merch and stickers",
+            "Press kit"
+          ],
+          "action": "Download the press kit",
+          "visual": "Gum robot, stickers on this page only"
+        },
+        {
+          "path": "/company/press",
+          "title": "Press",
+          "purpose": "Announcements and a contact for journalists.",
+          "audience": "Journalists",
+          "modules": [
+            "Announcements",
+            "Press kit",
+            "Media contact"
+          ],
+          "action": "Contact press",
+          "visual": "None; type only"
+        },
+        {
+          "path": "/company/careers",
+          "title": "Careers",
+          "purpose": "Open roles and how Pulp works.",
+          "audience": "Candidates",
+          "modules": [
+            "How we work",
+            "Open roles",
+            "Apprenticeship link"
+          ],
+          "action": "Apply",
+          "visual": "In Person photographs"
+        },
+        {
+          "path": "/company/contact",
+          "title": "Contact",
+          "purpose": "A page for people who arrive by link; elsewhere contact opens as a modal.",
+          "audience": "Everyone",
+          "modules": [
+            "What are you trying to understand?",
+            "Sales, research, press, partnerships",
+            "Brooklyn, New York"
+          ],
+          "action": "Send",
+          "visual": "None"
+        }
+      ]
+    },
+    {
+      "id": "trust",
+      "title": "Trust",
+      "note": "Policies people can read, with the hard rules stated plainly.",
+      "pages": [
+        {
+          "path": "/trust/privacy",
+          "title": "Privacy",
+          "purpose": "What we collect, why, and for how long.",
+          "audience": "Everyone",
+          "modules": [
+            "Plain summary first, full policy below",
+            "On-device redaction",
+            "Your choices"
+          ],
+          "action": "Ask about your data (opens the contact modal)",
+          "visual": "None"
+        },
+        {
+          "path": "/trust/consent",
+          "title": "Consent",
+          "purpose": "How consent works in every Pulp product.",
+          "audience": "Everyone",
+          "modules": [
+            "Opt in, always visible",
+            "Keeping and sharing are separate choices",
+            "Session attestation, not fingerprinting"
+          ],
+          "action": "Read the policy",
+          "visual": "None"
+        },
+        {
+          "path": "/trust/accessibility",
+          "title": "Accessibility",
+          "purpose": "Accessible by design, and the audit plan.",
+          "audience": "Public sector buyers, everyone",
+          "modules": [
+            "What we test: every mode, input and size",
+            "Audit status, stated exactly",
+            "Report a barrier"
+          ],
+          "action": "Report a barrier",
+          "visual": "None"
+        },
+        {
+          "path": "/trust/sustainability",
+          "title": "Sustainability",
+          "purpose": "Less compute, on the record.",
+          "audience": "Customers, investors",
+          "modules": [
+            "Rules first saves energy: the method",
+            "Measured use, with units and sources",
+            "Stripe Climate in typodojo"
+          ],
+          "action": "Read the data story",
+          "visual": "Hannah greens, on this page only"
+        },
+        {
+          "path": "/trust/security",
+          "title": "Security",
+          "purpose": "How data is protected.",
+          "audience": "Technical buyers",
+          "modules": [
+            "Practices",
+            "Compliance mode for organizations",
+            "Report a vulnerability"
+          ],
+          "action": "Report a vulnerability",
+          "visual": "None"
+        },
+        {
+          "path": "/trust/terms",
+          "title": "Terms",
+          "purpose": "Terms of use.",
+          "audience": "Everyone",
+          "modules": [
+            "Summary, then the terms"
+          ],
+          "action": "Get in touch (opens the contact modal)",
+          "visual": "None"
+        }
+      ]
+    },
+    {
+      "id": "system",
+      "title": "Everywhere",
+      "note": "Not pages: views and states every page shares.",
+      "pages": [
+        {
+          "path": "(modal)",
+          "title": "Contact",
+          "purpose": "Tell us what you are trying to understand, from anywhere, without leaving the page.",
+          "audience": "Everyone",
+          "modules": [
+            "Name, email, the question",
+            "Validation on blur and on send",
+            "Done state in Alan Green, errors in Akira red with words"
+          ],
+          "action": "Send",
+          "visual": "None"
+        },
+        {
+          "path": "(command menu)",
+          "title": "Search",
+          "purpose": "One search for pages, papers, stories and docs.",
+          "audience": "Everyone",
+          "modules": [
+            "Opens from the bar or with the slash key",
+            "Grouped results",
+            "Field never moves while results appear"
+          ],
+          "action": "Open a result",
+          "visual": "None"
+        },
+        {
+          "path": "(sheet)",
+          "title": "Menu on phones",
+          "purpose": "The full map, as a sheet from the bottom.",
+          "audience": "Phone visitors",
+          "modules": [
+            "Every section",
+            "Mode switch",
+            "Contact"
+          ],
+          "action": "Go to a section",
+          "visual": "None"
+        },
+        {
+          "path": "/404",
+          "title": "Not found",
+          "purpose": "A calm way back.",
+          "audience": "Lost visitors",
+          "modules": [
+            "The gum robot, at rest",
+            "One line",
+            "Search and Home"
+          ],
+          "action": "Go home",
+          "visual": "Gum robot"
+        }
+      ]
+    }
+  ],
+  "offMap": [
+    {
+      "where": "pulp.com.ai/docs",
+      "what": "API and SDK documentation, its own site, same brand at zero."
+    },
+    {
+      "where": "aithinkwell.com",
+      "what": "Thinkwell's own site, at plus one."
+    },
+    {
+      "where": "typodojo.com",
+      "what": "typodojo's own site, at minus one."
+    },
+    {
+      "where": "After Hours",
+      "what": "Off the dial and off this domain: its own blog, store and events."
+    }
+  ]
+}

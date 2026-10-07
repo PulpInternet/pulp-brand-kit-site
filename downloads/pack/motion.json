@@ -1,0 +1,140 @@
+{
+  "kit": "Pulp Brand Kit 2026",
+  "version": "v6d-LibreFranklin",
+  "durations": {
+    "quick": 120,
+    "settle": 240,
+    "breath": 480,
+    "loader": 1600
+  },
+  "easings": {
+    "arrive": "cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "leave": "cubic-bezier(0.4, 0, 1, 1)"
+  },
+  "animatable": [
+    "opacity",
+    "transform",
+    "color",
+    "background-color",
+    "border-color",
+    "box-shadow",
+    "background-size",
+    "text-decoration-thickness",
+    "outline-color"
+  ],
+  "parts": {
+    "scrim-open": "dialog-open",
+    "sheet-open": "dialog-open",
+    "sheet-close": "dialog-close"
+  },
+  "motions": [
+    {
+      "id": "highlight-sweep",
+      "trigger": "Hero first paints",
+      "what": "transform scaleX of the Highlighter block behind the promise word, 0 to 1, from the left",
+      "duration": "settle",
+      "easing": "arrive",
+      "loop": "never",
+      "reduced": "Already in place"
+    },
+    {
+      "id": "section-reveal",
+      "trigger": "A section crosses 15 percent into view, once",
+      "what": "opacity 0 to 1 and translateY 8 px to 0",
+      "duration": "breath",
+      "easing": "arrive",
+      "loop": "never",
+      "reduced": "Opacity only, 120 ms"
+    },
+    {
+      "id": "plate-focus",
+      "trigger": "Hover, focus or tap on a plate",
+      "what": "Other plates dim to 55 percent; the plate's label fades in",
+      "duration": "settle",
+      "easing": "arrive",
+      "loop": "never",
+      "reduced": "Fade only, 120 ms"
+    },
+    {
+      "id": "robot-peek",
+      "trigger": "The CTA band crosses 30 percent into view, once",
+      "what": "The robot rises: translateY 40 percent to 0",
+      "duration": "breath",
+      "easing": "arrive",
+      "loop": "never",
+      "reduced": "Already in place"
+    },
+    {
+      "id": "robot-blink",
+      "trigger": "The hero has been in view and idle for 8 s",
+      "what": "The robot's eyes: scaleY 1 to 0.1 and back",
+      "duration": "quick",
+      "easing": "leave",
+      "loop": "At most 3 per visit, at least 8 s apart",
+      "reduced": "None"
+    },
+    {
+      "id": "dialog-open",
+      "trigger": "A control opens the contact modal or the menu sheet",
+      "what": "Backdrop opacity 0 to 0.45; panel opacity and translateY 8 px (modal) or 100 percent (sheet) to 0",
+      "duration": "settle",
+      "easing": "arrive",
+      "loop": "never",
+      "reduced": "Fade only, 120 ms"
+    },
+    {
+      "id": "dialog-close",
+      "trigger": "Close, Escape, or a click outside",
+      "what": "The reverse of dialog-open",
+      "duration": "quick",
+      "easing": "leave",
+      "loop": "never",
+      "reduced": "Fade only, 120 ms"
+    },
+    {
+      "id": "mode-change",
+      "trigger": "The mode switch changes",
+      "what": "color, background-color and border-color",
+      "duration": "quick",
+      "easing": "arrive",
+      "loop": "never",
+      "reduced": "Same: color only"
+    },
+    {
+      "id": "press",
+      "trigger": "A button is pressed",
+      "what": "transform scale 1 to 0.98 and back",
+      "duration": "quick",
+      "easing": "arrive",
+      "loop": "never",
+      "reduced": "None"
+    },
+    {
+      "id": "link-underline",
+      "trigger": "Hover or focus on a link",
+      "what": "Underline thickness 1 to 2 px",
+      "duration": "quick",
+      "easing": "arrive",
+      "loop": "never",
+      "reduced": "Same"
+    },
+    {
+      "id": "photo-drift",
+      "trigger": "A photo band scrolls through the viewport",
+      "what": "The photo's transform translateY from minus to plus the parallax distance, tied to scroll, not time",
+      "duration": "scroll",
+      "easing": "scroll",
+      "loop": "never",
+      "reduced": "Still"
+    },
+    {
+      "id": "form-status",
+      "trigger": "The form finishes sending or finds an error",
+      "what": "The status line's opacity 0 to 1",
+      "duration": "settle",
+      "easing": "arrive",
+      "loop": "never",
+      "reduced": "Fade, 120 ms"
+    }
+  ]
+}

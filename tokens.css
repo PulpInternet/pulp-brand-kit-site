@@ -1,0 +1,134 @@
+@layer reset, tokens, base, layout, components, utilities;
+@layer tokens {
+:root {
+  --pulp-noir: #191A19;
+  --pulp-newsprint: #F0F0EC;
+  --pulp-carbon-copy: #2A2B2A;
+  --pulp-pulp-stock: #E7E7E4;
+  --pulp-lithograph: #D0D0CC;
+  --pulp-smudge: #C9C9C5;
+  --pulp-stick: #4A3B2E;
+  --pulp-bubble: #E7E3F6;
+  --pulp-blacklight: #5B4E9A;
+  --pulp-halftone: #372F5C;
+  --pulp-highlighter: #E6F21A;
+  --pulp-damani-cyan: #12C8E0;
+  --pulp-wintergreen: #00C690;
+  --pulp-wintergreen-bright: #00DF96;
+  --pulp-akira-red: #D8261E;
+  --pulp-wen-blue: #0A62A6;
+  --pulp-nicole-steel: #4682B4;
+  --pulp-alan-green: #419F59;
+  --pulp-milana-blue: #1398D1;
+  --pulp-pat-teal: #00A19C;
+  --pulp-rifaz-blue: #57A0D2;
+  --pulp-hannah-green: #009E60;
+  --pulp-hannah-emerald: #50C878;
+  --pulp-pink-matter: #C361BC;
+  --pulp-pink-matter-deep: #9A3D94;
+  --pulp-pink-matter-light: #E29ADC;
+  --pulp-gray-matter: #A69FA2;
+  --s-0: 0px;
+  --s-2: 2px;
+  --s-4: 4px;
+  --s-8: 8px;
+  --s-12: 12px;
+  --s-16: 16px;
+  --s-24: 24px;
+  --s-32: 32px;
+  --s-48: 48px;
+  --s-56: 56px;
+  --s-64: 64px;
+  --s-96: 96px;
+  --r-0: 0;
+  --r-6: 6px;
+  --r-pill: 999px;
+  --dur-quick: 120ms;
+  --dur-settle: 240ms;
+  --dur-breath: 480ms;
+  --dur-loader: 1600ms;
+  --ease-arrive: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-leave: cubic-bezier(0.4, 0, 1, 1);
+  --ease-scroll: linear;
+  --z-under: -1;
+  --z-rail: 45;
+  --z-bar: 50;
+  --z-modal: 80;
+  --f-display: 'Libre Franklin', Arial, sans-serif;
+  --f-reading: 'Libre Franklin', Arial, sans-serif;
+  --col: 680px;
+  --frame: 1180px;
+  --gutter: 16px;
+  --tap: 44px;
+  --tap-floor: 24px;
+  --line-w: 1px;
+  --ring-w: 2px;
+  --bar-h: 64px;
+  --dim: 0.55;
+  --scrim-a: 0.45;
+  --t-display: clamp(36px, 11.4vw, 44px);
+  --t-heading: 32px;
+  --t-title: 20px;
+  --t-body: 18px;
+  --t-small: 15px;
+  --t-caption: 13px;
+  --t-label: 12px;
+  --lh-display: 0.94;
+  --lh-heading: 1.05;
+  --lh-title: 1.2;
+  --lh-body: 1.5;
+  --track-label: 0.14em;
+  --track-display: -0.005em;
+  --track-heading: -0.01em;
+  --img-hero: 160px;
+  --img-peek: 96px;
+  --img-aside: 320px;
+  --img-tile: 280px;
+  --img-plate-row: 240px;
+  --plate-ratio: 4 / 3;
+  --print-w: 1200px;
+  --print-w-strip: 960px;
+  --strip-h: 96px;
+  --glass-veil: 72%;
+  --glass-blur: 14px;
+  --glass-saturate: 1;
+  --glass-fade-start: 64%;
+  --glass-fade-end: 94%;
+  --glass-bleed: 48px;
+  --glass-veil-fallback: 92%;
+  --glass-ground: var(--c-ground);
+  --glass-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  --glass-fade: radial-gradient(closest-side, #000 var(--glass-fade-start), transparent var(--glass-fade-end));
+  --glass-halo: 0 0 2px var(--glass-ground), 0 0 8px var(--glass-ground), 0 0 16px var(--glass-ground);
+  --dialog-w: 560px;
+  --rise: 8px;
+  --peek-rise: 40%;
+  --press: 0.98;
+  --photo-h: 320px;
+  --photo-max: 78svh;
+  --parallax: clamp(40px, 24svh, 240px);
+  --grad-glow-strength: 22%;
+  --grad-scrim-strength: 82%;
+  --grad-feature-solid: 34%;
+  --grad-hero: radial-gradient(56% 72% at 84% 46%, color-mix(in srgb, var(--c-glow) var(--grad-glow-strength), transparent), transparent 72%), linear-gradient(180deg, var(--c-ground) 0%, var(--c-ground) 55%, var(--c-band) 100%);
+  --grad-scrim: linear-gradient(0deg, color-mix(in srgb, var(--c-photo-ground) var(--grad-scrim-strength), transparent) 0%, transparent 64%);
+  --grad-feature-dir: 180deg;
+  --grad-feature: linear-gradient(var(--grad-feature-dir), var(--c-feature) 0%, var(--c-feature) var(--grad-feature-solid), color-mix(in srgb, var(--c-feature) 62%, transparent) 70%, color-mix(in srgb, var(--c-feature) 24%, transparent) 100%);
+  --mode-h: 44px;
+  --blink: 0.1;
+  --underline: 1px;
+  --underline-hover: 2px;
+}
+  @media (min-width: 560px) { :root { --gutter: 24px; } }
+  @media (min-width: 768px) { :root { --photo-h: 440px; --strip-h: 120px; --t-display: 64px; --t-heading: 40px; --t-title: 22px; --t-body: 19px; --img-hero: 240px; --img-peek: 128px; --bar-h: 72px; } }
+  @media (min-width: 1024px) { :root { --photo-h: 560px; --grad-feature-dir: 90deg; --t-display: 92px; --t-heading: 44px; --t-title: 24px; --img-hero: 280px; --img-peek: 160px; } }
+  @media (min-width: 1280px) { :root { --img-hero: 320px; } }
+  @media (min-width: 1024px) { :root { --mode-h: 32px; } }
+  @media (pointer: coarse) { :root { --mode-h: 44px; } }
+:root, html[data-mode="light"] { --c-ground: #F0F0EC; --c-type: #191A19; --c-muted: #5E5F5B; --c-line: #D0D0CC; --c-band: #E7E7E4; --c-card: #FFFFFF; --c-btn-bg: #191A19; --c-btn-fg: #F0F0EC; --c-link: #0A62A6; --c-plate: #372F5C; --c-print: #E1E1E0; --c-scrim: #191A19; --c-scheme: light; --c-feature: #372F5C; --c-feature-type: #F0F0EC; --c-feature-muted: #E7E3F6; --c-feature-ink: #E7E3F6; --c-feature-print: #453D68; --c-glow: #E7E3F6; --c-photo-ground: #191A19; --c-photo-type: #F0F0EC; --c-photo-filter: none; --c-thread: #5B4E9A; --c-dye: #00A19C; --c-api: #4682B4; --c-api-far: #A9C3DC; color-scheme: light; }
+@media (prefers-color-scheme: dark) { html:not([data-mode]) { --c-ground: #191A19; --c-type: #F0F0EC; --c-muted: #A9AAA5; --c-line: #3A3B3A; --c-band: #232423; --c-card: #212221; --c-btn-bg: #F0F0EC; --c-btn-fg: #191A19; --c-link: #E7E3F6; --c-plate: #E7E3F6; --c-print: #232424; --c-scrim: #191A19; --c-scheme: dark; --c-feature: #372F5C; --c-feature-type: #F0F0EC; --c-feature-muted: #E7E3F6; --c-feature-ink: #E7E3F6; --c-feature-print: #453D68; --c-glow: #372F5C; --c-photo-ground: #191A19; --c-photo-type: #F0F0EC; --c-photo-filter: none; --c-thread: #5B4E9A; --c-dye: #00A19C; --c-api: #6E9FCB; --c-api-far: #3A5F80; color-scheme: dark; } }
+html[data-theme="dark"]:not([data-mode]) { --c-ground: #191A19; --c-type: #F0F0EC; --c-muted: #A9AAA5; --c-line: #3A3B3A; --c-band: #232423; --c-card: #212221; --c-btn-bg: #F0F0EC; --c-btn-fg: #191A19; --c-link: #E7E3F6; --c-plate: #E7E3F6; --c-print: #232424; --c-scrim: #191A19; --c-scheme: dark; --c-feature: #372F5C; --c-feature-type: #F0F0EC; --c-feature-muted: #E7E3F6; --c-feature-ink: #E7E3F6; --c-feature-print: #453D68; --c-glow: #372F5C; --c-photo-ground: #191A19; --c-photo-type: #F0F0EC; --c-photo-filter: none; --c-thread: #5B4E9A; --c-dye: #00A19C; --c-api: #6E9FCB; --c-api-far: #3A5F80; color-scheme: dark; }
+html[data-theme="light"]:not([data-mode]) { --c-ground: #F0F0EC; --c-type: #191A19; --c-muted: #5E5F5B; --c-line: #D0D0CC; --c-band: #E7E7E4; --c-card: #FFFFFF; --c-btn-bg: #191A19; --c-btn-fg: #F0F0EC; --c-link: #0A62A6; --c-plate: #372F5C; --c-print: #E1E1E0; --c-scrim: #191A19; --c-scheme: light; --c-feature: #372F5C; --c-feature-type: #F0F0EC; --c-feature-muted: #E7E3F6; --c-feature-ink: #E7E3F6; --c-feature-print: #453D68; --c-glow: #E7E3F6; --c-photo-ground: #191A19; --c-photo-type: #F0F0EC; --c-photo-filter: none; --c-thread: #5B4E9A; --c-dye: #00A19C; --c-api: #4682B4; --c-api-far: #A9C3DC; color-scheme: light; }
+html[data-mode="dark"] { --c-ground: #191A19; --c-type: #F0F0EC; --c-muted: #A9AAA5; --c-line: #3A3B3A; --c-band: #232423; --c-card: #212221; --c-btn-bg: #F0F0EC; --c-btn-fg: #191A19; --c-link: #E7E3F6; --c-plate: #E7E3F6; --c-print: #232424; --c-scrim: #191A19; --c-scheme: dark; --c-feature: #372F5C; --c-feature-type: #F0F0EC; --c-feature-muted: #E7E3F6; --c-feature-ink: #E7E3F6; --c-feature-print: #453D68; --c-glow: #372F5C; --c-photo-ground: #191A19; --c-photo-type: #F0F0EC; --c-photo-filter: none; --c-thread: #5B4E9A; --c-dye: #00A19C; --c-api: #6E9FCB; --c-api-far: #3A5F80; color-scheme: dark; }
+html[data-mode="mono"] { --c-ground: #2A2B2A; --c-type: #F0F0EC; --c-muted: #B4B5B0; --c-line: #4A4B4A; --c-band: #333433; --c-card: #303130; --c-btn-bg: #F0F0EC; --c-btn-fg: #191A19; --c-link: #C9C9C5; --c-plate: #C9C9C5; --c-print: #333433; --c-scrim: #191A19; --c-scheme: dark; --c-feature: #191A19; --c-feature-type: #F0F0EC; --c-feature-muted: #C9C9C5; --c-feature-ink: #C9C9C5; --c-feature-print: #222322; --c-glow: #3A3B3A; --c-photo-ground: #191A19; --c-photo-type: #F0F0EC; --c-photo-filter: grayscale(1) contrast(1.06); --c-thread: #6E6F6B; --c-dye: #C9C9C5; --c-api: #9A9B97; --c-api-far: #555653; color-scheme: dark; }
+}

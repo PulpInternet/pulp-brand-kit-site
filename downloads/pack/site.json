@@ -1,0 +1,1637 @@
+{
+  "kit": "Pulp Brand Kit 2026",
+  "version": "v6d-LibreFranklin",
+  "shell": {
+    "bar": {
+      "mark": "pulp-wordmark",
+      "nav": [
+        "Research",
+        "Products",
+        "Platform",
+        "What we do",
+        "Pulp101",
+        "Company"
+      ],
+      "right": [
+        "mode-switch",
+        "search-trigger",
+        "contact-trigger"
+      ],
+      "phone": [
+        "contact-trigger",
+        "menu-button"
+      ],
+      "sticky": true,
+      "z": "--z-bar"
+    },
+    "footer": {
+      "groups": [
+        "Research",
+        "Products",
+        "Platform",
+        "What we do",
+        "Pulp101",
+        "Company",
+        "Trust"
+      ],
+      "closing": [
+        "pulp-wordmark",
+        "EST. 2026",
+        "Brooklyn, New York"
+      ],
+      "credits": "Every photo on the page, with its license"
+    },
+    "always": [
+      "skip-link",
+      "contact-modal",
+      "search",
+      "sheet"
+    ],
+    "files": {
+      "css": [
+        "tokens.css",
+        "site.css"
+      ],
+      "js": "site.js",
+      "images": "img/",
+      "marks": "marks/",
+      "plates": "plates/"
+    },
+    "budget": {
+      "firstViewKBgz": 200,
+      "note": "Per page, photos excluded. The single-file landing page is 198 KB gzip with every plate inlined; the multi-page site serves plates, marks and fonts as cached files instead of data URIs."
+    },
+    "noJs": "Every page reads and navigates without JavaScript: the mode follows the system setting, the contact modal falls back to /company/contact, search falls back to the footer map, records render inline as details elements, and every form posts as a plain HTML form.",
+    "search": {
+      "index": "search.json",
+      "written_by": "site_pages.py",
+      "fields": [
+        "title",
+        "path",
+        "group",
+        "summary"
+      ],
+      "groups": [
+        "Pages",
+        "Papers",
+        "Stories",
+        "Docs"
+      ]
+    },
+    "conversations": "Every action that starts a conversation (Get in touch, Invite us, Apply, Start a partnership, Take part, Contact press, Talk to us, Report a barrier, Report a vulnerability) opens the contact modal with its topic preset; there is one inbox.",
+    "storage": "The saved mode is the only thing the site stores, in localStorage, wrapped in try/catch. No cookies, no third-party scripts, no analytics beacons."
+  },
+  "sectionKinds": {
+    "hero": {
+      "built": "p-hero",
+      "parts": "eyebrow label, display headline with the one Highlighter block, lede, one primary and one secondary button, the gum robot cropped off the edge",
+      "photo": "optional hero photo (slot) under --grad-hero"
+    },
+    "page-head": {
+      "built": "spec",
+      "parts": "breadcrumb, h1 at --t-display, a lede of at most two lines at --t-title, the page's plate or mark at most 320 px wide on the right from 1024",
+      "photo": null
+    },
+    "lede": {
+      "built": "p-lede",
+      "parts": "one paragraph at --t-title in the column",
+      "photo": null
+    },
+    "band": {
+      "built": "p-section p-band",
+      "parts": "a section on --c-band with a heading and a short essay",
+      "photo": null
+    },
+    "plates": {
+      "built": "p-plate",
+      "parts": "one to three plates, each a button that previews and pins its plain label",
+      "photo": null
+    },
+    "ledger": {
+      "built": "p-ledger",
+      "parts": "term on the left, one sentence on the right, ruled rows",
+      "photo": null
+    },
+    "cards": {
+      "built": "p-grid p-card",
+      "parts": "ruled cards (a rule, never a filled box), mark or icon, title, one line, a link",
+      "photo": null
+    },
+    "list": {
+      "built": "spec",
+      "parts": "ruled rows: title, status label, venue or date, one line; each row is a details element with the record inline, upgraded by script to open the details modal and set the hash",
+      "photo": null
+    },
+    "filter": {
+      "built": "spec",
+      "parts": "chips that wrap and never scroll sideways; Clear all; the count of results in a live region",
+      "photo": null
+    },
+    "prose": {
+      "built": "spec",
+      "parts": "the 680 px column: h2, h3, paragraphs, lists, quotes as plain indented text, footnote-style sources",
+      "photo": null
+    },
+    "toc": {
+      "built": "spec",
+      "parts": "contents of a long read: a sticky rail 240 px wide from 1280, a disclosure at the top below 1280; the current part marked with aria-current",
+      "photo": null
+    },
+    "figure": {
+      "built": "spec",
+      "parts": "a figure on the text's left edge with a caption that holds unit, n or source",
+      "photo": null
+    },
+    "chart": {
+      "built": "spec",
+      "parts": "a chart from pack data slots with Provenance, values as text, a table fallback",
+      "photo": null
+    },
+    "code": {
+      "built": "spec",
+      "parts": "code as selectable text in --f-reading with tabular numbers, a copy button, never a picture of code",
+      "photo": null
+    },
+    "modules": {
+      "built": "p-sdks p-mods",
+      "parts": "an SDK's mark, its line, and its modules with their icons",
+      "photo": null
+    },
+    "people": {
+      "built": "spec",
+      "parts": "a grid of people: photo (consent on file, never dithered), name, role, their color as a 12 px chip; a bio opens in a floating modal",
+      "photo": "person photos (slot)"
+    },
+    "photo": {
+      "built": "p-photo",
+      "parts": "a full-bleed band with parallax and a one-line caption on the scrim",
+      "photo": "band photo (slot)"
+    },
+    "photo-break": {
+      "built": "spec",
+      "parts": "a band three quarters as tall as a photo band, inside a section between two of its parts, same parallax and credit",
+      "photo": "break photo (slot)"
+    },
+    "scale": {
+      "built": "p-scale",
+      "parts": "the dot scale from one person to a mesh",
+      "photo": null
+    },
+    "research": {
+      "built": "p-section",
+      "parts": "the section with id research: talks and acceptances with exact status",
+      "photo": null
+    },
+    "form": {
+      "built": "p-field",
+      "parts": "labeled fields, validation on blur and on send, the status line in a live region",
+      "photo": null
+    },
+    "related": {
+      "built": "spec",
+      "parts": "three ruled cards to the next pages a reader needs",
+      "photo": null
+    },
+    "cta": {
+      "built": "p-cta",
+      "parts": "the one feature block: heading, one line, the inverted primary button or the short form (subscribe, join the list, request access), the robot's peek on Pulp pages that allow it",
+      "photo": "optional feature photo"
+    },
+    "robot": {
+      "built": "p-robot",
+      "parts": "the gum robot at its About placement, engraved with the line dither, the one place that texture is used",
+      "photo": null
+    },
+    "not-found": {
+      "built": "spec",
+      "parts": "the gum robot at rest, one line, search and Home",
+      "photo": null
+    }
+  },
+  "templates": [
+    {
+      "id": "essay",
+      "use": "The home page: a short essay in sections",
+      "sections": [
+        "hero",
+        "band",
+        "plates",
+        "photo",
+        "ledger",
+        "cards",
+        "modules",
+        "photo-break",
+        "research",
+        "photo",
+        "scale",
+        "cta"
+      ]
+    },
+    {
+      "id": "hub",
+      "use": "A section's front page",
+      "sections": [
+        "page-head",
+        "lede",
+        "cards",
+        "list",
+        "related",
+        "cta"
+      ]
+    },
+    {
+      "id": "list",
+      "use": "A filterable list of records",
+      "sections": [
+        "page-head",
+        "filter",
+        "list",
+        "cta"
+      ]
+    },
+    {
+      "id": "longread",
+      "use": "A paper summary, data story, methods page or post",
+      "sections": [
+        "page-head",
+        "toc",
+        "prose",
+        "figure",
+        "chart",
+        "related",
+        "cta"
+      ]
+    },
+    {
+      "id": "product",
+      "use": "A product's page that hands off to its own site",
+      "sections": [
+        "page-head",
+        "lede",
+        "figure",
+        "ledger",
+        "cta"
+      ]
+    },
+    {
+      "id": "sdk",
+      "use": "An SDK or MCP page",
+      "sections": [
+        "page-head",
+        "modules",
+        "code",
+        "ledger",
+        "cta"
+      ]
+    },
+    {
+      "id": "work",
+      "use": "Capabilities, solutions and industries, thirteen pages",
+      "sections": [
+        "page-head",
+        "plates",
+        "prose",
+        "figure",
+        "related",
+        "cta"
+      ]
+    },
+    {
+      "id": "people",
+      "use": "Team and campus partners",
+      "sections": [
+        "page-head",
+        "people",
+        "related",
+        "cta"
+      ]
+    },
+    {
+      "id": "policy",
+      "use": "Trust pages and commitments: the plain summary first",
+      "sections": [
+        "page-head",
+        "ledger",
+        "toc",
+        "prose",
+        "related"
+      ]
+    },
+    {
+      "id": "brand",
+      "use": "The public brand page",
+      "sections": [
+        "page-head",
+        "plates",
+        "cards",
+        "list",
+        "cta"
+      ]
+    },
+    {
+      "id": "contact",
+      "use": "The contact page for people who arrive by link",
+      "sections": [
+        "page-head",
+        "form"
+      ]
+    },
+    {
+      "id": "not-found",
+      "use": "404",
+      "sections": [
+        "not-found"
+      ]
+    }
+  ],
+  "pageSections": {
+    "/work": [
+      "page-head",
+      "lede",
+      "plates",
+      "related",
+      "cta"
+    ],
+    "/research/talks": [
+      "page-head",
+      "filter",
+      "list",
+      "photo",
+      "cta"
+    ],
+    "/company/careers": [
+      "page-head",
+      "prose",
+      "photo",
+      "list",
+      "cta"
+    ],
+    "/pulp101/apprenticeship": [
+      "page-head",
+      "lede",
+      "ledger",
+      "photo",
+      "cards",
+      "cta"
+    ],
+    "/pulp101/campuses": [
+      "page-head",
+      "list",
+      "photo",
+      "cta"
+    ],
+    "/company/about": [
+      "page-head",
+      "prose",
+      "robot",
+      "related",
+      "cta"
+    ],
+    "/research/methods": [
+      "page-head",
+      "toc",
+      "prose",
+      "figure",
+      "list",
+      "related",
+      "cta"
+    ]
+  },
+  "childRoutes": {
+    "/research/stories/<slug>": "longread",
+    "/pulp101/<slug>": "longread"
+  },
+  "slots": [
+    {
+      "id": "copy-pages",
+      "kind": "copy",
+      "pages": "every page but /",
+      "spec": "Final copy in Shah's voice for each page's sections, from the outline in SITEMAP. Matter-of-fact, American spelling, no dashes, no banned phrases."
+    },
+    {
+      "id": "photo-hero",
+      "kind": "photo",
+      "pages": "/ (v4)",
+      "spec": "One landscape photo behind the hero, free license, at least 3800 px wide, dark enough at the left third for Newsprint type over --grad-hero. Not from the rejected sets in HANDOFF.md."
+    },
+    {
+      "id": "photo-break",
+      "kind": "photo",
+      "pages": "/ (v4), #platform",
+      "spec": "One landscape photo for the break between the Pulp API and Loosethreads, free license, at least 3800 px wide; it runs at three quarters of a band's height."
+    },
+    {
+      "id": "photos-in-person",
+      "kind": "photo",
+      "pages": "/research/talks, /pulp101/*, /company/careers",
+      "spec": "Real photographs of Pulp events and people, with a signed consent for every face."
+    },
+    {
+      "id": "team",
+      "kind": "data",
+      "pages": "/company/team",
+      "spec": "Per person: name, role, photo with consent, their color from the palette, a three-line bio."
+    },
+    {
+      "id": "papers",
+      "kind": "data",
+      "pages": "/research/papers, /research",
+      "spec": "Per paper: title, authors, venue, year, topic (reasoning, persuasion, attention, metacognition), exact status (accepted, presented, under review, published), abstract, PDF file, citation."
+    },
+    {
+      "id": "posts",
+      "kind": "data",
+      "pages": "/pulp101",
+      "spec": "Per post: title, author, date, tag, the text, and its sources."
+    },
+    {
+      "id": "glossary",
+      "kind": "copy",
+      "pages": "/research/methods",
+      "spec": "Each term and its plain definition; the list opens each term in the details modal."
+    },
+    {
+      "id": "talks",
+      "kind": "data",
+      "pages": "/research/talks",
+      "spec": "Per talk: place, date, title, who spoke, link."
+    },
+    {
+      "id": "stories",
+      "kind": "data",
+      "pages": "/research/stories",
+      "spec": "Per story: title, reading time, sources, data files; From Stone to Screen is the first."
+    },
+    {
+      "id": "campuses",
+      "kind": "data",
+      "pages": "/pulp101/campuses",
+      "spec": "Partner campuses that agreed to be named."
+    },
+    {
+      "id": "campaigns",
+      "kind": "data",
+      "pages": "/pulp101/campaigns",
+      "spec": "Open and closed campaigns with dates and, when closed, results with Provenance."
+    },
+    {
+      "id": "press",
+      "kind": "data",
+      "pages": "/company/press, /company/brand",
+      "spec": "Announcements with dates, a press kit zip, and a media contact address."
+    },
+    {
+      "id": "roles",
+      "kind": "data",
+      "pages": "/company/careers",
+      "spec": "Open roles: title, team, place, what the work is, how to apply."
+    },
+    {
+      "id": "policies",
+      "kind": "copy",
+      "pages": "/trust/*",
+      "spec": "Privacy, consent, security, accessibility audit status and terms, approved for publishing."
+    },
+    {
+      "id": "sustainability-data",
+      "kind": "data",
+      "pages": "/trust/sustainability",
+      "spec": "Measured compute and energy with units, sources and dates."
+    },
+    {
+      "id": "product-media",
+      "kind": "photo",
+      "pages": "/products/thinkwell, /pulp101/campaigns",
+      "spec": "Screens or a short clip of Thinkwell running, in light and dark."
+    },
+    {
+      "id": "endpoints",
+      "kind": "endpoint",
+      "pages": "/company/contact, /platform/api, /products/suade, /pulp101",
+      "spec": "Where the forms send (the contact modal on every page, request access, join the list, subscribe): one HTTPS endpoint that accepts a plain form POST and answers with a redirect to a thank-you state; the script sends the same fields and reads a 2xx."
+    },
+    {
+      "id": "docs-links",
+      "kind": "data",
+      "pages": "/platform/*",
+      "spec": "The live URLs for pulp.com.ai/docs: API, Loosethreads and MCP."
+    },
+    {
+      "id": "suade",
+      "kind": "copy",
+      "pages": "/products/suade",
+      "spec": "What Suade is, in two lines."
+    }
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "section": "home",
+      "title": "Home",
+      "template": "essay",
+      "sections": [
+        "hero",
+        "band",
+        "plates",
+        "photo",
+        "ledger",
+        "cards",
+        "modules",
+        "photo-break",
+        "research",
+        "photo",
+        "scale",
+        "cta"
+      ],
+      "action": "Get in touch (opens the contact modal)",
+      "meta": {
+        "title": "Pulp",
+        "description": "Say what Pulp is, why it matters, and where to go next, in the voice of a short essay."
+      },
+      "status": "built",
+      "slots": [
+        "photo-hero",
+        "photo-break"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/research",
+      "section": "research",
+      "title": "Research",
+      "template": "hub",
+      "sections": [
+        "page-head",
+        "lede",
+        "cards",
+        "list",
+        "related",
+        "cta"
+      ],
+      "action": "Read the newest paper",
+      "meta": {
+        "title": "Research | Pulp",
+        "description": "One page that shows what Pulp studies and the newest work first."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "papers"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/research/papers",
+      "section": "research",
+      "title": "Papers",
+      "template": "list",
+      "sections": [
+        "page-head",
+        "filter",
+        "list",
+        "cta"
+      ],
+      "action": "Download the PDF",
+      "meta": {
+        "title": "Papers | Pulp",
+        "description": "Every paper with its exact status, so nothing is overclaimed."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "papers"
+      ],
+      "details": "modal"
+    },
+    {
+      "path": "/research/stories",
+      "section": "research",
+      "title": "Data stories",
+      "template": "hub",
+      "sections": [
+        "page-head",
+        "lede",
+        "cards",
+        "list",
+        "related",
+        "cta"
+      ],
+      "action": "Read a story",
+      "meta": {
+        "title": "Data stories | Pulp",
+        "description": "Long reads that turn research into something anyone can follow."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "stories"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/research/methods",
+      "section": "research",
+      "title": "Methods",
+      "template": "longread",
+      "sections": [
+        "page-head",
+        "toc",
+        "prose",
+        "figure",
+        "list",
+        "related",
+        "cta"
+      ],
+      "action": "Read the methods paper",
+      "meta": {
+        "title": "Methods | Pulp",
+        "description": "How Pulp measures conversation, in plain language with the precise terms one step away."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "glossary"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/research/talks",
+      "section": "research",
+      "title": "Talks",
+      "template": "list",
+      "sections": [
+        "page-head",
+        "filter",
+        "list",
+        "photo",
+        "cta"
+      ],
+      "action": "Invite us",
+      "meta": {
+        "title": "Talks | Pulp",
+        "description": "Where the team has spoken and where it will speak next."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "photos-in-person",
+        "talks"
+      ],
+      "details": "modal"
+    },
+    {
+      "path": "/products",
+      "section": "products",
+      "title": "Products",
+      "template": "hub",
+      "sections": [
+        "page-head",
+        "lede",
+        "cards",
+        "list",
+        "related",
+        "cta"
+      ],
+      "action": "Choose a product",
+      "meta": {
+        "title": "Products | Pulp",
+        "description": "Show the family on one page, from the most playful to the most precise."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/products/thinkwell",
+      "section": "products",
+      "title": "Thinkwell",
+      "template": "product",
+      "sections": [
+        "page-head",
+        "lede",
+        "figure",
+        "ledger",
+        "cta"
+      ],
+      "action": "Visit Thinkwell",
+      "meta": {
+        "title": "Thinkwell | Pulp",
+        "description": "Introduce Thinkwell and hand off to its own site."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "product-media"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/products/typodojo",
+      "section": "products",
+      "title": "typodojo",
+      "template": "product",
+      "sections": [
+        "page-head",
+        "lede",
+        "figure",
+        "ledger",
+        "cta"
+      ],
+      "action": "Visit typodojo",
+      "meta": {
+        "title": "typodojo | Pulp",
+        "description": "Introduce the dojo as a Pulp special project and hand off."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/products/suade",
+      "section": "products",
+      "title": "Suade",
+      "template": "product",
+      "sections": [
+        "page-head",
+        "lede",
+        "figure",
+        "ledger",
+        "cta"
+      ],
+      "action": "Join the list",
+      "meta": {
+        "title": "Suade | Pulp",
+        "description": "Hold the place for the structured-discussion product."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "endpoints",
+        "suade"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/platform",
+      "section": "platform",
+      "title": "Platform",
+      "template": "hub",
+      "sections": [
+        "page-head",
+        "lede",
+        "cards",
+        "list",
+        "related",
+        "cta"
+      ],
+      "action": "Read the docs",
+      "meta": {
+        "title": "Platform | Pulp",
+        "description": "Explain the platform: two SDKs on the P.U.L.P. engine, one for the server and one for the web."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/platform/api",
+      "section": "platform",
+      "title": "Pulp API",
+      "template": "sdk",
+      "sections": [
+        "page-head",
+        "modules",
+        "code",
+        "ledger",
+        "cta"
+      ],
+      "action": "Request access",
+      "meta": {
+        "title": "Pulp API | Pulp",
+        "description": "The server SDK. Name its four modules and what each does, in one line each."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "endpoints",
+        "docs-links"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/platform/loosethreads",
+      "section": "platform",
+      "title": "Loosethreads",
+      "template": "sdk",
+      "sections": [
+        "page-head",
+        "modules",
+        "code",
+        "ledger",
+        "cta"
+      ],
+      "action": "Read the SDK docs",
+      "meta": {
+        "title": "Loosethreads | Pulp",
+        "description": "The web SDK: every interactive, multimedia part, so one experience works on every device."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "docs-links"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/platform/mcp",
+      "section": "platform",
+      "title": "MCP",
+      "template": "sdk",
+      "sections": [
+        "page-head",
+        "modules",
+        "code",
+        "ledger",
+        "cta"
+      ],
+      "action": "Read the MCP docs",
+      "meta": {
+        "title": "MCP | Pulp",
+        "description": "Explain how AI assistants reach Pulp safely."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "docs-links"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/work",
+      "section": "work",
+      "title": "What we do",
+      "template": "hub",
+      "sections": [
+        "page-head",
+        "lede",
+        "plates",
+        "related",
+        "cta"
+      ],
+      "action": "Pick a page",
+      "meta": {
+        "title": "What we do | Pulp",
+        "description": "Let a visitor find their need by what, how, or who."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/work/capabilities/human-interfaces",
+      "section": "work",
+      "title": "Human interfaces",
+      "template": "work",
+      "sections": [
+        "page-head",
+        "plates",
+        "prose",
+        "figure",
+        "related",
+        "cta"
+      ],
+      "action": "Talk to us",
+      "meta": {
+        "title": "Human interfaces | Pulp",
+        "description": "Human interfaces, Critical decisions, Persona engine, Machine health."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/work/capabilities/critical-decisions",
+      "section": "work",
+      "title": "Critical decisions",
+      "template": "work",
+      "sections": [
+        "page-head",
+        "plates",
+        "prose",
+        "figure",
+        "related",
+        "cta"
+      ],
+      "action": "Talk to us",
+      "meta": {
+        "title": "Critical decisions | Pulp",
+        "description": "Human interfaces, Critical decisions, Persona engine, Machine health."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/work/capabilities/persona-engine",
+      "section": "work",
+      "title": "Persona engine",
+      "template": "work",
+      "sections": [
+        "page-head",
+        "plates",
+        "prose",
+        "figure",
+        "related",
+        "cta"
+      ],
+      "action": "Talk to us",
+      "meta": {
+        "title": "Persona engine | Pulp",
+        "description": "Human interfaces, Critical decisions, Persona engine, Machine health."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/work/capabilities/machine-health",
+      "section": "work",
+      "title": "Machine health",
+      "template": "work",
+      "sections": [
+        "page-head",
+        "plates",
+        "prose",
+        "figure",
+        "related",
+        "cta"
+      ],
+      "action": "Talk to us",
+      "meta": {
+        "title": "Machine health | Pulp",
+        "description": "Human interfaces, Critical decisions, Persona engine, Machine health."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/work/solutions/workforce-optimization",
+      "section": "work",
+      "title": "Workforce optimization",
+      "template": "work",
+      "sections": [
+        "page-head",
+        "plates",
+        "prose",
+        "figure",
+        "related",
+        "cta"
+      ],
+      "action": "Talk to us",
+      "meta": {
+        "title": "Workforce optimization | Pulp",
+        "description": "Workforce optimization, Data storytelling, Persuasive intelligence, Custom AI and ML."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/work/solutions/data-storytelling",
+      "section": "work",
+      "title": "Data storytelling",
+      "template": "work",
+      "sections": [
+        "page-head",
+        "plates",
+        "prose",
+        "figure",
+        "related",
+        "cta"
+      ],
+      "action": "Talk to us",
+      "meta": {
+        "title": "Data storytelling | Pulp",
+        "description": "Workforce optimization, Data storytelling, Persuasive intelligence, Custom AI and ML."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/work/solutions/persuasive-intelligence",
+      "section": "work",
+      "title": "Persuasive intelligence",
+      "template": "work",
+      "sections": [
+        "page-head",
+        "plates",
+        "prose",
+        "figure",
+        "related",
+        "cta"
+      ],
+      "action": "Talk to us",
+      "meta": {
+        "title": "Persuasive intelligence | Pulp",
+        "description": "Workforce optimization, Data storytelling, Persuasive intelligence, Custom AI and ML."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/work/solutions/custom-ai-and-ml",
+      "section": "work",
+      "title": "Custom AI and ML",
+      "template": "work",
+      "sections": [
+        "page-head",
+        "plates",
+        "prose",
+        "figure",
+        "related",
+        "cta"
+      ],
+      "action": "Talk to us",
+      "meta": {
+        "title": "Custom AI and ML | Pulp",
+        "description": "Workforce optimization, Data storytelling, Persuasive intelligence, Custom AI and ML."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/work/industries/policy-and-governance",
+      "section": "work",
+      "title": "Policy and governance",
+      "template": "work",
+      "sections": [
+        "page-head",
+        "plates",
+        "prose",
+        "figure",
+        "related",
+        "cta"
+      ],
+      "action": "Talk to us",
+      "meta": {
+        "title": "Policy and governance | Pulp",
+        "description": "Policy and governance, Marketing and media, Consulting and management, Finance and markets, Public engagement."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/work/industries/marketing-and-media",
+      "section": "work",
+      "title": "Marketing and media",
+      "template": "work",
+      "sections": [
+        "page-head",
+        "plates",
+        "prose",
+        "figure",
+        "related",
+        "cta"
+      ],
+      "action": "Talk to us",
+      "meta": {
+        "title": "Marketing and media | Pulp",
+        "description": "Policy and governance, Marketing and media, Consulting and management, Finance and markets, Public engagement."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/work/industries/consulting-and-management",
+      "section": "work",
+      "title": "Consulting and management",
+      "template": "work",
+      "sections": [
+        "page-head",
+        "plates",
+        "prose",
+        "figure",
+        "related",
+        "cta"
+      ],
+      "action": "Talk to us",
+      "meta": {
+        "title": "Consulting and management | Pulp",
+        "description": "Policy and governance, Marketing and media, Consulting and management, Finance and markets, Public engagement."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/work/industries/finance-and-markets",
+      "section": "work",
+      "title": "Finance and markets",
+      "template": "work",
+      "sections": [
+        "page-head",
+        "plates",
+        "prose",
+        "figure",
+        "related",
+        "cta"
+      ],
+      "action": "Talk to us",
+      "meta": {
+        "title": "Finance and markets | Pulp",
+        "description": "Policy and governance, Marketing and media, Consulting and management, Finance and markets, Public engagement."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/work/industries/public-engagement",
+      "section": "work",
+      "title": "Public engagement",
+      "template": "work",
+      "sections": [
+        "page-head",
+        "plates",
+        "prose",
+        "figure",
+        "related",
+        "cta"
+      ],
+      "action": "Talk to us",
+      "meta": {
+        "title": "Public engagement | Pulp",
+        "description": "Policy and governance, Marketing and media, Consulting and management, Finance and markets, Public engagement."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/pulp101",
+      "section": "pulp101",
+      "title": "Pulp101",
+      "template": "list",
+      "sections": [
+        "page-head",
+        "filter",
+        "list",
+        "cta"
+      ],
+      "action": "Read the newest post",
+      "meta": {
+        "title": "Pulp101 | Pulp",
+        "description": "The blog: what the team and apprentices are learning, one claim at a time."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "posts",
+        "endpoints"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/pulp101/apprenticeship",
+      "section": "pulp101",
+      "title": "Apprenticeship",
+      "template": "hub",
+      "sections": [
+        "page-head",
+        "lede",
+        "ledger",
+        "photo",
+        "cards",
+        "cta"
+      ],
+      "action": "Apply",
+      "meta": {
+        "title": "Apprenticeship | Pulp",
+        "description": "Show the Pulp AI Apprenticeship: mentors from industry and academia working with students."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "photos-in-person"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/pulp101/campuses",
+      "section": "pulp101",
+      "title": "Campus partners",
+      "template": "list",
+      "sections": [
+        "page-head",
+        "list",
+        "photo",
+        "cta"
+      ],
+      "action": "Start a partnership",
+      "meta": {
+        "title": "Campus partners | Pulp",
+        "description": "List campuses and what partnership involves."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "photos-in-person",
+        "campuses"
+      ],
+      "details": "modal"
+    },
+    {
+      "path": "/pulp101/campaigns",
+      "section": "pulp101",
+      "title": "Campaigns",
+      "template": "list",
+      "sections": [
+        "page-head",
+        "filter",
+        "list",
+        "cta"
+      ],
+      "action": "Take part",
+      "meta": {
+        "title": "Campaigns | Pulp",
+        "description": "Live Thinkwell engagement campaigns run with the Pulp101 community."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "photos-in-person",
+        "campaigns",
+        "product-media"
+      ],
+      "details": "modal"
+    },
+    {
+      "path": "/company/about",
+      "section": "company",
+      "title": "About",
+      "template": "longread",
+      "sections": [
+        "page-head",
+        "prose",
+        "robot",
+        "related",
+        "cta"
+      ],
+      "action": "Meet the team",
+      "meta": {
+        "title": "About | Pulp",
+        "description": "Tell the story: years of research, incorporated in 2026, Brooklyn."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/company/team",
+      "section": "company",
+      "title": "Team",
+      "template": "people",
+      "sections": [
+        "page-head",
+        "people",
+        "related",
+        "cta"
+      ],
+      "action": "See open roles",
+      "meta": {
+        "title": "Team | Pulp",
+        "description": "The people, and the colors they chose."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "team"
+      ],
+      "details": "modal"
+    },
+    {
+      "path": "/company/commitments",
+      "section": "company",
+      "title": "Commitments",
+      "template": "policy",
+      "sections": [
+        "page-head",
+        "ledger",
+        "toc",
+        "prose",
+        "related"
+      ],
+      "action": "Read the policies",
+      "meta": {
+        "title": "Commitments | Pulp",
+        "description": "What Pulp promises and how it can be checked."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/company/brand",
+      "section": "company",
+      "title": "Brand",
+      "template": "brand",
+      "sections": [
+        "page-head",
+        "plates",
+        "cards",
+        "list",
+        "cta"
+      ],
+      "action": "Download the press kit",
+      "meta": {
+        "title": "Brand | Pulp",
+        "description": "The public brand page: the dial, the marks, merch, how to use them."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "press"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/company/press",
+      "section": "company",
+      "title": "Press",
+      "template": "list",
+      "sections": [
+        "page-head",
+        "filter",
+        "list",
+        "cta"
+      ],
+      "action": "Contact press",
+      "meta": {
+        "title": "Press | Pulp",
+        "description": "Announcements and a contact for journalists."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "press"
+      ],
+      "details": "modal"
+    },
+    {
+      "path": "/company/careers",
+      "section": "company",
+      "title": "Careers",
+      "template": "list",
+      "sections": [
+        "page-head",
+        "prose",
+        "photo",
+        "list",
+        "cta"
+      ],
+      "action": "Apply",
+      "meta": {
+        "title": "Careers | Pulp",
+        "description": "Open roles and how Pulp works."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "photos-in-person",
+        "roles"
+      ],
+      "details": "modal"
+    },
+    {
+      "path": "/company/contact",
+      "section": "company",
+      "title": "Contact",
+      "template": "contact",
+      "sections": [
+        "page-head",
+        "form"
+      ],
+      "action": "Send",
+      "meta": {
+        "title": "Contact | Pulp",
+        "description": "A page for people who arrive by link; elsewhere contact opens as a modal."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "endpoints"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/trust/privacy",
+      "section": "trust",
+      "title": "Privacy",
+      "template": "policy",
+      "sections": [
+        "page-head",
+        "ledger",
+        "toc",
+        "prose",
+        "related"
+      ],
+      "action": "Ask about your data (opens the contact modal)",
+      "meta": {
+        "title": "Privacy | Pulp",
+        "description": "What we collect, why, and for how long."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "policies"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/trust/consent",
+      "section": "trust",
+      "title": "Consent",
+      "template": "policy",
+      "sections": [
+        "page-head",
+        "ledger",
+        "toc",
+        "prose",
+        "related"
+      ],
+      "action": "Read the policy",
+      "meta": {
+        "title": "Consent | Pulp",
+        "description": "How consent works in every Pulp product."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "policies"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/trust/accessibility",
+      "section": "trust",
+      "title": "Accessibility",
+      "template": "policy",
+      "sections": [
+        "page-head",
+        "ledger",
+        "toc",
+        "prose",
+        "related"
+      ],
+      "action": "Report a barrier",
+      "meta": {
+        "title": "Accessibility | Pulp",
+        "description": "Accessible by design, and the audit plan."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "policies"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/trust/sustainability",
+      "section": "trust",
+      "title": "Sustainability",
+      "template": "longread",
+      "sections": [
+        "page-head",
+        "toc",
+        "prose",
+        "figure",
+        "chart",
+        "related",
+        "cta"
+      ],
+      "action": "Read the data story",
+      "meta": {
+        "title": "Sustainability | Pulp",
+        "description": "Less compute, on the record."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "policies",
+        "sustainability-data"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/trust/security",
+      "section": "trust",
+      "title": "Security",
+      "template": "policy",
+      "sections": [
+        "page-head",
+        "ledger",
+        "toc",
+        "prose",
+        "related"
+      ],
+      "action": "Report a vulnerability",
+      "meta": {
+        "title": "Security | Pulp",
+        "description": "How data is protected."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "policies"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/trust/terms",
+      "section": "trust",
+      "title": "Terms",
+      "template": "policy",
+      "sections": [
+        "page-head",
+        "ledger",
+        "toc",
+        "prose",
+        "related"
+      ],
+      "action": "Get in touch (opens the contact modal)",
+      "meta": {
+        "title": "Terms | Pulp",
+        "description": "Terms of use."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "policies"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/404",
+      "section": "system",
+      "title": "Not found",
+      "template": "not-found",
+      "sections": [
+        "not-found"
+      ],
+      "action": "Go home",
+      "meta": {
+        "title": "Not found | Pulp",
+        "description": "A calm way back."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages"
+      ],
+      "details": "page"
+    }
+  ]
+}

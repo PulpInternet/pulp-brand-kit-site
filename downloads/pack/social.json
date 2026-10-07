@@ -1,0 +1,2663 @@
+{
+  "kit": "Pulp Brand Kit 2026",
+  "version": "v6d-LibreFranklin",
+  "platforms": {
+    "linkedin": {
+      "name": "LinkedIn",
+      "w": 1080,
+      "h": 1350,
+      "cls": "port",
+      "safe": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time": "8:30 AM",
+      "kind": "4:5 image post"
+    },
+    "x": {
+      "name": "X",
+      "w": 1600,
+      "h": 900,
+      "cls": "wide",
+      "safe": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time": "9:15 AM",
+      "kind": "16:9 image post"
+    },
+    "bluesky": {
+      "name": "Bluesky",
+      "w": 1200,
+      "h": 675,
+      "cls": "wide",
+      "safe": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time": "9:30 AM",
+      "kind": "16:9 image post"
+    },
+    "reddit": {
+      "name": "Reddit",
+      "w": 1200,
+      "h": 900,
+      "cls": "land",
+      "safe": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time": "10:00 AM",
+      "kind": "4:3 image post on the brand profile"
+    },
+    "threads": {
+      "name": "Threads",
+      "w": 1080,
+      "h": 1350,
+      "cls": "port",
+      "safe": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time": "11:30 AM",
+      "kind": "4:5 image post"
+    },
+    "instagram": {
+      "name": "Instagram",
+      "w": 1080,
+      "h": 1350,
+      "cls": "port",
+      "safe": [
+        0,
+        60,
+        0,
+        60
+      ],
+      "time": "12:15 PM",
+      "kind": "4:5 feed post; the grid shows the middle 3:4"
+    },
+    "facebook": {
+      "name": "Facebook",
+      "w": 1080,
+      "h": 1350,
+      "cls": "port",
+      "safe": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time": "1:00 PM",
+      "kind": "4:5 feed post"
+    },
+    "youtube": {
+      "name": "YouTube",
+      "w": 1280,
+      "h": 720,
+      "cls": "wide",
+      "safe": [
+        0,
+        0,
+        80,
+        0
+      ],
+      "time": "3:00 PM",
+      "kind": "video thumbnail; the timestamp covers the bottom right"
+    },
+    "tiktok": {
+      "name": "TikTok",
+      "w": 1080,
+      "h": 1920,
+      "cls": "tall",
+      "safe": [
+        160,
+        140,
+        440,
+        60
+      ],
+      "time": "7:00 PM",
+      "kind": "9:16 cover; captions and buttons cover the right edge and the bottom"
+    },
+    "substack": {
+      "name": "Substack",
+      "w": 1200,
+      "h": 630,
+      "cls": "wide",
+      "safe": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time": "7:00 AM",
+      "kind": "post image and share card"
+    }
+  },
+  "brands": {
+    "pulp": {
+      "name": "Pulp",
+      "link": "pulp.com.ai",
+      "handle": "Pulp"
+    },
+    "thinkwell": {
+      "name": "Thinkwell",
+      "link": "aithinkwell.com",
+      "handle": "Thinkwell"
+    },
+    "typodojo": {
+      "name": "typodojo",
+      "link": "typodojo.com",
+      "handle": "typodojo"
+    }
+  },
+  "templates": {
+    "pulp": [
+      {
+        "id": "statement",
+        "name": "Statement",
+        "mode": "light",
+        "art": "robot"
+      },
+      {
+        "id": "stance",
+        "name": "Stance",
+        "mode": "dark",
+        "art": "plate:think-again"
+      },
+      {
+        "id": "three-plates",
+        "name": "Three ways of seeing",
+        "mode": "light",
+        "art": "plates3"
+      },
+      {
+        "id": "platform",
+        "name": "Platform",
+        "mode": "dark",
+        "art": "platform"
+      },
+      {
+        "id": "research",
+        "name": "Research",
+        "mode": "feature",
+        "art": "research"
+      }
+    ],
+    "thinkwell": [
+      {
+        "id": "statement",
+        "name": "Statement",
+        "mode": "dark",
+        "art": "day"
+      },
+      {
+        "id": "feature",
+        "name": "Feature",
+        "mode": "light",
+        "art": "capsule"
+      },
+      {
+        "id": "rooms",
+        "name": "Rooms",
+        "mode": "dark",
+        "art": "rooms"
+      },
+      {
+        "id": "insight",
+        "name": "Insight",
+        "mode": "light",
+        "art": "transcript"
+      },
+      {
+        "id": "ladder",
+        "name": "Ladder",
+        "mode": "dark",
+        "art": "ladder"
+      }
+    ],
+    "typodojo": [
+      {
+        "id": "statement",
+        "name": "Statement",
+        "mode": "dark",
+        "art": "waves"
+      },
+      {
+        "id": "drill",
+        "name": "Drill",
+        "mode": "light",
+        "art": "letter:a"
+      },
+      {
+        "id": "typo-says",
+        "name": "Typo says",
+        "mode": "dark",
+        "art": "quote"
+      },
+      {
+        "id": "steps",
+        "name": "Steps",
+        "mode": "light",
+        "art": "steps"
+      },
+      {
+        "id": "invite",
+        "name": "Invite",
+        "mode": "dark",
+        "art": "waves"
+      }
+    ]
+  },
+  "posts": [
+    {
+      "brand": "pulp",
+      "post": 1,
+      "template": "statement",
+      "platform": "linkedin",
+      "date": "2026-10-13",
+      "time": "8:30 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-linkedin-1",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
+      "caption": "We help humans understand humans.\n\nPulp is a research company in Brooklyn. We study how people talk, argue and make up their minds, and we build tools around what we learn: Thinkwell for the people whose work runs on conversation, typodojo for anyone who wants to draw letters, and a platform underneath both.\n\nRead what we are working on at pulp.com.ai.\n\n#research #persuasion #Brooklyn"
+    },
+    {
+      "brand": "pulp",
+      "post": 1,
+      "template": "statement",
+      "platform": "x",
+      "date": "2026-10-13",
+      "time": "9:15 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-x-1",
+      "size": [
+        1600,
+        900
+      ],
+      "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
+      "caption": "We help humans understand humans.\n\nA research company in Brooklyn. We study how people talk, argue and make up their minds.\n\npulp.com.ai"
+    },
+    {
+      "brand": "pulp",
+      "post": 1,
+      "template": "statement",
+      "platform": "bluesky",
+      "date": "2026-10-13",
+      "time": "9:30 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-bluesky-1",
+      "size": [
+        1200,
+        675
+      ],
+      "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
+      "caption": "We help humans understand humans.\n\nA research company in Brooklyn. We study how people talk, argue and make up their minds.\n\npulp.com.ai"
+    },
+    {
+      "brand": "pulp",
+      "post": 1,
+      "template": "statement",
+      "platform": "reddit",
+      "date": "2026-10-13",
+      "time": "10:00 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-reddit-1",
+      "size": [
+        1200,
+        900
+      ],
+      "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
+      "caption": "Title: Pulp: we help humans understand humans\n\nPulp is a research company in Brooklyn. We study how people talk, argue and make up their minds, and we build tools around what we learn: Thinkwell for the people whose work runs on conversation, typodojo for anyone who wants to draw letters, and a platform underneath both.\n\nRead what we are working on at pulp.com.ai."
+    },
+    {
+      "brand": "pulp",
+      "post": 1,
+      "template": "statement",
+      "platform": "threads",
+      "date": "2026-10-13",
+      "time": "11:30 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-threads-1",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
+      "caption": "We help humans understand humans.\n\nPulp is a research company in Brooklyn. We study how people talk, argue and make up their minds, and we build tools around what we learn: Thinkwell for the people whose work runs on conversation, typodojo for anyone who wants to draw letters, and a platform underneath both."
+    },
+    {
+      "brand": "pulp",
+      "post": 1,
+      "template": "statement",
+      "platform": "instagram",
+      "date": "2026-10-13",
+      "time": "12:15 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-instagram-1",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
+      "caption": "We help humans understand humans.\n\nPulp is a research company in Brooklyn. We study how people talk, argue and make up their minds, and we build tools around what we learn: Thinkwell for the people whose work runs on conversation, typodojo for anyone who wants to draw letters, and a platform underneath both.\n\nLink in bio.\n\n#research #persuasion #Brooklyn"
+    },
+    {
+      "brand": "pulp",
+      "post": 1,
+      "template": "statement",
+      "platform": "facebook",
+      "date": "2026-10-13",
+      "time": "1:00 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-facebook-1",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
+      "caption": "We help humans understand humans.\n\nPulp is a research company in Brooklyn. We study how people talk, argue and make up their minds, and we build tools around what we learn: Thinkwell for the people whose work runs on conversation, typodojo for anyone who wants to draw letters, and a platform underneath both.\n\nRead what we are working on at pulp.com.ai."
+    },
+    {
+      "brand": "pulp",
+      "post": 1,
+      "template": "statement",
+      "platform": "youtube",
+      "date": "2026-10-13",
+      "time": "3:00 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-youtube-1",
+      "size": [
+        1280,
+        720
+      ],
+      "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
+      "caption": "Title: Pulp: we help humans understand humans\n\nWe help humans understand humans. Pulp is a research company in Brooklyn. We study how people talk, argue and make up their minds, and we build tools around what we learn: Thinkwell for the people whose work runs on conversation, typodojo for anyone who wants to draw letters, and a platform underneath both.\n\nRead what we are working on at pulp.com.ai."
+    },
+    {
+      "brand": "pulp",
+      "post": 1,
+      "template": "statement",
+      "platform": "tiktok",
+      "date": "2026-10-13",
+      "time": "7:00 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-tiktok-1",
+      "size": [
+        1080,
+        1920
+      ],
+      "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
+      "caption": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds. #research #persuasion #Brooklyn"
+    },
+    {
+      "brand": "pulp",
+      "post": 1,
+      "template": "statement",
+      "platform": "substack",
+      "date": "2026-10-13",
+      "time": "7:00 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-substack-1",
+      "size": [
+        1200,
+        630
+      ],
+      "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
+      "caption": "Title: Pulp: we help humans understand humans\nSubtitle: A research company in Brooklyn. We study how people talk, argue and make up their minds.\n\nPulp is a research company in Brooklyn. We study how people talk, argue and make up their minds, and we build tools around what we learn: Thinkwell for the people whose work runs on conversation, typodojo for anyone who wants to draw letters, and a platform underneath both."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 1,
+      "template": "statement",
+      "platform": "linkedin",
+      "date": "2026-10-14",
+      "time": "8:30 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-linkedin-1",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "See the world through conversation. A workstation for the conversations that run public life.",
+      "caption": "See the world through conversation.\n\nThinkwell is a workstation for teams whose work runs on conversation: government relations, public affairs, campaigns. It keeps every call, hearing and meeting, writes down what was promised, and checks it against the morning\u2019s news.\n\nMeet Thinkwell at aithinkwell.com.\n\n#governmentRelations #publicAffairs #Thinkwell"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 1,
+      "template": "statement",
+      "platform": "x",
+      "date": "2026-10-14",
+      "time": "9:15 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-x-1",
+      "size": [
+        1600,
+        900
+      ],
+      "alt": "See the world through conversation. A workstation for the conversations that run public life.",
+      "caption": "See the world through conversation.\n\nA workstation for the conversations that run public life.\n\naithinkwell.com"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 1,
+      "template": "statement",
+      "platform": "bluesky",
+      "date": "2026-10-14",
+      "time": "9:30 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-bluesky-1",
+      "size": [
+        1200,
+        675
+      ],
+      "alt": "See the world through conversation. A workstation for the conversations that run public life.",
+      "caption": "See the world through conversation.\n\nA workstation for the conversations that run public life.\n\naithinkwell.com"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 1,
+      "template": "statement",
+      "platform": "reddit",
+      "date": "2026-10-14",
+      "time": "10:00 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-reddit-1",
+      "size": [
+        1200,
+        900
+      ],
+      "alt": "See the world through conversation. A workstation for the conversations that run public life.",
+      "caption": "Title: Thinkwell: see the world through conversation\n\nThinkwell is a workstation for teams whose work runs on conversation: government relations, public affairs, campaigns. It keeps every call, hearing and meeting, writes down what was promised, and checks it against the morning\u2019s news.\n\nMeet Thinkwell at aithinkwell.com."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 1,
+      "template": "statement",
+      "platform": "threads",
+      "date": "2026-10-14",
+      "time": "11:30 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-threads-1",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "See the world through conversation. A workstation for the conversations that run public life.",
+      "caption": "See the world through conversation.\n\nThinkwell is a workstation for teams whose work runs on conversation: government relations, public affairs, campaigns. It keeps every call, hearing and meeting, writes down what was promised, and checks it against the morning\u2019s news."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 1,
+      "template": "statement",
+      "platform": "instagram",
+      "date": "2026-10-14",
+      "time": "12:15 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-instagram-1",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "See the world through conversation. A workstation for the conversations that run public life.",
+      "caption": "See the world through conversation.\n\nThinkwell is a workstation for teams whose work runs on conversation: government relations, public affairs, campaigns. It keeps every call, hearing and meeting, writes down what was promised, and checks it against the morning\u2019s news.\n\nLink in bio.\n\n#governmentRelations #publicAffairs #Thinkwell"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 1,
+      "template": "statement",
+      "platform": "facebook",
+      "date": "2026-10-14",
+      "time": "1:00 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-facebook-1",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "See the world through conversation. A workstation for the conversations that run public life.",
+      "caption": "See the world through conversation.\n\nThinkwell is a workstation for teams whose work runs on conversation: government relations, public affairs, campaigns. It keeps every call, hearing and meeting, writes down what was promised, and checks it against the morning\u2019s news.\n\nMeet Thinkwell at aithinkwell.com."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 1,
+      "template": "statement",
+      "platform": "youtube",
+      "date": "2026-10-14",
+      "time": "3:00 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-youtube-1",
+      "size": [
+        1280,
+        720
+      ],
+      "alt": "See the world through conversation. A workstation for the conversations that run public life.",
+      "caption": "Title: Thinkwell: see the world through conversation\n\nSee the world through conversation. Thinkwell is a workstation for teams whose work runs on conversation: government relations, public affairs, campaigns. It keeps every call, hearing and meeting, writes down what was promised, and checks it against the morning\u2019s news.\n\nMeet Thinkwell at aithinkwell.com."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 1,
+      "template": "statement",
+      "platform": "tiktok",
+      "date": "2026-10-14",
+      "time": "7:00 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-tiktok-1",
+      "size": [
+        1080,
+        1920
+      ],
+      "alt": "See the world through conversation. A workstation for the conversations that run public life.",
+      "caption": "See the world through conversation. A workstation for the conversations that run public life. #governmentRelations #publicAffairs #Thinkwell"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 1,
+      "template": "statement",
+      "platform": "substack",
+      "date": "2026-10-14",
+      "time": "7:00 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-substack-1",
+      "size": [
+        1200,
+        630
+      ],
+      "alt": "See the world through conversation. A workstation for the conversations that run public life.",
+      "caption": "Title: Thinkwell: see the world through conversation\nSubtitle: A workstation for the conversations that run public life.\n\nThinkwell is a workstation for teams whose work runs on conversation: government relations, public affairs, campaigns. It keeps every call, hearing and meeting, writes down what was promised, and checks it against the morning\u2019s news."
+    },
+    {
+      "brand": "pulp",
+      "post": 2,
+      "template": "stance",
+      "platform": "linkedin",
+      "date": "2026-10-15",
+      "time": "8:30 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-linkedin-2",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Technology doesn\u2019t make you a better thinker. It never has. Habits do.",
+      "caption": "Technology doesn\u2019t make you a better thinker. It never has. Habits do.\n\nSo we measure what actually helps: critical thinking, reflection, and conversations that change minds on both sides. Walking away solves nothing.\n\nThe full essay is at pulp.com.ai.\n\n#criticalThinking #metacognition #habits"
+    },
+    {
+      "brand": "pulp",
+      "post": 2,
+      "template": "stance",
+      "platform": "x",
+      "date": "2026-10-15",
+      "time": "9:15 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-x-2",
+      "size": [
+        1600,
+        900
+      ],
+      "alt": "Technology doesn\u2019t make you a better thinker. It never has. Habits do.",
+      "caption": "Technology doesn\u2019t make you a better thinker. It never has. Habits do.\n\nIt never has. Habits do.\n\npulp.com.ai"
+    },
+    {
+      "brand": "pulp",
+      "post": 2,
+      "template": "stance",
+      "platform": "bluesky",
+      "date": "2026-10-15",
+      "time": "9:30 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-bluesky-2",
+      "size": [
+        1200,
+        675
+      ],
+      "alt": "Technology doesn\u2019t make you a better thinker. It never has. Habits do.",
+      "caption": "Technology doesn\u2019t make you a better thinker. It never has. Habits do.\n\nIt never has. Habits do.\n\npulp.com.ai"
+    },
+    {
+      "brand": "pulp",
+      "post": 2,
+      "template": "stance",
+      "platform": "reddit",
+      "date": "2026-10-15",
+      "time": "10:00 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-reddit-2",
+      "size": [
+        1200,
+        900
+      ],
+      "alt": "Technology doesn\u2019t make you a better thinker. It never has. Habits do.",
+      "caption": "Title: Technology doesn\u2019t make you a better thinker. Habits do.\n\nSo we measure what actually helps: critical thinking, reflection, and conversations that change minds on both sides. Walking away solves nothing.\n\nThe full essay is at pulp.com.ai."
+    },
+    {
+      "brand": "pulp",
+      "post": 2,
+      "template": "stance",
+      "platform": "threads",
+      "date": "2026-10-15",
+      "time": "11:30 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-threads-2",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Technology doesn\u2019t make you a better thinker. It never has. Habits do.",
+      "caption": "Technology doesn\u2019t make you a better thinker. It never has. Habits do.\n\nSo we measure what actually helps: critical thinking, reflection, and conversations that change minds on both sides. Walking away solves nothing."
+    },
+    {
+      "brand": "pulp",
+      "post": 2,
+      "template": "stance",
+      "platform": "instagram",
+      "date": "2026-10-15",
+      "time": "12:15 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-instagram-2",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Technology doesn\u2019t make you a better thinker. It never has. Habits do.",
+      "caption": "Technology doesn\u2019t make you a better thinker. It never has. Habits do.\n\nSo we measure what actually helps: critical thinking, reflection, and conversations that change minds on both sides. Walking away solves nothing.\n\nLink in bio.\n\n#criticalThinking #metacognition #habits"
+    },
+    {
+      "brand": "pulp",
+      "post": 2,
+      "template": "stance",
+      "platform": "facebook",
+      "date": "2026-10-15",
+      "time": "1:00 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-facebook-2",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Technology doesn\u2019t make you a better thinker. It never has. Habits do.",
+      "caption": "Technology doesn\u2019t make you a better thinker. It never has. Habits do.\n\nSo we measure what actually helps: critical thinking, reflection, and conversations that change minds on both sides. Walking away solves nothing.\n\nThe full essay is at pulp.com.ai."
+    },
+    {
+      "brand": "pulp",
+      "post": 2,
+      "template": "stance",
+      "platform": "youtube",
+      "date": "2026-10-15",
+      "time": "3:00 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-youtube-2",
+      "size": [
+        1280,
+        720
+      ],
+      "alt": "Technology doesn\u2019t make you a better thinker. It never has. Habits do.",
+      "caption": "Title: Technology doesn\u2019t make you a better thinker. Habits do.\n\nTechnology doesn\u2019t make you a better thinker. It never has. Habits do. So we measure what actually helps: critical thinking, reflection, and conversations that change minds on both sides. Walking away solves nothing.\n\nThe full essay is at pulp.com.ai."
+    },
+    {
+      "brand": "pulp",
+      "post": 2,
+      "template": "stance",
+      "platform": "tiktok",
+      "date": "2026-10-15",
+      "time": "7:00 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-tiktok-2",
+      "size": [
+        1080,
+        1920
+      ],
+      "alt": "Technology doesn\u2019t make you a better thinker. It never has. Habits do.",
+      "caption": "Technology doesn\u2019t make you a better thinker. It never has. Habits do. It never has. Habits do. #criticalThinking #metacognition #habits"
+    },
+    {
+      "brand": "pulp",
+      "post": 2,
+      "template": "stance",
+      "platform": "substack",
+      "date": "2026-10-15",
+      "time": "7:00 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-substack-2",
+      "size": [
+        1200,
+        630
+      ],
+      "alt": "Technology doesn\u2019t make you a better thinker. It never has. Habits do.",
+      "caption": "Title: Technology doesn\u2019t make you a better thinker. Habits do.\nSubtitle: It never has. Habits do.\n\nSo we measure what actually helps: critical thinking, reflection, and conversations that change minds on both sides. Walking away solves nothing."
+    },
+    {
+      "brand": "typodojo",
+      "post": 1,
+      "template": "statement",
+      "platform": "linkedin",
+      "date": "2026-10-16",
+      "time": "8:30 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-linkedin-1",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
+      "caption": "draw a typeface.\n\ntypodojo is a dojo for drawing letters by hand. Draw them, clean them up, and turn them into a real font you can install, share or sell. Mastery takes time. Your first font takes five minutes.\n\nJoin the list at typodojo.com.\n\n#typography #lettering #fonts"
+    },
+    {
+      "brand": "typodojo",
+      "post": 1,
+      "template": "statement",
+      "platform": "x",
+      "date": "2026-10-16",
+      "time": "9:15 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-x-1",
+      "size": [
+        1600,
+        900
+      ],
+      "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
+      "caption": "draw a typeface.\n\nMastery takes time. Your first font takes five minutes.\n\ntypodojo.com"
+    },
+    {
+      "brand": "typodojo",
+      "post": 1,
+      "template": "statement",
+      "platform": "bluesky",
+      "date": "2026-10-16",
+      "time": "9:30 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-bluesky-1",
+      "size": [
+        1200,
+        675
+      ],
+      "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
+      "caption": "draw a typeface.\n\nMastery takes time. Your first font takes five minutes.\n\ntypodojo.com"
+    },
+    {
+      "brand": "typodojo",
+      "post": 1,
+      "template": "statement",
+      "platform": "reddit",
+      "date": "2026-10-16",
+      "time": "10:00 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-reddit-1",
+      "size": [
+        1200,
+        900
+      ],
+      "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
+      "caption": "Title: typodojo: draw a typeface\n\ntypodojo is a dojo for drawing letters by hand. Draw them, clean them up, and turn them into a real font you can install, share or sell. Mastery takes time. Your first font takes five minutes.\n\nJoin the list at typodojo.com."
+    },
+    {
+      "brand": "typodojo",
+      "post": 1,
+      "template": "statement",
+      "platform": "threads",
+      "date": "2026-10-16",
+      "time": "11:30 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-threads-1",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
+      "caption": "draw a typeface.\n\ntypodojo is a dojo for drawing letters by hand. Draw them, clean them up, and turn them into a real font you can install, share or sell. Mastery takes time. Your first font takes five minutes."
+    },
+    {
+      "brand": "typodojo",
+      "post": 1,
+      "template": "statement",
+      "platform": "instagram",
+      "date": "2026-10-16",
+      "time": "12:15 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-instagram-1",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
+      "caption": "draw a typeface.\n\ntypodojo is a dojo for drawing letters by hand. Draw them, clean them up, and turn them into a real font you can install, share or sell. Mastery takes time. Your first font takes five minutes.\n\nLink in bio.\n\n#typography #lettering #fonts"
+    },
+    {
+      "brand": "typodojo",
+      "post": 1,
+      "template": "statement",
+      "platform": "facebook",
+      "date": "2026-10-16",
+      "time": "1:00 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-facebook-1",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
+      "caption": "draw a typeface.\n\ntypodojo is a dojo for drawing letters by hand. Draw them, clean them up, and turn them into a real font you can install, share or sell. Mastery takes time. Your first font takes five minutes.\n\nJoin the list at typodojo.com."
+    },
+    {
+      "brand": "typodojo",
+      "post": 1,
+      "template": "statement",
+      "platform": "youtube",
+      "date": "2026-10-16",
+      "time": "3:00 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-youtube-1",
+      "size": [
+        1280,
+        720
+      ],
+      "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
+      "caption": "Title: typodojo: draw a typeface\n\ndraw a typeface. typodojo is a dojo for drawing letters by hand. Draw them, clean them up, and turn them into a real font you can install, share or sell. Mastery takes time. Your first font takes five minutes.\n\nJoin the list at typodojo.com."
+    },
+    {
+      "brand": "typodojo",
+      "post": 1,
+      "template": "statement",
+      "platform": "tiktok",
+      "date": "2026-10-16",
+      "time": "7:00 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-tiktok-1",
+      "size": [
+        1080,
+        1920
+      ],
+      "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
+      "caption": "draw a typeface. Mastery takes time. Your first font takes five minutes. #typography #lettering #fonts"
+    },
+    {
+      "brand": "typodojo",
+      "post": 1,
+      "template": "statement",
+      "platform": "substack",
+      "date": "2026-10-16",
+      "time": "7:00 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-substack-1",
+      "size": [
+        1200,
+        630
+      ],
+      "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
+      "caption": "Title: typodojo: draw a typeface\nSubtitle: Mastery takes time. Your first font takes five minutes.\n\ntypodojo is a dojo for drawing letters by hand. Draw them, clean them up, and turn them into a real font you can install, share or sell. Mastery takes time. Your first font takes five minutes."
+    },
+    {
+      "brand": "typodojo",
+      "post": 2,
+      "template": "drill",
+      "platform": "linkedin",
+      "date": "2026-10-18",
+      "time": "8:30 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-linkedin-2",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "one a, ten times. Slowly. The tenth one is yours.",
+      "caption": "today\u2019s drill: one a, ten times.\n\nDraw a lowercase a ten times, slowly, with one round pen. Don\u2019t fix the first nine. The tenth one is yours. Post it and tag us.\n\nMore drills at typodojo.com.\n\n#lettering #practice #typodojo"
+    },
+    {
+      "brand": "typodojo",
+      "post": 2,
+      "template": "drill",
+      "platform": "x",
+      "date": "2026-10-18",
+      "time": "9:15 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-x-2",
+      "size": [
+        1600,
+        900
+      ],
+      "alt": "one a, ten times. Slowly. The tenth one is yours.",
+      "caption": "today\u2019s drill: one a, ten times.\n\nSlowly. The tenth one is yours.\n\ntypodojo.com"
+    },
+    {
+      "brand": "typodojo",
+      "post": 2,
+      "template": "drill",
+      "platform": "bluesky",
+      "date": "2026-10-18",
+      "time": "9:30 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-bluesky-2",
+      "size": [
+        1200,
+        675
+      ],
+      "alt": "one a, ten times. Slowly. The tenth one is yours.",
+      "caption": "today\u2019s drill: one a, ten times.\n\nSlowly. The tenth one is yours.\n\ntypodojo.com"
+    },
+    {
+      "brand": "typodojo",
+      "post": 2,
+      "template": "drill",
+      "platform": "reddit",
+      "date": "2026-10-18",
+      "time": "10:00 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-reddit-2",
+      "size": [
+        1200,
+        900
+      ],
+      "alt": "one a, ten times. Slowly. The tenth one is yours.",
+      "caption": "Title: Today\u2019s drill: one a, ten times\n\nDraw a lowercase a ten times, slowly, with one round pen. Don\u2019t fix the first nine. The tenth one is yours. Post it and tag us.\n\nMore drills at typodojo.com."
+    },
+    {
+      "brand": "typodojo",
+      "post": 2,
+      "template": "drill",
+      "platform": "threads",
+      "date": "2026-10-18",
+      "time": "11:30 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-threads-2",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "one a, ten times. Slowly. The tenth one is yours.",
+      "caption": "today\u2019s drill: one a, ten times.\n\nDraw a lowercase a ten times, slowly, with one round pen. Don\u2019t fix the first nine. The tenth one is yours. Post it and tag us."
+    },
+    {
+      "brand": "typodojo",
+      "post": 2,
+      "template": "drill",
+      "platform": "instagram",
+      "date": "2026-10-18",
+      "time": "12:15 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-instagram-2",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "one a, ten times. Slowly. The tenth one is yours.",
+      "caption": "today\u2019s drill: one a, ten times.\n\nDraw a lowercase a ten times, slowly, with one round pen. Don\u2019t fix the first nine. The tenth one is yours. Post it and tag us.\n\nLink in bio.\n\n#lettering #practice #typodojo"
+    },
+    {
+      "brand": "typodojo",
+      "post": 2,
+      "template": "drill",
+      "platform": "facebook",
+      "date": "2026-10-18",
+      "time": "1:00 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-facebook-2",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "one a, ten times. Slowly. The tenth one is yours.",
+      "caption": "today\u2019s drill: one a, ten times.\n\nDraw a lowercase a ten times, slowly, with one round pen. Don\u2019t fix the first nine. The tenth one is yours. Post it and tag us.\n\nMore drills at typodojo.com."
+    },
+    {
+      "brand": "typodojo",
+      "post": 2,
+      "template": "drill",
+      "platform": "youtube",
+      "date": "2026-10-18",
+      "time": "3:00 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-youtube-2",
+      "size": [
+        1280,
+        720
+      ],
+      "alt": "one a, ten times. Slowly. The tenth one is yours.",
+      "caption": "Title: Today\u2019s drill: one a, ten times\n\ntoday\u2019s drill: one a, ten times. Draw a lowercase a ten times, slowly, with one round pen. Don\u2019t fix the first nine. The tenth one is yours. Post it and tag us.\n\nMore drills at typodojo.com."
+    },
+    {
+      "brand": "typodojo",
+      "post": 2,
+      "template": "drill",
+      "platform": "tiktok",
+      "date": "2026-10-18",
+      "time": "7:00 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-tiktok-2",
+      "size": [
+        1080,
+        1920
+      ],
+      "alt": "one a, ten times. Slowly. The tenth one is yours.",
+      "caption": "today\u2019s drill: one a, ten times. Slowly. The tenth one is yours. #lettering #practice #typodojo"
+    },
+    {
+      "brand": "typodojo",
+      "post": 2,
+      "template": "drill",
+      "platform": "substack",
+      "date": "2026-10-18",
+      "time": "7:00 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-substack-2",
+      "size": [
+        1200,
+        630
+      ],
+      "alt": "one a, ten times. Slowly. The tenth one is yours.",
+      "caption": "Title: Today\u2019s drill: one a, ten times\nSubtitle: Slowly. The tenth one is yours.\n\nDraw a lowercase a ten times, slowly, with one round pen. Don\u2019t fix the first nine. The tenth one is yours. Post it and tag us."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 2,
+      "template": "feature",
+      "platform": "linkedin",
+      "date": "2026-10-19",
+      "time": "8:30 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-linkedin-2",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Your next conversation, remembered. A small capsule on your screen. It keeps the conversation so you can stay in it.",
+      "caption": "Stay in the conversation. Thinkwell keeps it.\n\nThinkwell Lite sits on your screen as a small capsule. It records when you ask it to, transcribes, and learns each voice in 30 to 60 seconds, so the notes say who said what.\n\nSee it at aithinkwell.com.\n\n#notes #meetings #Thinkwell"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 2,
+      "template": "feature",
+      "platform": "x",
+      "date": "2026-10-19",
+      "time": "9:15 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-x-2",
+      "size": [
+        1600,
+        900
+      ],
+      "alt": "Your next conversation, remembered. A small capsule on your screen. It keeps the conversation so you can stay in it.",
+      "caption": "Stay in the conversation. Thinkwell keeps it.\n\nA small capsule on your screen. It keeps the conversation so you can stay in it.\n\naithinkwell.com"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 2,
+      "template": "feature",
+      "platform": "bluesky",
+      "date": "2026-10-19",
+      "time": "9:30 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-bluesky-2",
+      "size": [
+        1200,
+        675
+      ],
+      "alt": "Your next conversation, remembered. A small capsule on your screen. It keeps the conversation so you can stay in it.",
+      "caption": "Stay in the conversation. Thinkwell keeps it.\n\nA small capsule on your screen. It keeps the conversation so you can stay in it.\n\naithinkwell.com"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 2,
+      "template": "feature",
+      "platform": "reddit",
+      "date": "2026-10-19",
+      "time": "10:00 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-reddit-2",
+      "size": [
+        1200,
+        900
+      ],
+      "alt": "Your next conversation, remembered. A small capsule on your screen. It keeps the conversation so you can stay in it.",
+      "caption": "Title: Thinkwell Lite: your next conversation, remembered\n\nThinkwell Lite sits on your screen as a small capsule. It records when you ask it to, transcribes, and learns each voice in 30 to 60 seconds, so the notes say who said what.\n\nSee it at aithinkwell.com."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 2,
+      "template": "feature",
+      "platform": "threads",
+      "date": "2026-10-19",
+      "time": "11:30 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-threads-2",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Your next conversation, remembered. A small capsule on your screen. It keeps the conversation so you can stay in it.",
+      "caption": "Stay in the conversation. Thinkwell keeps it.\n\nThinkwell Lite sits on your screen as a small capsule. It records when you ask it to, transcribes, and learns each voice in 30 to 60 seconds, so the notes say who said what."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 2,
+      "template": "feature",
+      "platform": "instagram",
+      "date": "2026-10-19",
+      "time": "12:15 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-instagram-2",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Your next conversation, remembered. A small capsule on your screen. It keeps the conversation so you can stay in it.",
+      "caption": "Stay in the conversation. Thinkwell keeps it.\n\nThinkwell Lite sits on your screen as a small capsule. It records when you ask it to, transcribes, and learns each voice in 30 to 60 seconds, so the notes say who said what.\n\nLink in bio.\n\n#notes #meetings #Thinkwell"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 2,
+      "template": "feature",
+      "platform": "facebook",
+      "date": "2026-10-19",
+      "time": "1:00 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-facebook-2",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Your next conversation, remembered. A small capsule on your screen. It keeps the conversation so you can stay in it.",
+      "caption": "Stay in the conversation. Thinkwell keeps it.\n\nThinkwell Lite sits on your screen as a small capsule. It records when you ask it to, transcribes, and learns each voice in 30 to 60 seconds, so the notes say who said what.\n\nSee it at aithinkwell.com."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 2,
+      "template": "feature",
+      "platform": "youtube",
+      "date": "2026-10-19",
+      "time": "3:00 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-youtube-2",
+      "size": [
+        1280,
+        720
+      ],
+      "alt": "Your next conversation, remembered. A small capsule on your screen. It keeps the conversation so you can stay in it.",
+      "caption": "Title: Thinkwell Lite: your next conversation, remembered\n\nStay in the conversation. Thinkwell keeps it. Thinkwell Lite sits on your screen as a small capsule. It records when you ask it to, transcribes, and learns each voice in 30 to 60 seconds, so the notes say who said what.\n\nSee it at aithinkwell.com."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 2,
+      "template": "feature",
+      "platform": "tiktok",
+      "date": "2026-10-19",
+      "time": "7:00 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-tiktok-2",
+      "size": [
+        1080,
+        1920
+      ],
+      "alt": "Your next conversation, remembered. A small capsule on your screen. It keeps the conversation so you can stay in it.",
+      "caption": "Stay in the conversation. Thinkwell keeps it. A small capsule on your screen. It keeps the conversation so you can stay in it. #notes #meetings #Thinkwell"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 2,
+      "template": "feature",
+      "platform": "substack",
+      "date": "2026-10-19",
+      "time": "7:00 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-substack-2",
+      "size": [
+        1200,
+        630
+      ],
+      "alt": "Your next conversation, remembered. A small capsule on your screen. It keeps the conversation so you can stay in it.",
+      "caption": "Title: Thinkwell Lite: your next conversation, remembered\nSubtitle: A small capsule on your screen. It keeps the conversation so you can stay in it.\n\nThinkwell Lite sits on your screen as a small capsule. It records when you ask it to, transcribes, and learns each voice in 30 to 60 seconds, so the notes say who said what."
+    },
+    {
+      "brand": "pulp",
+      "post": 3,
+      "template": "three-plates",
+      "platform": "linkedin",
+      "date": "2026-10-20",
+      "time": "8:30 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-linkedin-3",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "From afar, up close, from every angle. People at large scale. One person at one moment. How and why people decide.",
+      "caption": "Three ways we look at people.\n\nFrom afar: people at large scale, one graph across time, past and present. Up close: one person at one moment, who they are, what they care about, their state of mind and their surroundings. From every angle: how and why people think and decide, in numbers for machines and in words for people.\n\nMore at pulp.com.ai.\n\n#research #people #decisions"
+    },
+    {
+      "brand": "pulp",
+      "post": 3,
+      "template": "three-plates",
+      "platform": "x",
+      "date": "2026-10-20",
+      "time": "9:15 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-x-3",
+      "size": [
+        1600,
+        900
+      ],
+      "alt": "From afar, up close, from every angle. People at large scale. One person at one moment. How and why people decide.",
+      "caption": "Three ways we look at people.\n\nPeople at large scale. One person at one moment. How and why people decide.\n\npulp.com.ai"
+    },
+    {
+      "brand": "pulp",
+      "post": 3,
+      "template": "three-plates",
+      "platform": "bluesky",
+      "date": "2026-10-20",
+      "time": "9:30 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-bluesky-3",
+      "size": [
+        1200,
+        675
+      ],
+      "alt": "From afar, up close, from every angle. People at large scale. One person at one moment. How and why people decide.",
+      "caption": "Three ways we look at people.\n\nPeople at large scale. One person at one moment. How and why people decide.\n\npulp.com.ai"
+    },
+    {
+      "brand": "pulp",
+      "post": 3,
+      "template": "three-plates",
+      "platform": "reddit",
+      "date": "2026-10-20",
+      "time": "10:00 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-reddit-3",
+      "size": [
+        1200,
+        900
+      ],
+      "alt": "From afar, up close, from every angle. People at large scale. One person at one moment. How and why people decide.",
+      "caption": "Title: How Pulp sees people: from afar, up close, from every angle\n\nFrom afar: people at large scale, one graph across time, past and present. Up close: one person at one moment, who they are, what they care about, their state of mind and their surroundings. From every angle: how and why people think and decide, in numbers for machines and in words for people.\n\nMore at pulp.com.ai."
+    },
+    {
+      "brand": "pulp",
+      "post": 3,
+      "template": "three-plates",
+      "platform": "threads",
+      "date": "2026-10-20",
+      "time": "11:30 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-threads-3",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "From afar, up close, from every angle. People at large scale. One person at one moment. How and why people decide.",
+      "caption": "Three ways we look at people.\n\nFrom afar: people at large scale, one graph across time, past and present. Up close: one person at one moment, who they are, what they care about, their state of mind and their surroundings. From every angle: how and why people think and decide, in numbers for machines and in words for people."
+    },
+    {
+      "brand": "pulp",
+      "post": 3,
+      "template": "three-plates",
+      "platform": "instagram",
+      "date": "2026-10-20",
+      "time": "12:15 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-instagram-3",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "From afar, up close, from every angle. People at large scale. One person at one moment. How and why people decide.",
+      "caption": "Three ways we look at people.\n\nFrom afar: people at large scale, one graph across time, past and present. Up close: one person at one moment, who they are, what they care about, their state of mind and their surroundings. From every angle: how and why people think and decide, in numbers for machines and in words for people.\n\nLink in bio.\n\n#research #people #decisions"
+    },
+    {
+      "brand": "pulp",
+      "post": 3,
+      "template": "three-plates",
+      "platform": "facebook",
+      "date": "2026-10-20",
+      "time": "1:00 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-facebook-3",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "From afar, up close, from every angle. People at large scale. One person at one moment. How and why people decide.",
+      "caption": "Three ways we look at people.\n\nFrom afar: people at large scale, one graph across time, past and present. Up close: one person at one moment, who they are, what they care about, their state of mind and their surroundings. From every angle: how and why people think and decide, in numbers for machines and in words for people.\n\nMore at pulp.com.ai."
+    },
+    {
+      "brand": "pulp",
+      "post": 3,
+      "template": "three-plates",
+      "platform": "youtube",
+      "date": "2026-10-20",
+      "time": "3:00 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-youtube-3",
+      "size": [
+        1280,
+        720
+      ],
+      "alt": "From afar, up close, from every angle. People at large scale. One person at one moment. How and why people decide.",
+      "caption": "Title: How Pulp sees people: from afar, up close, from every angle\n\nThree ways we look at people. From afar: people at large scale, one graph across time, past and present. Up close: one person at one moment, who they are, what they care about, their state of mind and their surroundings. From every angle: how and why people think and decide, in numbers for machines and in words for people.\n\nMore at pulp.com.ai."
+    },
+    {
+      "brand": "pulp",
+      "post": 3,
+      "template": "three-plates",
+      "platform": "tiktok",
+      "date": "2026-10-20",
+      "time": "7:00 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-tiktok-3",
+      "size": [
+        1080,
+        1920
+      ],
+      "alt": "From afar, up close, from every angle. People at large scale. One person at one moment. How and why people decide.",
+      "caption": "Three ways we look at people. People at large scale. One person at one moment. How and why people decide. #research #people #decisions"
+    },
+    {
+      "brand": "pulp",
+      "post": 3,
+      "template": "three-plates",
+      "platform": "substack",
+      "date": "2026-10-20",
+      "time": "7:00 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-substack-3",
+      "size": [
+        1200,
+        630
+      ],
+      "alt": "From afar, up close, from every angle. People at large scale. One person at one moment. How and why people decide.",
+      "caption": "Title: How Pulp sees people: from afar, up close, from every angle\nSubtitle: People at large scale. One person at one moment. How and why people decide.\n\nFrom afar: people at large scale, one graph across time, past and present. Up close: one person at one moment, who they are, what they care about, their state of mind and their surroundings. From every angle: how and why people think and decide, in numbers for machines and in words for people."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 3,
+      "template": "rooms",
+      "platform": "linkedin",
+      "date": "2026-10-21",
+      "time": "8:30 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-linkedin-3",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Every conversation, in five rooms. For teams whose work never fits in one inbox.",
+      "caption": "Five rooms for a team\u2019s conversations. Coming to Thinkwell Web.\n\nProject Studio, where your projects get planned and run. News Room, every signal and story in one feed. Dashboard Console, everything you watch on one wall. Message Hub, every conversation in one queue. Time Planner, one timeline for everything that ships.\n\nFollow along at aithinkwell.com.\n\n#publicAffairs #teams #Thinkwell"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 3,
+      "template": "rooms",
+      "platform": "x",
+      "date": "2026-10-21",
+      "time": "9:15 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-x-3",
+      "size": [
+        1600,
+        900
+      ],
+      "alt": "Every conversation, in five rooms. For teams whose work never fits in one inbox.",
+      "caption": "Five rooms for a team\u2019s conversations. Coming to Thinkwell Web.\n\nFor teams whose work never fits in one inbox.\n\naithinkwell.com"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 3,
+      "template": "rooms",
+      "platform": "bluesky",
+      "date": "2026-10-21",
+      "time": "9:30 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-bluesky-3",
+      "size": [
+        1200,
+        675
+      ],
+      "alt": "Every conversation, in five rooms. For teams whose work never fits in one inbox.",
+      "caption": "Five rooms for a team\u2019s conversations. Coming to Thinkwell Web.\n\nFor teams whose work never fits in one inbox.\n\naithinkwell.com"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 3,
+      "template": "rooms",
+      "platform": "reddit",
+      "date": "2026-10-21",
+      "time": "10:00 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-reddit-3",
+      "size": [
+        1200,
+        900
+      ],
+      "alt": "Every conversation, in five rooms. For teams whose work never fits in one inbox.",
+      "caption": "Title: Thinkwell Web: every conversation, in five rooms\n\nProject Studio, where your projects get planned and run. News Room, every signal and story in one feed. Dashboard Console, everything you watch on one wall. Message Hub, every conversation in one queue. Time Planner, one timeline for everything that ships.\n\nFollow along at aithinkwell.com."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 3,
+      "template": "rooms",
+      "platform": "threads",
+      "date": "2026-10-21",
+      "time": "11:30 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-threads-3",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Every conversation, in five rooms. For teams whose work never fits in one inbox.",
+      "caption": "Five rooms for a team\u2019s conversations. Coming to Thinkwell Web.\n\nProject Studio, where your projects get planned and run. News Room, every signal and story in one feed. Dashboard Console, everything you watch on one wall. Message Hub, every conversation in one queue. Time Planner, one timeline for everything that ships."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 3,
+      "template": "rooms",
+      "platform": "instagram",
+      "date": "2026-10-21",
+      "time": "12:15 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-instagram-3",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Every conversation, in five rooms. For teams whose work never fits in one inbox.",
+      "caption": "Five rooms for a team\u2019s conversations. Coming to Thinkwell Web.\n\nProject Studio, where your projects get planned and run. News Room, every signal and story in one feed. Dashboard Console, everything you watch on one wall. Message Hub, every conversation in one queue. Time Planner, one timeline for everything that ships.\n\nLink in bio.\n\n#publicAffairs #teams #Thinkwell"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 3,
+      "template": "rooms",
+      "platform": "facebook",
+      "date": "2026-10-21",
+      "time": "1:00 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-facebook-3",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Every conversation, in five rooms. For teams whose work never fits in one inbox.",
+      "caption": "Five rooms for a team\u2019s conversations. Coming to Thinkwell Web.\n\nProject Studio, where your projects get planned and run. News Room, every signal and story in one feed. Dashboard Console, everything you watch on one wall. Message Hub, every conversation in one queue. Time Planner, one timeline for everything that ships.\n\nFollow along at aithinkwell.com."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 3,
+      "template": "rooms",
+      "platform": "youtube",
+      "date": "2026-10-21",
+      "time": "3:00 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-youtube-3",
+      "size": [
+        1280,
+        720
+      ],
+      "alt": "Every conversation, in five rooms. For teams whose work never fits in one inbox.",
+      "caption": "Title: Thinkwell Web: every conversation, in five rooms\n\nFive rooms for a team\u2019s conversations. Coming to Thinkwell Web. Project Studio, where your projects get planned and run. News Room, every signal and story in one feed. Dashboard Console, everything you watch on one wall. Message Hub, every conversation in one queue. Time Planner, one timeline for everything that ships.\n\nFollow along at aithinkwell.com."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 3,
+      "template": "rooms",
+      "platform": "tiktok",
+      "date": "2026-10-21",
+      "time": "7:00 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-tiktok-3",
+      "size": [
+        1080,
+        1920
+      ],
+      "alt": "Every conversation, in five rooms. For teams whose work never fits in one inbox.",
+      "caption": "Five rooms for a team\u2019s conversations. Coming to Thinkwell Web. For teams whose work never fits in one inbox. #publicAffairs #teams #Thinkwell"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 3,
+      "template": "rooms",
+      "platform": "substack",
+      "date": "2026-10-21",
+      "time": "7:00 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-substack-3",
+      "size": [
+        1200,
+        630
+      ],
+      "alt": "Every conversation, in five rooms. For teams whose work never fits in one inbox.",
+      "caption": "Title: Thinkwell Web: every conversation, in five rooms\nSubtitle: For teams whose work never fits in one inbox.\n\nProject Studio, where your projects get planned and run. News Room, every signal and story in one feed. Dashboard Console, everything you watch on one wall. Message Hub, every conversation in one queue. Time Planner, one timeline for everything that ships."
+    },
+    {
+      "brand": "pulp",
+      "post": 4,
+      "template": "platform",
+      "platform": "linkedin",
+      "date": "2026-10-22",
+      "time": "8:30 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-linkedin-4",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Two SDKs on one engine. The Pulp API on the server. Loosethreads on the web.",
+      "caption": "Two SDKs, one engine.\n\nEverything we make runs on one parameterized language for people and machines. Developers reach it two ways: the Pulp API on the server, with Radiance, Windfall, TrueAura and Groundwater, and Loosethreads on the web, with weftConversations, WarpDisplays, DyeMedia and BightInteractions.\n\nThe platform is at pulp.com.ai/platform.\n\n#developers #API #SDK"
+    },
+    {
+      "brand": "pulp",
+      "post": 4,
+      "template": "platform",
+      "platform": "x",
+      "date": "2026-10-22",
+      "time": "9:15 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-x-4",
+      "size": [
+        1600,
+        900
+      ],
+      "alt": "Two SDKs on one engine. The Pulp API on the server. Loosethreads on the web.",
+      "caption": "Two SDKs, one engine.\n\nThe Pulp API on the server. Loosethreads on the web.\n\npulp.com.ai"
+    },
+    {
+      "brand": "pulp",
+      "post": 4,
+      "template": "platform",
+      "platform": "bluesky",
+      "date": "2026-10-22",
+      "time": "9:30 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-bluesky-4",
+      "size": [
+        1200,
+        675
+      ],
+      "alt": "Two SDKs on one engine. The Pulp API on the server. Loosethreads on the web.",
+      "caption": "Two SDKs, one engine.\n\nThe Pulp API on the server. Loosethreads on the web.\n\npulp.com.ai"
+    },
+    {
+      "brand": "pulp",
+      "post": 4,
+      "template": "platform",
+      "platform": "reddit",
+      "date": "2026-10-22",
+      "time": "10:00 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-reddit-4",
+      "size": [
+        1200,
+        900
+      ],
+      "alt": "Two SDKs on one engine. The Pulp API on the server. Loosethreads on the web.",
+      "caption": "Title: The Pulp platform: two SDKs on one engine\n\nEverything we make runs on one parameterized language for people and machines. Developers reach it two ways: the Pulp API on the server, with Radiance, Windfall, TrueAura and Groundwater, and Loosethreads on the web, with weftConversations, WarpDisplays, DyeMedia and BightInteractions.\n\nThe platform is at pulp.com.ai/platform."
+    },
+    {
+      "brand": "pulp",
+      "post": 4,
+      "template": "platform",
+      "platform": "threads",
+      "date": "2026-10-22",
+      "time": "11:30 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-threads-4",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Two SDKs on one engine. The Pulp API on the server. Loosethreads on the web.",
+      "caption": "Two SDKs, one engine.\n\nEverything we make runs on one parameterized language for people and machines. Developers reach it two ways: the Pulp API on the server, with Radiance, Windfall, TrueAura and Groundwater, and Loosethreads on the web, with weftConversations, WarpDisplays, DyeMedia and BightInteractions."
+    },
+    {
+      "brand": "pulp",
+      "post": 4,
+      "template": "platform",
+      "platform": "instagram",
+      "date": "2026-10-22",
+      "time": "12:15 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-instagram-4",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Two SDKs on one engine. The Pulp API on the server. Loosethreads on the web.",
+      "caption": "Two SDKs, one engine.\n\nEverything we make runs on one parameterized language for people and machines. Developers reach it two ways: the Pulp API on the server, with Radiance, Windfall, TrueAura and Groundwater, and Loosethreads on the web, with weftConversations, WarpDisplays, DyeMedia and BightInteractions.\n\nLink in bio.\n\n#developers #API #SDK"
+    },
+    {
+      "brand": "pulp",
+      "post": 4,
+      "template": "platform",
+      "platform": "facebook",
+      "date": "2026-10-22",
+      "time": "1:00 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-facebook-4",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Two SDKs on one engine. The Pulp API on the server. Loosethreads on the web.",
+      "caption": "Two SDKs, one engine.\n\nEverything we make runs on one parameterized language for people and machines. Developers reach it two ways: the Pulp API on the server, with Radiance, Windfall, TrueAura and Groundwater, and Loosethreads on the web, with weftConversations, WarpDisplays, DyeMedia and BightInteractions.\n\nThe platform is at pulp.com.ai/platform."
+    },
+    {
+      "brand": "pulp",
+      "post": 4,
+      "template": "platform",
+      "platform": "youtube",
+      "date": "2026-10-22",
+      "time": "3:00 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-youtube-4",
+      "size": [
+        1280,
+        720
+      ],
+      "alt": "Two SDKs on one engine. The Pulp API on the server. Loosethreads on the web.",
+      "caption": "Title: The Pulp platform: two SDKs on one engine\n\nTwo SDKs, one engine. Everything we make runs on one parameterized language for people and machines. Developers reach it two ways: the Pulp API on the server, with Radiance, Windfall, TrueAura and Groundwater, and Loosethreads on the web, with weftConversations, WarpDisplays, DyeMedia and BightInteractions.\n\nThe platform is at pulp.com.ai/platform."
+    },
+    {
+      "brand": "pulp",
+      "post": 4,
+      "template": "platform",
+      "platform": "tiktok",
+      "date": "2026-10-22",
+      "time": "7:00 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-tiktok-4",
+      "size": [
+        1080,
+        1920
+      ],
+      "alt": "Two SDKs on one engine. The Pulp API on the server. Loosethreads on the web.",
+      "caption": "Two SDKs, one engine. The Pulp API on the server. Loosethreads on the web. #developers #API #SDK"
+    },
+    {
+      "brand": "pulp",
+      "post": 4,
+      "template": "platform",
+      "platform": "substack",
+      "date": "2026-10-22",
+      "time": "7:00 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-substack-4",
+      "size": [
+        1200,
+        630
+      ],
+      "alt": "Two SDKs on one engine. The Pulp API on the server. Loosethreads on the web.",
+      "caption": "Title: The Pulp platform: two SDKs on one engine\nSubtitle: The Pulp API on the server. Loosethreads on the web.\n\nEverything we make runs on one parameterized language for people and machines. Developers reach it two ways: the Pulp API on the server, with Radiance, Windfall, TrueAura and Groundwater, and Loosethreads on the web, with weftConversations, WarpDisplays, DyeMedia and BightInteractions."
+    },
+    {
+      "brand": "typodojo",
+      "post": 3,
+      "template": "typo-says",
+      "platform": "linkedin",
+      "date": "2026-10-23",
+      "time": "8:30 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-linkedin-3",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "slow is smooth. Smooth is fast. And lift the pen less.",
+      "caption": "typo says: slow is smooth.\n\nSmooth is fast. Every time the pen lifts, the stroke loses its line. Draw the whole curve in one pass, even if it wobbles. Wobbles get fixed. Breaks get noticed.\n\ntypodojo.com\n\n#lettering #tips #typodojo"
+    },
+    {
+      "brand": "typodojo",
+      "post": 3,
+      "template": "typo-says",
+      "platform": "x",
+      "date": "2026-10-23",
+      "time": "9:15 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-x-3",
+      "size": [
+        1600,
+        900
+      ],
+      "alt": "slow is smooth. Smooth is fast. And lift the pen less.",
+      "caption": "typo says: slow is smooth.\n\nSmooth is fast. And lift the pen less.\n\ntypodojo.com"
+    },
+    {
+      "brand": "typodojo",
+      "post": 3,
+      "template": "typo-says",
+      "platform": "bluesky",
+      "date": "2026-10-23",
+      "time": "9:30 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-bluesky-3",
+      "size": [
+        1200,
+        675
+      ],
+      "alt": "slow is smooth. Smooth is fast. And lift the pen less.",
+      "caption": "typo says: slow is smooth.\n\nSmooth is fast. And lift the pen less.\n\ntypodojo.com"
+    },
+    {
+      "brand": "typodojo",
+      "post": 3,
+      "template": "typo-says",
+      "platform": "reddit",
+      "date": "2026-10-23",
+      "time": "10:00 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-reddit-3",
+      "size": [
+        1200,
+        900
+      ],
+      "alt": "slow is smooth. Smooth is fast. And lift the pen less.",
+      "caption": "Title: Typo says: slow is smooth\n\nSmooth is fast. Every time the pen lifts, the stroke loses its line. Draw the whole curve in one pass, even if it wobbles. Wobbles get fixed. Breaks get noticed.\n\ntypodojo.com"
+    },
+    {
+      "brand": "typodojo",
+      "post": 3,
+      "template": "typo-says",
+      "platform": "threads",
+      "date": "2026-10-23",
+      "time": "11:30 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-threads-3",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "slow is smooth. Smooth is fast. And lift the pen less.",
+      "caption": "typo says: slow is smooth.\n\nSmooth is fast. Every time the pen lifts, the stroke loses its line. Draw the whole curve in one pass, even if it wobbles. Wobbles get fixed. Breaks get noticed."
+    },
+    {
+      "brand": "typodojo",
+      "post": 3,
+      "template": "typo-says",
+      "platform": "instagram",
+      "date": "2026-10-23",
+      "time": "12:15 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-instagram-3",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "slow is smooth. Smooth is fast. And lift the pen less.",
+      "caption": "typo says: slow is smooth.\n\nSmooth is fast. Every time the pen lifts, the stroke loses its line. Draw the whole curve in one pass, even if it wobbles. Wobbles get fixed. Breaks get noticed.\n\nLink in bio.\n\n#lettering #tips #typodojo"
+    },
+    {
+      "brand": "typodojo",
+      "post": 3,
+      "template": "typo-says",
+      "platform": "facebook",
+      "date": "2026-10-23",
+      "time": "1:00 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-facebook-3",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "slow is smooth. Smooth is fast. And lift the pen less.",
+      "caption": "typo says: slow is smooth.\n\nSmooth is fast. Every time the pen lifts, the stroke loses its line. Draw the whole curve in one pass, even if it wobbles. Wobbles get fixed. Breaks get noticed.\n\ntypodojo.com"
+    },
+    {
+      "brand": "typodojo",
+      "post": 3,
+      "template": "typo-says",
+      "platform": "youtube",
+      "date": "2026-10-23",
+      "time": "3:00 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-youtube-3",
+      "size": [
+        1280,
+        720
+      ],
+      "alt": "slow is smooth. Smooth is fast. And lift the pen less.",
+      "caption": "Title: Typo says: slow is smooth\n\ntypo says: slow is smooth. Smooth is fast. Every time the pen lifts, the stroke loses its line. Draw the whole curve in one pass, even if it wobbles. Wobbles get fixed. Breaks get noticed.\n\ntypodojo.com"
+    },
+    {
+      "brand": "typodojo",
+      "post": 3,
+      "template": "typo-says",
+      "platform": "tiktok",
+      "date": "2026-10-23",
+      "time": "7:00 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-tiktok-3",
+      "size": [
+        1080,
+        1920
+      ],
+      "alt": "slow is smooth. Smooth is fast. And lift the pen less.",
+      "caption": "typo says: slow is smooth. Smooth is fast. And lift the pen less. #lettering #tips #typodojo"
+    },
+    {
+      "brand": "typodojo",
+      "post": 3,
+      "template": "typo-says",
+      "platform": "substack",
+      "date": "2026-10-23",
+      "time": "7:00 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-substack-3",
+      "size": [
+        1200,
+        630
+      ],
+      "alt": "slow is smooth. Smooth is fast. And lift the pen less.",
+      "caption": "Title: Typo says: slow is smooth\nSubtitle: Smooth is fast. And lift the pen less.\n\nSmooth is fast. Every time the pen lifts, the stroke loses its line. Draw the whole curve in one pass, even if it wobbles. Wobbles get fixed. Breaks get noticed."
+    },
+    {
+      "brand": "typodojo",
+      "post": 4,
+      "template": "steps",
+      "platform": "linkedin",
+      "date": "2026-10-25",
+      "time": "8:30 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-linkedin-4",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "your hand, as a font. Draw it. Clean it. Install it.",
+      "caption": "your hand, as a font.\n\nDraw your letters with one round pen. typodojo cleans the curves and keeps your hand in them. Then install the font and type with it, or put it in the marketplace.\n\nJoin the list at typodojo.com.\n\n#fonts #typography #typodojo"
+    },
+    {
+      "brand": "typodojo",
+      "post": 4,
+      "template": "steps",
+      "platform": "x",
+      "date": "2026-10-25",
+      "time": "9:15 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-x-4",
+      "size": [
+        1600,
+        900
+      ],
+      "alt": "your hand, as a font. Draw it. Clean it. Install it.",
+      "caption": "your hand, as a font.\n\nDraw it. Clean it. Install it.\n\ntypodojo.com"
+    },
+    {
+      "brand": "typodojo",
+      "post": 4,
+      "template": "steps",
+      "platform": "bluesky",
+      "date": "2026-10-25",
+      "time": "9:30 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-bluesky-4",
+      "size": [
+        1200,
+        675
+      ],
+      "alt": "your hand, as a font. Draw it. Clean it. Install it.",
+      "caption": "your hand, as a font.\n\nDraw it. Clean it. Install it.\n\ntypodojo.com"
+    },
+    {
+      "brand": "typodojo",
+      "post": 4,
+      "template": "steps",
+      "platform": "reddit",
+      "date": "2026-10-25",
+      "time": "10:00 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-reddit-4",
+      "size": [
+        1200,
+        900
+      ],
+      "alt": "your hand, as a font. Draw it. Clean it. Install it.",
+      "caption": "Title: Your hand, as a font: draw it, clean it, install it\n\nDraw your letters with one round pen. typodojo cleans the curves and keeps your hand in them. Then install the font and type with it, or put it in the marketplace.\n\nJoin the list at typodojo.com."
+    },
+    {
+      "brand": "typodojo",
+      "post": 4,
+      "template": "steps",
+      "platform": "threads",
+      "date": "2026-10-25",
+      "time": "11:30 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-threads-4",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "your hand, as a font. Draw it. Clean it. Install it.",
+      "caption": "your hand, as a font.\n\nDraw your letters with one round pen. typodojo cleans the curves and keeps your hand in them. Then install the font and type with it, or put it in the marketplace."
+    },
+    {
+      "brand": "typodojo",
+      "post": 4,
+      "template": "steps",
+      "platform": "instagram",
+      "date": "2026-10-25",
+      "time": "12:15 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-instagram-4",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "your hand, as a font. Draw it. Clean it. Install it.",
+      "caption": "your hand, as a font.\n\nDraw your letters with one round pen. typodojo cleans the curves and keeps your hand in them. Then install the font and type with it, or put it in the marketplace.\n\nLink in bio.\n\n#fonts #typography #typodojo"
+    },
+    {
+      "brand": "typodojo",
+      "post": 4,
+      "template": "steps",
+      "platform": "facebook",
+      "date": "2026-10-25",
+      "time": "1:00 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-facebook-4",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "your hand, as a font. Draw it. Clean it. Install it.",
+      "caption": "your hand, as a font.\n\nDraw your letters with one round pen. typodojo cleans the curves and keeps your hand in them. Then install the font and type with it, or put it in the marketplace.\n\nJoin the list at typodojo.com."
+    },
+    {
+      "brand": "typodojo",
+      "post": 4,
+      "template": "steps",
+      "platform": "youtube",
+      "date": "2026-10-25",
+      "time": "3:00 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-youtube-4",
+      "size": [
+        1280,
+        720
+      ],
+      "alt": "your hand, as a font. Draw it. Clean it. Install it.",
+      "caption": "Title: Your hand, as a font: draw it, clean it, install it\n\nyour hand, as a font. Draw your letters with one round pen. typodojo cleans the curves and keeps your hand in them. Then install the font and type with it, or put it in the marketplace.\n\nJoin the list at typodojo.com."
+    },
+    {
+      "brand": "typodojo",
+      "post": 4,
+      "template": "steps",
+      "platform": "tiktok",
+      "date": "2026-10-25",
+      "time": "7:00 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-tiktok-4",
+      "size": [
+        1080,
+        1920
+      ],
+      "alt": "your hand, as a font. Draw it. Clean it. Install it.",
+      "caption": "your hand, as a font. Draw it. Clean it. Install it. #fonts #typography #typodojo"
+    },
+    {
+      "brand": "typodojo",
+      "post": 4,
+      "template": "steps",
+      "platform": "substack",
+      "date": "2026-10-25",
+      "time": "7:00 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-substack-4",
+      "size": [
+        1200,
+        630
+      ],
+      "alt": "your hand, as a font. Draw it. Clean it. Install it.",
+      "caption": "Title: Your hand, as a font: draw it, clean it, install it\nSubtitle: Draw it. Clean it. Install it.\n\nDraw your letters with one round pen. typodojo cleans the curves and keeps your hand in them. Then install the font and type with it, or put it in the marketplace."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 4,
+      "template": "insight",
+      "platform": "linkedin",
+      "date": "2026-10-26",
+      "time": "8:30 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-linkedin-4",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Notice what was said, and how. The fallacy, the bias, the distortion, in what you say and in what is said to you.",
+      "caption": "Every conversation plants something.\n\nThinkwell helps you notice the fallacy, the bias and the cognitive distortion in what you say and in what is said to you, so the decision that follows is a clear one.\n\naithinkwell.com\n\n#criticalThinking #conversation #Thinkwell"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 4,
+      "template": "insight",
+      "platform": "x",
+      "date": "2026-10-26",
+      "time": "9:15 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-x-4",
+      "size": [
+        1600,
+        900
+      ],
+      "alt": "Notice what was said, and how. The fallacy, the bias, the distortion, in what you say and in what is said to you.",
+      "caption": "Every conversation plants something.\n\nThe fallacy, the bias, the distortion, in what you say and in what is said to you.\n\naithinkwell.com"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 4,
+      "template": "insight",
+      "platform": "bluesky",
+      "date": "2026-10-26",
+      "time": "9:30 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-bluesky-4",
+      "size": [
+        1200,
+        675
+      ],
+      "alt": "Notice what was said, and how. The fallacy, the bias, the distortion, in what you say and in what is said to you.",
+      "caption": "Every conversation plants something.\n\nThe fallacy, the bias, the distortion, in what you say and in what is said to you.\n\naithinkwell.com"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 4,
+      "template": "insight",
+      "platform": "reddit",
+      "date": "2026-10-26",
+      "time": "10:00 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-reddit-4",
+      "size": [
+        1200,
+        900
+      ],
+      "alt": "Notice what was said, and how. The fallacy, the bias, the distortion, in what you say and in what is said to you.",
+      "caption": "Title: Notice what was said, and how\n\nThinkwell helps you notice the fallacy, the bias and the cognitive distortion in what you say and in what is said to you, so the decision that follows is a clear one.\n\naithinkwell.com"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 4,
+      "template": "insight",
+      "platform": "threads",
+      "date": "2026-10-26",
+      "time": "11:30 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-threads-4",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Notice what was said, and how. The fallacy, the bias, the distortion, in what you say and in what is said to you.",
+      "caption": "Every conversation plants something.\n\nThinkwell helps you notice the fallacy, the bias and the cognitive distortion in what you say and in what is said to you, so the decision that follows is a clear one."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 4,
+      "template": "insight",
+      "platform": "instagram",
+      "date": "2026-10-26",
+      "time": "12:15 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-instagram-4",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Notice what was said, and how. The fallacy, the bias, the distortion, in what you say and in what is said to you.",
+      "caption": "Every conversation plants something.\n\nThinkwell helps you notice the fallacy, the bias and the cognitive distortion in what you say and in what is said to you, so the decision that follows is a clear one.\n\nLink in bio.\n\n#criticalThinking #conversation #Thinkwell"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 4,
+      "template": "insight",
+      "platform": "facebook",
+      "date": "2026-10-26",
+      "time": "1:00 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-facebook-4",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Notice what was said, and how. The fallacy, the bias, the distortion, in what you say and in what is said to you.",
+      "caption": "Every conversation plants something.\n\nThinkwell helps you notice the fallacy, the bias and the cognitive distortion in what you say and in what is said to you, so the decision that follows is a clear one.\n\naithinkwell.com"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 4,
+      "template": "insight",
+      "platform": "youtube",
+      "date": "2026-10-26",
+      "time": "3:00 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-youtube-4",
+      "size": [
+        1280,
+        720
+      ],
+      "alt": "Notice what was said, and how. The fallacy, the bias, the distortion, in what you say and in what is said to you.",
+      "caption": "Title: Notice what was said, and how\n\nEvery conversation plants something. Thinkwell helps you notice the fallacy, the bias and the cognitive distortion in what you say and in what is said to you, so the decision that follows is a clear one.\n\naithinkwell.com"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 4,
+      "template": "insight",
+      "platform": "tiktok",
+      "date": "2026-10-26",
+      "time": "7:00 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-tiktok-4",
+      "size": [
+        1080,
+        1920
+      ],
+      "alt": "Notice what was said, and how. The fallacy, the bias, the distortion, in what you say and in what is said to you.",
+      "caption": "Every conversation plants something. The fallacy, the bias, the distortion, in what you say and in what is said to you. #criticalThinking #conversation #Thinkwell"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 4,
+      "template": "insight",
+      "platform": "substack",
+      "date": "2026-10-26",
+      "time": "7:00 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-substack-4",
+      "size": [
+        1200,
+        630
+      ],
+      "alt": "Notice what was said, and how. The fallacy, the bias, the distortion, in what you say and in what is said to you.",
+      "caption": "Title: Notice what was said, and how\nSubtitle: The fallacy, the bias, the distortion, in what you say and in what is said to you.\n\nThinkwell helps you notice the fallacy, the bias and the cognitive distortion in what you say and in what is said to you, so the decision that follows is a clear one."
+    },
+    {
+      "brand": "pulp",
+      "post": 5,
+      "template": "research",
+      "platform": "linkedin",
+      "date": "2026-10-27",
+      "time": "8:30 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-linkedin-5",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
+      "caption": "Our research was accepted at INFORMS and the ASA roundtable in 2026.\n\nWe have also given seminars at the University of Florida and spoken to Emory\u2019s MSBA program. Papers, data stories and the methods behind them are going up on the site, so you can check our work.\n\nRead the research at pulp.com.ai/research.\n\n#INFORMS #ASA #research"
+    },
+    {
+      "brand": "pulp",
+      "post": 5,
+      "template": "research",
+      "platform": "x",
+      "date": "2026-10-27",
+      "time": "9:15 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-x-5",
+      "size": [
+        1600,
+        900
+      ],
+      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
+      "caption": "Our research was accepted at INFORMS and the ASA roundtable in 2026.\n\nOur work on persuasion and reasoning, out in the open where it can be checked.\n\npulp.com.ai"
+    },
+    {
+      "brand": "pulp",
+      "post": 5,
+      "template": "research",
+      "platform": "bluesky",
+      "date": "2026-10-27",
+      "time": "9:30 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-bluesky-5",
+      "size": [
+        1200,
+        675
+      ],
+      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
+      "caption": "Our research was accepted at INFORMS and the ASA roundtable in 2026.\n\nOur work on persuasion and reasoning, out in the open where it can be checked.\n\npulp.com.ai"
+    },
+    {
+      "brand": "pulp",
+      "post": 5,
+      "template": "research",
+      "platform": "reddit",
+      "date": "2026-10-27",
+      "time": "10:00 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-reddit-5",
+      "size": [
+        1200,
+        900
+      ],
+      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
+      "caption": "Title: Our research, accepted at INFORMS and the ASA 2026 roundtable\n\nWe have also given seminars at the University of Florida and spoken to Emory\u2019s MSBA program. Papers, data stories and the methods behind them are going up on the site, so you can check our work.\n\nRead the research at pulp.com.ai/research."
+    },
+    {
+      "brand": "pulp",
+      "post": 5,
+      "template": "research",
+      "platform": "threads",
+      "date": "2026-10-27",
+      "time": "11:30 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-threads-5",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
+      "caption": "Our research was accepted at INFORMS and the ASA roundtable in 2026.\n\nWe have also given seminars at the University of Florida and spoken to Emory\u2019s MSBA program. Papers, data stories and the methods behind them are going up on the site, so you can check our work."
+    },
+    {
+      "brand": "pulp",
+      "post": 5,
+      "template": "research",
+      "platform": "instagram",
+      "date": "2026-10-27",
+      "time": "12:15 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-instagram-5",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
+      "caption": "Our research was accepted at INFORMS and the ASA roundtable in 2026.\n\nWe have also given seminars at the University of Florida and spoken to Emory\u2019s MSBA program. Papers, data stories and the methods behind them are going up on the site, so you can check our work.\n\nLink in bio.\n\n#INFORMS #ASA #research"
+    },
+    {
+      "brand": "pulp",
+      "post": 5,
+      "template": "research",
+      "platform": "facebook",
+      "date": "2026-10-27",
+      "time": "1:00 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-facebook-5",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
+      "caption": "Our research was accepted at INFORMS and the ASA roundtable in 2026.\n\nWe have also given seminars at the University of Florida and spoken to Emory\u2019s MSBA program. Papers, data stories and the methods behind them are going up on the site, so you can check our work.\n\nRead the research at pulp.com.ai/research."
+    },
+    {
+      "brand": "pulp",
+      "post": 5,
+      "template": "research",
+      "platform": "youtube",
+      "date": "2026-10-27",
+      "time": "3:00 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-youtube-5",
+      "size": [
+        1280,
+        720
+      ],
+      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
+      "caption": "Title: Our research, accepted at INFORMS and the ASA 2026 roundtable\n\nOur research was accepted at INFORMS and the ASA roundtable in 2026. We have also given seminars at the University of Florida and spoken to Emory\u2019s MSBA program. Papers, data stories and the methods behind them are going up on the site, so you can check our work.\n\nRead the research at pulp.com.ai/research."
+    },
+    {
+      "brand": "pulp",
+      "post": 5,
+      "template": "research",
+      "platform": "tiktok",
+      "date": "2026-10-27",
+      "time": "7:00 PM",
+      "zone": "America/New_York",
+      "image": "S-pulp-tiktok-5",
+      "size": [
+        1080,
+        1920
+      ],
+      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
+      "caption": "Our research was accepted at INFORMS and the ASA roundtable in 2026. Our work on persuasion and reasoning, out in the open where it can be checked. #INFORMS #ASA #research"
+    },
+    {
+      "brand": "pulp",
+      "post": 5,
+      "template": "research",
+      "platform": "substack",
+      "date": "2026-10-27",
+      "time": "7:00 AM",
+      "zone": "America/New_York",
+      "image": "S-pulp-substack-5",
+      "size": [
+        1200,
+        630
+      ],
+      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
+      "caption": "Title: Our research, accepted at INFORMS and the ASA 2026 roundtable\nSubtitle: Our work on persuasion and reasoning, out in the open where it can be checked.\n\nWe have also given seminars at the University of Florida and spoken to Emory\u2019s MSBA program. Papers, data stories and the methods behind them are going up on the site, so you can check our work."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 5,
+      "template": "ladder",
+      "platform": "linkedin",
+      "date": "2026-10-28",
+      "time": "8:30 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-linkedin-5",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "The capsule is the ground floor. Thinkwell Web is the building.",
+      "caption": "The capsule is the ground floor. Thinkwell Web is the building.\n\nLite is one person and one conversation. Premium brings the facts to the conversation. Pro opens every conversation in five rooms. Business governs a team\u2019s conversations. Enterprise holds an institution\u2019s, across markets. The software stays the same; the conversations grow.\n\nTalk to us at aithinkwell.com.\n\n#Thinkwell #teams #enterprise"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 5,
+      "template": "ladder",
+      "platform": "x",
+      "date": "2026-10-28",
+      "time": "9:15 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-x-5",
+      "size": [
+        1600,
+        900
+      ],
+      "alt": "The capsule is the ground floor. Thinkwell Web is the building.",
+      "caption": "The capsule is the ground floor. Thinkwell Web is the building.\n\nThinkwell Web is the building.\n\naithinkwell.com"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 5,
+      "template": "ladder",
+      "platform": "bluesky",
+      "date": "2026-10-28",
+      "time": "9:30 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-bluesky-5",
+      "size": [
+        1200,
+        675
+      ],
+      "alt": "The capsule is the ground floor. Thinkwell Web is the building.",
+      "caption": "The capsule is the ground floor. Thinkwell Web is the building.\n\nThinkwell Web is the building.\n\naithinkwell.com"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 5,
+      "template": "ladder",
+      "platform": "reddit",
+      "date": "2026-10-28",
+      "time": "10:00 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-reddit-5",
+      "size": [
+        1200,
+        900
+      ],
+      "alt": "The capsule is the ground floor. Thinkwell Web is the building.",
+      "caption": "Title: The capsule is the ground floor. Thinkwell Web is the building.\n\nLite is one person and one conversation. Premium brings the facts to the conversation. Pro opens every conversation in five rooms. Business governs a team\u2019s conversations. Enterprise holds an institution\u2019s, across markets. The software stays the same; the conversations grow.\n\nTalk to us at aithinkwell.com."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 5,
+      "template": "ladder",
+      "platform": "threads",
+      "date": "2026-10-28",
+      "time": "11:30 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-threads-5",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "The capsule is the ground floor. Thinkwell Web is the building.",
+      "caption": "The capsule is the ground floor. Thinkwell Web is the building.\n\nLite is one person and one conversation. Premium brings the facts to the conversation. Pro opens every conversation in five rooms. Business governs a team\u2019s conversations. Enterprise holds an institution\u2019s, across markets. The software stays the same; the conversations grow."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 5,
+      "template": "ladder",
+      "platform": "instagram",
+      "date": "2026-10-28",
+      "time": "12:15 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-instagram-5",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "The capsule is the ground floor. Thinkwell Web is the building.",
+      "caption": "The capsule is the ground floor. Thinkwell Web is the building.\n\nLite is one person and one conversation. Premium brings the facts to the conversation. Pro opens every conversation in five rooms. Business governs a team\u2019s conversations. Enterprise holds an institution\u2019s, across markets. The software stays the same; the conversations grow.\n\nLink in bio.\n\n#Thinkwell #teams #enterprise"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 5,
+      "template": "ladder",
+      "platform": "facebook",
+      "date": "2026-10-28",
+      "time": "1:00 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-facebook-5",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "The capsule is the ground floor. Thinkwell Web is the building.",
+      "caption": "The capsule is the ground floor. Thinkwell Web is the building.\n\nLite is one person and one conversation. Premium brings the facts to the conversation. Pro opens every conversation in five rooms. Business governs a team\u2019s conversations. Enterprise holds an institution\u2019s, across markets. The software stays the same; the conversations grow.\n\nTalk to us at aithinkwell.com."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 5,
+      "template": "ladder",
+      "platform": "youtube",
+      "date": "2026-10-28",
+      "time": "3:00 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-youtube-5",
+      "size": [
+        1280,
+        720
+      ],
+      "alt": "The capsule is the ground floor. Thinkwell Web is the building.",
+      "caption": "Title: The capsule is the ground floor. Thinkwell Web is the building.\n\nThe capsule is the ground floor. Thinkwell Web is the building. Lite is one person and one conversation. Premium brings the facts to the conversation. Pro opens every conversation in five rooms. Business governs a team\u2019s conversations. Enterprise holds an institution\u2019s, across markets. The software stays the same; the conversations grow.\n\nTalk to us at aithinkwell.com."
+    },
+    {
+      "brand": "thinkwell",
+      "post": 5,
+      "template": "ladder",
+      "platform": "tiktok",
+      "date": "2026-10-28",
+      "time": "7:00 PM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-tiktok-5",
+      "size": [
+        1080,
+        1920
+      ],
+      "alt": "The capsule is the ground floor. Thinkwell Web is the building.",
+      "caption": "The capsule is the ground floor. Thinkwell Web is the building. Thinkwell Web is the building. #Thinkwell #teams #enterprise"
+    },
+    {
+      "brand": "thinkwell",
+      "post": 5,
+      "template": "ladder",
+      "platform": "substack",
+      "date": "2026-10-28",
+      "time": "7:00 AM",
+      "zone": "America/New_York",
+      "image": "S-thinkwell-substack-5",
+      "size": [
+        1200,
+        630
+      ],
+      "alt": "The capsule is the ground floor. Thinkwell Web is the building.",
+      "caption": "Title: The capsule is the ground floor. Thinkwell Web is the building.\nSubtitle: Thinkwell Web is the building.\n\nLite is one person and one conversation. Premium brings the facts to the conversation. Pro opens every conversation in five rooms. Business governs a team\u2019s conversations. Enterprise holds an institution\u2019s, across markets. The software stays the same; the conversations grow."
+    },
+    {
+      "brand": "typodojo",
+      "post": 5,
+      "template": "invite",
+      "platform": "linkedin",
+      "date": "2026-10-30",
+      "time": "8:30 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-linkedin-5",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "the dojo is open to a few, for now. Join the list, and we will write when it is your turn.",
+      "caption": "the dojo is open to a few, for now.\n\ntypodojo is in preview. Join the list, and we will write when it is your turn. Bring a pen.\n\ntypodojo.com\n\n#typography #fonts #typodojo"
+    },
+    {
+      "brand": "typodojo",
+      "post": 5,
+      "template": "invite",
+      "platform": "x",
+      "date": "2026-10-30",
+      "time": "9:15 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-x-5",
+      "size": [
+        1600,
+        900
+      ],
+      "alt": "the dojo is open to a few, for now. Join the list, and we will write when it is your turn.",
+      "caption": "the dojo is open to a few, for now.\n\nJoin the list, and we will write when it is your turn.\n\ntypodojo.com"
+    },
+    {
+      "brand": "typodojo",
+      "post": 5,
+      "template": "invite",
+      "platform": "bluesky",
+      "date": "2026-10-30",
+      "time": "9:30 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-bluesky-5",
+      "size": [
+        1200,
+        675
+      ],
+      "alt": "the dojo is open to a few, for now. Join the list, and we will write when it is your turn.",
+      "caption": "the dojo is open to a few, for now.\n\nJoin the list, and we will write when it is your turn.\n\ntypodojo.com"
+    },
+    {
+      "brand": "typodojo",
+      "post": 5,
+      "template": "invite",
+      "platform": "reddit",
+      "date": "2026-10-30",
+      "time": "10:00 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-reddit-5",
+      "size": [
+        1200,
+        900
+      ],
+      "alt": "the dojo is open to a few, for now. Join the list, and we will write when it is your turn.",
+      "caption": "Title: The dojo is open to a few, for now\n\ntypodojo is in preview. Join the list, and we will write when it is your turn. Bring a pen.\n\ntypodojo.com"
+    },
+    {
+      "brand": "typodojo",
+      "post": 5,
+      "template": "invite",
+      "platform": "threads",
+      "date": "2026-10-30",
+      "time": "11:30 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-threads-5",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "the dojo is open to a few, for now. Join the list, and we will write when it is your turn.",
+      "caption": "the dojo is open to a few, for now.\n\ntypodojo is in preview. Join the list, and we will write when it is your turn. Bring a pen."
+    },
+    {
+      "brand": "typodojo",
+      "post": 5,
+      "template": "invite",
+      "platform": "instagram",
+      "date": "2026-10-30",
+      "time": "12:15 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-instagram-5",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "the dojo is open to a few, for now. Join the list, and we will write when it is your turn.",
+      "caption": "the dojo is open to a few, for now.\n\ntypodojo is in preview. Join the list, and we will write when it is your turn. Bring a pen.\n\nLink in bio.\n\n#typography #fonts #typodojo"
+    },
+    {
+      "brand": "typodojo",
+      "post": 5,
+      "template": "invite",
+      "platform": "facebook",
+      "date": "2026-10-30",
+      "time": "1:00 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-facebook-5",
+      "size": [
+        1080,
+        1350
+      ],
+      "alt": "the dojo is open to a few, for now. Join the list, and we will write when it is your turn.",
+      "caption": "the dojo is open to a few, for now.\n\ntypodojo is in preview. Join the list, and we will write when it is your turn. Bring a pen.\n\ntypodojo.com"
+    },
+    {
+      "brand": "typodojo",
+      "post": 5,
+      "template": "invite",
+      "platform": "youtube",
+      "date": "2026-10-30",
+      "time": "3:00 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-youtube-5",
+      "size": [
+        1280,
+        720
+      ],
+      "alt": "the dojo is open to a few, for now. Join the list, and we will write when it is your turn.",
+      "caption": "Title: The dojo is open to a few, for now\n\nthe dojo is open to a few, for now. typodojo is in preview. Join the list, and we will write when it is your turn. Bring a pen.\n\ntypodojo.com"
+    },
+    {
+      "brand": "typodojo",
+      "post": 5,
+      "template": "invite",
+      "platform": "tiktok",
+      "date": "2026-10-30",
+      "time": "7:00 PM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-tiktok-5",
+      "size": [
+        1080,
+        1920
+      ],
+      "alt": "the dojo is open to a few, for now. Join the list, and we will write when it is your turn.",
+      "caption": "the dojo is open to a few, for now. Join the list, and we will write when it is your turn. #typography #fonts #typodojo"
+    },
+    {
+      "brand": "typodojo",
+      "post": 5,
+      "template": "invite",
+      "platform": "substack",
+      "date": "2026-10-30",
+      "time": "7:00 AM",
+      "zone": "America/New_York",
+      "image": "S-typodojo-substack-5",
+      "size": [
+        1200,
+        630
+      ],
+      "alt": "the dojo is open to a few, for now. Join the list, and we will write when it is your turn.",
+      "caption": "Title: The dojo is open to a few, for now\nSubtitle: Join the list, and we will write when it is your turn.\n\ntypodojo is in preview. Join the list, and we will write when it is your turn. Bring a pen."
+    }
+  ]
+}

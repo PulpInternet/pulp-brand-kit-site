@@ -1,0 +1,1151 @@
+{
+  "kit": "Pulp Brand Kit 2026",
+  "version": "v6d-LibreFranklin",
+  "count": 186,
+  "rules": [
+    {
+      "id": "R-HOUSE-01",
+      "scope": "house",
+      "check": "review",
+      "text": "Pulp is the house. Every property is endorsed by Pulp, inherits every house rule, and may move only the parameters on the dial."
+    },
+    {
+      "id": "R-HOUSE-02",
+      "scope": "house",
+      "check": "review",
+      "text": "The dial has three positions: typodojo at minus one, less formal; Pulp at zero; Thinkwell at plus one, more formal. A new property is placed on the dial before any design work starts."
+    },
+    {
+      "id": "R-HOUSE-03",
+      "scope": "house",
+      "check": "lint",
+      "text": "A parameter a property does not set takes Pulp's value. tokens.json resolves every property against Pulp first."
+    },
+    {
+      "id": "R-HOUSE-04",
+      "scope": "house",
+      "check": "review",
+      "text": "No property borrows another's signature: Typo, the gum robot, the tw cloud, Pink Matter and typodojo's prints stay home."
+    },
+    {
+      "id": "R-HOUSE-05",
+      "scope": "house",
+      "check": "review",
+      "text": "Publishing (essays, Pulp101, data stories) sits at zero, signs as Published by Pulp, and may give each part its own accent."
+    },
+    {
+      "id": "R-HOUSE-06",
+      "scope": "house",
+      "check": "review",
+      "text": "After Hours sits off the dial: never on the corporate domain, in press, or in investor material.",
+      "was": "R-REG-01"
+    },
+    {
+      "id": "R-HOUSE-07",
+      "scope": "house",
+      "check": "review",
+      "text": "The ten invariants never move, whatever a property's position."
+    },
+    {
+      "id": "R-LOGO-01",
+      "scope": "pulp",
+      "check": "review",
+      "text": "Pulp appears only as the full wordmark. Never a single letter.",
+      "was": "R-LOGO-01"
+    },
+    {
+      "id": "R-LOGO-02",
+      "scope": "house",
+      "check": "layout",
+      "text": "Clear space around any mark is half the mark's height on every side. The Pulp wordmark is at least 72 px wide on screen and 20 mm in print."
+    },
+    {
+      "id": "R-LOGO-03",
+      "scope": "pulp",
+      "check": "lint",
+      "text": "The wordmark is Noir on light grounds and Newsprint on dark and mono grounds. Never a color, never on Bubble or an image."
+    },
+    {
+      "id": "R-LOGO-04",
+      "scope": "house",
+      "check": "lint",
+      "text": "Endorsements are fixed text: A Pulp special project (typodojo), A Pulp product (Thinkwell), Published by Pulp (publishing), Part of the Pulp platform (Loosethreads). They sit under or after the property's mark, in the property's reading face, at label size."
+    },
+    {
+      "id": "R-LOGO-05",
+      "scope": "thinkwell",
+      "check": "lint",
+      "text": "The tw cloud is Pink Matter, #C361BC, in every palette and mode, with light lettering on dark and dark lettering on light."
+    },
+    {
+      "id": "R-LOGO-06",
+      "scope": "typodojo",
+      "check": "lint",
+      "text": "The dojo T is black or white only, drawn with one round stroke."
+    },
+    {
+      "id": "R-LOGO-07",
+      "scope": "house",
+      "check": "lint",
+      "text": "The trademark sign sits at the top right of a mark and never in running text."
+    },
+    {
+      "id": "R-LOGO-08",
+      "scope": "pulp",
+      "check": "review",
+      "text": "Pulp101 is the full wordmark with the 101 seal to its right: assets/marks/pulp101-lockup-*. The seal alone is for avatars and favicons only. It follows the wordmark's fill, Noir on light and Newsprint on dark and mono."
+    },
+    {
+      "id": "R-LOGO-09",
+      "scope": "pulp",
+      "check": "review",
+      "text": "The platform is two SDKs, each with its own mark. The Pulp API is the attention orb (Q-cubies3-30): the shell of a 3 by 3 by 3 cube of particles rounded toward a sphere, the attention X corner to corner on its front faces in the type color, the near shell in --c-api (Nicole Steel) and the back in --c-api-far; then the full Pulp wordmark, then API in Libre Franklin 800. At 32 px and under it is the flat cut, a 3 by 3 grid with both diagonals heavy. Its motion, a turn that breathes between cube and orb, runs on one canvas on the platform section and /platform/api only, and stands still under reduced motion. Loosethreads is cloth: warp in the type color, weft in Blacklight, and its last thread dyed Pat Teal and pulled loose into a bight (LT-a), then its name and the line Part of the Pulp platform. In mono the orb and the threads go to grays. LT-e, the long thread under the name, is the alternate lockup; LT-c, one thread, is the favicon."
+    },
+    {
+      "id": "R-LOGO-10",
+      "scope": "pulp",
+      "check": "lint",
+      "text": "Module names keep their exact spelling and case. Pulp API: Radiance, Windfall, TrueAura, Groundwater (websoil, domaincrust, codemantle, servercore). Loosethreads: weftConversations, WarpDisplays, DyeMedia, BightInteractions. typodojo.js ships in Loosethreads and is documented with typodojo. Each module has one icon on the house grid."
+    },
+    {
+      "id": "R-DATE-01",
+      "scope": "pulp",
+      "check": "lint",
+      "text": "Pulp Corporation is EST. 2026, Brooklyn, New York, in every material. No earlier founding story.",
+      "was": "R-DATE-01"
+    },
+    {
+      "id": "R-BOT-01",
+      "scope": "pulp",
+      "check": "review",
+      "text": "The gum robot is Pulp's only character and stays at zero. It never appears in Thinkwell, and Typo never appears on Pulp."
+    },
+    {
+      "id": "R-BOT-02",
+      "scope": "pulp",
+      "check": "review",
+      "text": "The robot is calm help: headphones on, blowing a gum bubble inside a speech bubble, a play on chat bubble and bubble gum. Unbothered, focused, never boasting. It is drawn once, recolored by tokens, never redrawn, restyled or named."
+    },
+    {
+      "id": "R-BOT-03",
+      "scope": "pulp",
+      "check": "review",
+      "text": "Places: the hero, one CTA peek, Company > About, the 404, merch, and Plate 11. One per screen at most. Its world (the headphones, the gum, the sparkles, the cloud) may appear without it, on Plates 12 and 13 and the Robot weather print. Never beside a face, never as a persona or an avatar."
+    },
+    {
+      "id": "R-BOT-04",
+      "scope": "pulp",
+      "check": "layout",
+      "text": "At least 96 px wide on screen. In a hero, at most 40 percent of the viewport width."
+    },
+    {
+      "id": "R-BOT-05",
+      "scope": "pulp",
+      "check": "lint",
+      "text": "Line work is the imagery ink, the same as the plates: Halftone on light, Bubble on dark, Smudge on mono, and Bubble or Smudge in the feature block. The face fill matches the ground. Never an accent color, never the outlined sticker."
+    },
+    {
+      "id": "R-BOT-06",
+      "scope": "pulp",
+      "check": "review",
+      "text": "It blinks at most once every 8 s and never loops. A peek rises in 480 ms with the arrive easing and stays. Reduced motion: already in place, no blink."
+    },
+    {
+      "id": "R-BOT-07",
+      "scope": "pulp",
+      "check": "review",
+      "text": "It never speaks or shows off: no lines, quotes, or captions in its voice, and never framed as watching, listening to, or knowing about the person. Speaking characters belong to typodojo."
+    },
+    {
+      "id": "R-COL-01",
+      "scope": "house",
+      "check": "lint",
+      "text": "Palette colors only. Every value comes from tokens.json. Accents keep the name of the teammate who chose them.",
+      "was": "R-COL-01"
+    },
+    {
+      "id": "R-COL-02",
+      "scope": "house",
+      "check": "lint",
+      "text": "One accent per object, and one resting highlight per page: the Highlighter block. Pulp and publishing use the full palette this way; Thinkwell keeps one accent per palette; typodojo uses none.",
+      "was": "R-COL-02"
+    },
+    {
+      "id": "R-COL-10",
+      "scope": "pulp",
+      "check": "review",
+      "text": "Each named accent marks its own kind of object wherever it appears: Damani Cyan the machine and simulated personas, Uday Wintergreen real people and In Person, Akira red urgency, errors and see, Alan Green success and things kept, Rifaz Blue guidance and hints, Pat Teal value and cost, Milana Blue research and evidence, Wen Blue links, citations and the first series, Nicole Steel large figures and lines, Halftone and Bubble the plates and quiet bands, Stick physical goods."
+    },
+    {
+      "id": "R-COL-11",
+      "scope": "pulp",
+      "check": "review",
+      "text": "Dark mode gets as much care as light. On Noir, accents switch to their dark partners: Bubble links and plates, Wintergreen bright for lines and type."
+    },
+    {
+      "id": "R-COL-03",
+      "scope": "pulp",
+      "check": "review",
+      "text": "Covers on Newsprint, Pulp Stock, Lithograph or Noir. Never on Bubble, Blacklight or Halftone.",
+      "was": "R-COL-03"
+    },
+    {
+      "id": "R-COL-04",
+      "scope": "pulp",
+      "check": "lint",
+      "text": "Highlighter is a flat block behind one headline word or the current item, with Noir text. Never text on Newsprint, never on an image."
+    },
+    {
+      "id": "R-COL-05",
+      "scope": "house",
+      "check": "layout",
+      "text": "Text on an accent fill is Noir. Text passes 4.5:1 and marks pass 3:1; add an edge token rather than darkening a brand color."
+    },
+    {
+      "id": "R-COL-06",
+      "scope": "thinkwell",
+      "check": "lint",
+      "text": "Pink Matter, settled: #C361BC for the mark; #9A3D94 as the UI accent on light and #E29ADC on dark. #DA6FD5 is retired."
+    },
+    {
+      "id": "R-COL-07",
+      "scope": "house",
+      "check": "review",
+      "text": "Context colors stay on their own pages: Hannah greens on sustainability, Pink Matter and Gray Matter only where Thinkwell is named."
+    },
+    {
+      "id": "R-COL-08",
+      "scope": "house",
+      "check": "lint",
+      "text": "No glows and no colored stripe on one edge of a card, modal, callout or panel. Gradients are written only through the --grad-* and --glass-* tokens; nothing else may fade, glow or shade."
+    },
+    {
+      "id": "R-COL-13",
+      "scope": "pulp",
+      "check": "review",
+      "text": "One page, one scheme. Structure is neutral at Newsprint's hue: Newsprint, Pulp Stock, Lithograph, Noir. Every picture is in one violet ink, Halftone (Bubble on dark). Highlighter is the one complement, used once. Accents carry meaning in small marks only: a dot, a line, a link."
+    },
+    {
+      "id": "R-COL-14",
+      "scope": "pulp",
+      "check": "review",
+      "text": "Proportion 60, 30, 10: the ground, then type and bands, then imagery and the one highlight. A page has at most two Pulp Stock bands and one feature block, and no two bands touch."
+    },
+    {
+      "id": "R-COL-15",
+      "scope": "pulp",
+      "check": "review",
+      "text": "One feature block per page, for the call to action: Halftone on light and dark, Noir on mono, with Newsprint type, an inverted button and the robot in Bubble."
+    },
+    {
+      "id": "R-COL-16",
+      "scope": "house",
+      "check": "layout",
+      "text": "Every piece of text takes its color from a mode role, never a fixed hex and never from inheritance alone. Switched with the page's own control, under a host stylesheet, every text holds 4.5:1 against what is behind it in light, dark and mono (3:1 at 24 px, or 18.66 px bold, and up). The one fixed pair is Noir on Highlighter."
+    },
+    {
+      "id": "R-GRD-01",
+      "scope": "pulp",
+      "check": "lint",
+      "text": "Three gradients, all tokens: --grad-hero (a glow of the mode's --c-glow, 8 to 28 percent, over a ground that settles into the band), --grad-scrim (the photo ground rising 60 to 90 percent under a caption) and --grad-feature (the feature color solid for its first 30 to 45 percent, then thinning over a photo)."
+    },
+    {
+      "id": "R-GRD-02",
+      "scope": "pulp",
+      "check": "review",
+      "text": "A gradient is light, not a color of its own. It runs between two roles of the same mode, never across two hues, and text sits only on its solid end."
+    },
+    {
+      "id": "R-PHO-01",
+      "scope": "pulp",
+      "check": "review",
+      "text": "Photos are free to use under a license recorded in assets/source/photos.json with the photographer and the source page. Each band credits its photographer and license in its caption (R-IMG-12), the feature block in its corner, and the footer lists them all. Originals stay out of git."
+    },
+    {
+      "id": "R-PHO-02",
+      "scope": "pulp",
+      "check": "review",
+      "text": "What Pulp photographs: night, light and people in conversation or in crowds, never posed stock, never a screen of a product, never a face we cannot credit. Night blues, violets and sodium golds, so they sit with Halftone and Highlighter."
+    },
+    {
+      "id": "R-PHO-03",
+      "scope": "pulp",
+      "check": "layout",
+      "text": "Photos run full bleed in four places: behind the hero, under --grad-hero so the type sits on its solid end; as bands between sections; as a break inside a section, three quarters of a band's height; and behind the one feature block. At most three bands and breaks a page, never two touching, never in a card or beside text. A band or break caption sits on the scrim, in Newsprint, one line at heading size. The hero photo has no caption and is credited in the footer."
+    },
+    {
+      "id": "R-PHO-04",
+      "scope": "pulp",
+      "check": "layout",
+      "text": "Fast by contract: WebP at 640, 1280 and 1920 wide with srcset and sizes, 45, 110 and 190 KB at most, width and height set, lazy below the first screen, and a 24 px placeholder painted until the file arrives."
+    },
+    {
+      "id": "R-PHO-05",
+      "scope": "pulp",
+      "check": "lint",
+      "text": "Photos follow the mode through --c-photo-filter: full color in light and dark, grayscale in mono and on typodojo."
+    },
+    {
+      "id": "R-PHO-06",
+      "scope": "pulp",
+      "check": "layout",
+      "text": "Parallax you can see: a photo travels 24 percent of the screen height against its band (40 to 240 px) as the band crosses the screen, so it moves at about two thirds of the scroll. Scroll-driven CSS first, a per-frame script only where scroll timelines are missing. Never on text, never on a plate. With reduced motion the photo stands still."
+    },
+    {
+      "id": "R-TYPE-12",
+      "scope": "house",
+      "check": "layout",
+      "text": "Every piece of text is set in a --f-* family at a --t-* size, at every width and in every mode. Nothing falls back to a system or host font."
+    },
+    {
+      "id": "R-COL-09",
+      "scope": "typodojo",
+      "check": "lint",
+      "text": "typodojo is black and white: its black, its white, and its gray ramp. No hue anywhere, ever."
+    },
+    {
+      "id": "R-MODE-01",
+      "scope": "house",
+      "check": "review",
+      "text": "Every surface ships in light, dark and mono. Thinkwell names its third look Black and adds 13 palettes inside the app.",
+      "was": "R-MODE-01"
+    },
+    {
+      "id": "R-MODE-02",
+      "scope": "house",
+      "check": "layout",
+      "text": "The switch test: changing modes changes colors only. A grayscale screenshot of one mode matches the others shape for shape."
+    },
+    {
+      "id": "R-MODE-03",
+      "scope": "house",
+      "check": "review",
+      "text": "The mode follows the system, then remembers the person's choice."
+    },
+    {
+      "id": "R-MODE-04",
+      "scope": "house",
+      "check": "lint",
+      "text": "Mono is a gray mode on Carbon Copy, not a copy of light. Pulp and typodojo share Carbon Copy, #2A2B2A."
+    },
+    {
+      "id": "R-TYPE-01",
+      "scope": "house",
+      "check": "lint",
+      "text": "Faces by position: typodojo, Typo Display and Recursive Sans Casual; Pulp, Libre Franklin; Thinkwell, Albert Sans and Instrument Sans. Arial is the only fallback.",
+      "was": "R-TYPE-01"
+    },
+    {
+      "id": "R-TYPE-02",
+      "scope": "house",
+      "check": "lint",
+      "text": "No italics in any title, headline, lockup, label or display type, including single accent words.",
+      "was": "R-TYPE-02"
+    },
+    {
+      "id": "R-TYPE-03",
+      "scope": "house",
+      "check": "lint",
+      "text": "Case by position: typodojo headlines are lowercase; Pulp heroes are caps and headings sentence case; Thinkwell is sentence case everywhere.",
+      "was": "R-TYPE-03"
+    },
+    {
+      "id": "R-TYPE-04",
+      "scope": "house",
+      "check": "lint",
+      "text": "No monospace, except typodojo's Mono Casual for code and keys, opted in one spot at a time.",
+      "was": "R-TYPE-04"
+    },
+    {
+      "id": "R-TYPE-05",
+      "scope": "house",
+      "check": "layout",
+      "text": "Every piece of text has a role, and the role decides its size, line height and what it does when it runs long."
+    },
+    {
+      "id": "R-TYPE-06",
+      "scope": "house",
+      "check": "lint",
+      "text": "Uppercase labels are tracked 0.1 to 0.16 em at weight 600 (500 in Recursive)."
+    },
+    {
+      "id": "R-TYPE-07",
+      "scope": "house",
+      "check": "review",
+      "text": "Headline endings by position: typodojo always ends on a period; Pulp ends statements on a period; Thinkwell UI titles take none."
+    },
+    {
+      "id": "R-TYPE-08",
+      "scope": "house",
+      "check": "review",
+      "text": "Numbers in tables, meters and data use tabular figures."
+    },
+    {
+      "id": "R-LAY-01",
+      "scope": "house",
+      "check": "review",
+      "text": "Two widths: the 680 reading column and the frame (Pulp 1180, typodojo 1240). Thinkwell follows its own frame rules (R-CMP-14)."
+    },
+    {
+      "id": "R-LAY-02",
+      "scope": "house",
+      "check": "lint",
+      "text": "Spacing comes from one scale: 0, 2, 4, 8, 12, 16, 24, 32, 48, 56, 64, 96. Use gap between siblings, not margins."
+    },
+    {
+      "id": "R-LAY-13",
+      "scope": "house",
+      "check": "layout",
+      "text": "One left edge. Every heading, label and grid in a section starts on the column's left edge at every width; rows of a grid share a top edge; a grid never ends on one lonely item under a fuller row. On tablets and large phones, plates sit as rows: the plate left, its words right."
+    },
+    {
+      "id": "R-LAY-03",
+      "scope": "house",
+      "check": "lint",
+      "text": "Radii by position: typodojo 8, 12, 24 for cards, and pill; Pulp 0 for bands and plates, 6 for cards and swatches, pill for buttons and chips; Thinkwell 2, 4, 6, 10, 16, 24."
+    },
+    {
+      "id": "R-LAY-04",
+      "scope": "house",
+      "check": "layout",
+      "text": "Every target is at least 44 by 44 under 1024 px wide, under 500 px tall, or on coarse pointers, and never under 24 anywhere."
+    },
+    {
+      "id": "R-LAY-05",
+      "scope": "house",
+      "check": "layout",
+      "text": "No page-level sideways scroll, and no scrolling region inside a scrolling page."
+    },
+    {
+      "id": "R-LAY-06",
+      "scope": "house",
+      "check": "layout",
+      "text": "Fixed bars respect safe areas, and their middle lines up with the reading column within 2 px."
+    },
+    {
+      "id": "R-LAY-07",
+      "scope": "house",
+      "check": "layout",
+      "text": "Photos and figures start on the text's left edge. A figure narrower than the column is never centered."
+    },
+    {
+      "id": "R-LAY-08",
+      "scope": "house",
+      "check": "layout",
+      "text": "Checks run at 320, 390, 768, 1024, 1280, 1440 and 2000 px wide, portrait and landscape, at 200 percent zoom, with forced colors, in every mode."
+    },
+    {
+      "id": "R-LAY-09",
+      "scope": "house",
+      "check": "lint",
+      "text": "z-index takes three values: rail 45, bar 50, modal 80."
+    },
+    {
+      "id": "R-CMP-01",
+      "scope": "house",
+      "check": "lint",
+      "text": "Controls are 24, 32, 40 or 44 tall. Nothing else.",
+      "was": "C1"
+    },
+    {
+      "id": "R-CMP-02",
+      "scope": "house",
+      "check": "review",
+      "text": "One primary button per view: Noir fill on light, Newsprint fill on dark and mono. Secondary is an outline in the line color."
+    },
+    {
+      "id": "R-CMP-03",
+      "scope": "house",
+      "check": "lint",
+      "text": "Buttons and chips are pills on Pulp and typodojo. In Thinkwell, controls have 10 px corners, and the Ask button inside the 24 px Ask bar has 16."
+    },
+    {
+      "id": "R-CMP-04",
+      "scope": "house",
+      "check": "lint",
+      "text": "One switch: 40 by 24 with a 16 px knob set 4 px in. On is the type color; off is a ringed well.",
+      "was": "C2"
+    },
+    {
+      "id": "R-CMP-05",
+      "scope": "house",
+      "check": "review",
+      "text": "Secondary views float: a modal on desktop, a sheet from the bottom on phones, over a dimmed page. They close on outside click, the close button and Escape, and return focus to the control that opened them. Never a page jump."
+    },
+    {
+      "id": "R-CMP-06",
+      "scope": "house",
+      "check": "review",
+      "text": "Two surfaces never overlap at full strength. The one underneath dims or blurs."
+    },
+    {
+      "id": "R-CMP-07",
+      "scope": "house",
+      "check": "review",
+      "text": "Focus by brightness: done at 55 percent, now at full strength, next at 75. Everything lights up together at a finish.",
+      "was": "C5"
+    },
+    {
+      "id": "R-CMP-08",
+      "scope": "house",
+      "check": "review",
+      "text": "One step marker: a 24 px circle. Done shows a check, now is filled with the type color, next keeps its number.",
+      "was": "C4"
+    },
+    {
+      "id": "R-CMP-09",
+      "scope": "house",
+      "check": "review",
+      "text": "Rows divide with a half-pixel line. Shadows only for floating views and lifted cards.",
+      "was": "C3"
+    },
+    {
+      "id": "R-CMP-10",
+      "scope": "house",
+      "check": "review",
+      "text": "States keep the frame. Loading says what already works; an error says what happened, that nothing is lost, and offers Try again.",
+      "was": "C13"
+    },
+    {
+      "id": "R-CMP-11",
+      "scope": "house",
+      "check": "layout",
+      "text": "Long text truncates to one line with the full text on hover and focus. Numbers never truncate; counts over 99 read 99+.",
+      "was": "C14"
+    },
+    {
+      "id": "R-CMP-12",
+      "scope": "house",
+      "check": "review",
+      "text": "Search is one command menu that searches everything, and its field never moves while results appear."
+    },
+    {
+      "id": "R-CMP-13",
+      "scope": "house",
+      "check": "review",
+      "text": "Menus open one short move from the pointer, never directly under it."
+    },
+    {
+      "id": "R-CMP-14",
+      "scope": "thinkwell",
+      "check": "layout",
+      "text": "The Thinkwell frame follows its own size: full panel from 1280, a rail from 1024, one column under 1024, phone header and bottom tabs under 768.",
+      "was": "C11"
+    },
+    {
+      "id": "R-IMG-01",
+      "scope": "house",
+      "check": "review",
+      "text": "Vector by default. Raster only for photographs of real people and real objects."
+    },
+    {
+      "id": "R-IMG-02",
+      "scope": "house",
+      "check": "review",
+      "text": "Photographs of real people are never dithered, halftoned or filtered, and consent is on file before a face is published.",
+      "was": "R-IP-02"
+    },
+    {
+      "id": "R-IMG-03",
+      "scope": "house",
+      "check": "review",
+      "text": "Each image is either pointillist or sharp, decided once. One never morphs into the other."
+    },
+    {
+      "id": "R-IMG-04",
+      "scope": "pulp",
+      "check": "review",
+      "text": "Plates are one-ink prints: one bold shape, a coarse halftone for every tone, cropped type, and a press mark. Halftone on Newsprint, Bubble on Noir, Smudge on Carbon Copy. On hover, focus or tap a plain label says what it means. No Highlighter on a plate.",
+      "was": "R-PLATE-01"
+    },
+    {
+      "id": "R-IMG-05",
+      "scope": "pulp",
+      "check": "review",
+      "text": "Each symbol keeps one meaning, forever."
+    },
+    {
+      "id": "R-IMG-06",
+      "scope": "house",
+      "check": "lint",
+      "text": "One icon set: 24 px grid, 1.6 px stroke, round caps and joins. Icons are line, never filled, never emoji."
+    },
+    {
+      "id": "R-IMG-07",
+      "scope": "house",
+      "check": "review",
+      "text": "Texture by position: typodojo ink prints; Pulp dithered plates and Pulp prints; Thinkwell none, because the product is the picture."
+    },
+    {
+      "id": "R-IMG-08",
+      "scope": "thinkwell",
+      "check": "review",
+      "text": "Every visual of Thinkwell is Thinkwell running, never a drawing of it."
+    },
+    {
+      "id": "R-IMG-09",
+      "scope": "house",
+      "check": "review",
+      "text": "The chat-bubble dither is retired everywhere. The horizontal line dither lives only on Company > About."
+    },
+    {
+      "id": "R-IMG-10",
+      "scope": "house",
+      "check": "review",
+      "text": "No Highlighter on images, at rest or on hover."
+    },
+    {
+      "id": "R-IMG-11",
+      "scope": "house",
+      "check": "review",
+      "text": "Persona iconography never reuses a branded character."
+    },
+    {
+      "id": "R-IMG-12",
+      "scope": "house",
+      "check": "lint",
+      "text": "Every photograph carries its credit and license in its caption."
+    },
+    {
+      "id": "R-IMG-13",
+      "scope": "house",
+      "check": "layout",
+      "text": "An image never outweighs its text. Beside text it is at most half the reading column wide (320 px) and never taller than the text block next to it."
+    },
+    {
+      "id": "R-IMG-14",
+      "scope": "house",
+      "check": "layout",
+      "text": "Sizes come from tokens: --img-hero 160, 240, 280, 320 px by width; --img-aside 320; --img-tile 280; --img-peek 96, 128, 160."
+    },
+    {
+      "id": "R-IMG-15",
+      "scope": "pulp",
+      "check": "layout",
+      "text": "A plate is never shown under 240 px wide, so its screen stays at 2.5 px or more. Crop to a detail instead of shrinking."
+    },
+    {
+      "id": "R-IMG-16",
+      "scope": "house",
+      "check": "layout",
+      "text": "One large image per screen. Only the hero robot may pass 300 px wide."
+    },
+    {
+      "id": "R-IMG-17",
+      "scope": "pulp",
+      "check": "review",
+      "text": "Symbols are drawn in the gum robot's hand: its cloud, its line (7 units at 640 wide, swelling and tapering like ink), its sparkles, and one object poking out where the robot's gum would be. Ink and ground only. A dashed line means modeled or simulated."
+    },
+    {
+      "id": "R-IMG-18",
+      "scope": "pulp",
+      "check": "review",
+      "text": "Reserve symbols are drawn but unused. One joins the set only when its meaning needs no explaining."
+    },
+    {
+      "id": "R-IMG-19",
+      "scope": "pulp",
+      "check": "review",
+      "text": "On a page, a plate is ink only: no fill, no box, no outline behind it. Its ground drops out into the band it sits on. Boxed plates belong to specimen sheets."
+    },
+    {
+      "id": "R-IMG-20",
+      "scope": "pulp",
+      "check": "review",
+      "text": "No opaque containers on marketing pages. Group with a rule and space, not a filled card. Fills are for things that float: modals, sheets and the glass label on a pinned plate."
+    },
+    {
+      "id": "R-TEX-01",
+      "scope": "pulp",
+      "check": "review",
+      "text": "The dither is an amplitude-modulated halftone: round dots on a square grid at 0 degrees. Never error diffusion, never lines, never a 45 degree screen."
+    },
+    {
+      "id": "R-TEX-02",
+      "scope": "pulp",
+      "check": "layout",
+      "text": "The screen is 13 px at the plate's native 760 px width and 2.5 to 8 px on screen. Dots run from 0.15 to 0.65 times the screen, so they never touch: dense areas read as texture, not solid ink."
+    },
+    {
+      "id": "R-TEX-03",
+      "scope": "pulp",
+      "check": "review",
+      "text": "Ink covers 10 to 45 percent of a plate. Dust is allowed: specks under a quarter of the screen, under 1 percent of the area."
+    },
+    {
+      "id": "R-TEX-04",
+      "scope": "pulp",
+      "check": "lint",
+      "text": "One ink per plate, set by mode: Halftone on Newsprint, Bubble on Noir, Smudge on Carbon Copy, through var(--c-plate). Never a second ink, never Highlighter."
+    },
+    {
+      "id": "R-TEX-05",
+      "scope": "pulp",
+      "check": "review",
+      "text": "Plates ship as a WebP alpha mask, or a JPEG at quality 85 or more, at twice the display width and 120 KB at most. Never blurred or resampled in the browser."
+    },
+    {
+      "id": "R-TEX-06",
+      "scope": "house",
+      "check": "review",
+      "text": "Real people are never dithered (R-IMG-02). The dither is for instruments, data and symbols."
+    },
+    {
+      "id": "R-GLS-01",
+      "scope": "house",
+      "check": "review",
+      "text": "Glass is a veil of the ground color with the page blurred behind it. No edge, no border, no shadow, no tint. It fades out at its edges, so you never see where it stops."
+    },
+    {
+      "id": "R-GLS-02",
+      "scope": "house",
+      "check": "lint",
+      "text": "Glass values stay in range: veil 55 to 85 percent of the ground, blur 12 to 20 px, saturation 1 to 1.3, fade from 55 to 70 percent of the radius out to 90 to 100."
+    },
+    {
+      "id": "R-GLS-03",
+      "scope": "house",
+      "check": "lint",
+      "text": "Glass is written only through the --glass tokens: backdrop-filter, the fade mask and the text halo. Nothing else may blur, fade or glow."
+    },
+    {
+      "id": "R-GLS-04",
+      "scope": "house",
+      "check": "review",
+      "text": "Use glass for things that float over a print, a plate or scrolling content: menus, pickers, the bar, a call to action over a print. Never as a card, and never under more than three lines of body text."
+    },
+    {
+      "id": "R-GLS-05",
+      "scope": "house",
+      "check": "review",
+      "text": "Without backdrop-filter the veil goes to 92 percent. With reduced transparency it is the solid ground. In forced colors it is Canvas."
+    },
+    {
+      "id": "R-GLS-06",
+      "scope": "house",
+      "check": "review",
+      "text": "By position: typodojo veil 62, blur 16, saturation 1.2, as in its mode picker; Pulp veil 72, blur 14, no saturation boost; Thinkwell no glass panes, only modal scrims blurred 8 to 12 px."
+    },
+    {
+      "id": "R-PRT-01",
+      "scope": "pulp",
+      "check": "review",
+      "text": "Pulp has sixteen prints, in text, geometric and brand families. Each has one job, listed in the kit."
+    },
+    {
+      "id": "R-PRT-02",
+      "scope": "pulp",
+      "check": "lint",
+      "text": "A print is one ink, var(--c-print), at 1.08 to 1.25:1 against what it sits on: a texture you notice second, never a picture. Never an accent, never Highlighter."
+    },
+    {
+      "id": "R-PRT-03",
+      "scope": "pulp",
+      "check": "review",
+      "text": "At most two prints on a page, as strips between sections or one strip inside the feature block. Two strips never touch, and a print never sits behind a plate, a symbol or the robot."
+    },
+    {
+      "id": "R-PRT-04",
+      "scope": "pulp",
+      "check": "layout",
+      "text": "A print tile shows 800 to 1600 px wide. Smaller reads as noise; crop it instead."
+    },
+    {
+      "id": "R-PRT-05",
+      "scope": "pulp",
+      "check": "review",
+      "text": "A print never sits behind text. Text prints are read as texture, so body text over them is noise. Pulp prints do not move; typodojo's may."
+    },
+    {
+      "id": "R-PRT-07",
+      "scope": "pulp",
+      "check": "layout",
+      "text": "A print strip is a band of print with no text, 96 px tall on phones and 120 px from 768, set between sections to change the pace."
+    },
+    {
+      "id": "R-PRT-06",
+      "scope": "pulp",
+      "check": "review",
+      "text": "Text prints use the whole wordmark or a phrase from the promise, set in Libre Franklin 800 and outlined. Never a letter of the wordmark alone. The Wordmark run drops the trademark sign, which stays on the single wordmark in the bar."
+    },
+    {
+      "id": "R-MO-01",
+      "scope": "house",
+      "check": "review",
+      "text": "Every animation ends on a still frame that works on its own.",
+      "was": "R-MO-01"
+    },
+    {
+      "id": "R-MO-02",
+      "scope": "house",
+      "check": "lint",
+      "text": "Durations are 120, 240, 480 and 1600 ms; easings are arrive and leave. Nothing else.",
+      "was": "R-MO-02"
+    },
+    {
+      "id": "R-MO-03",
+      "scope": "house",
+      "check": "lint",
+      "text": "Reduced motion removes movement only. Opacity and color fades stay, at 120 ms. Never a blanket transition: none."
+    },
+    {
+      "id": "R-MO-04",
+      "scope": "house",
+      "check": "review",
+      "text": "Motion stays below the words. Text never moves while someone reads it.",
+      "was": "R-MO-04"
+    },
+    {
+      "id": "R-MO-05",
+      "scope": "house",
+      "check": "review",
+      "text": "Nothing flashes more than twice a second. Only loaders loop.",
+      "was": "R-MO-05"
+    },
+    {
+      "id": "R-MO-06",
+      "scope": "house",
+      "check": "review",
+      "text": "Signature motion by position: typodojo letters draw themselves in stroke order; Pulp's highlight sweeps once in 240 ms; Thinkwell acknowledges state with thin rings and fades."
+    },
+    {
+      "id": "R-MO-07",
+      "scope": "house",
+      "check": "review",
+      "text": "Jitter is fixed at its root, never by removing the effect. Motion is smooth on every browser, Safari included."
+    },
+    {
+      "id": "R-INT-01",
+      "scope": "house",
+      "check": "review",
+      "text": "Every control works with touch, mouse, trackpad, keyboard and pen, with hover and without."
+    },
+    {
+      "id": "R-INT-02",
+      "scope": "house",
+      "check": "review",
+      "text": "Anything shown on hover also shows on focus and on tap."
+    },
+    {
+      "id": "R-INT-03",
+      "scope": "house",
+      "check": "lint",
+      "text": "Custom cursors only for fine pointers that can hover. Text keeps the I-beam.",
+      "was": "R-CUR-01"
+    },
+    {
+      "id": "R-INT-04",
+      "scope": "house",
+      "check": "review",
+      "text": "Hover or tap previews; click, Enter or a second tap selects; arrows move; Escape clears."
+    },
+    {
+      "id": "R-INT-05",
+      "scope": "house",
+      "check": "review",
+      "text": "Jumps take about 400 ms and land below the top bar. Reduced motion makes them instant."
+    },
+    {
+      "id": "R-CSS-01",
+      "scope": "house",
+      "check": "lint",
+      "text": "Every value comes from a custom property defined in tokens.css. No raw colors, sizes or durations outside the tokens layer."
+    },
+    {
+      "id": "R-CSS-02",
+      "scope": "house",
+      "check": "lint",
+      "text": "Every rule sits in a cascade layer, declared once in this order: reset, tokens, base, layout, components, utilities."
+    },
+    {
+      "id": "R-CSS-03",
+      "scope": "house",
+      "check": "lint",
+      "text": "No !important."
+    },
+    {
+      "id": "R-CSS-04",
+      "scope": "house",
+      "check": "lint",
+      "text": "Mode is one attribute on html: data-mode light, dark or mono. A mode block may only reassign the --c-* color roles, so the switch test holds in code."
+    },
+    {
+      "id": "R-CSS-05",
+      "scope": "house",
+      "check": "lint",
+      "text": "Hover styles live inside @media (hover: hover) and (pointer: fine). The same information is reachable on focus and tap."
+    },
+    {
+      "id": "R-CSS-06",
+      "scope": "house",
+      "check": "lint",
+      "text": "Focus is shown with :focus-visible: a 2 px ring in the type color, 2 px out. An outline is never removed without that ring."
+    },
+    {
+      "id": "R-CSS-07",
+      "scope": "house",
+      "check": "lint",
+      "text": "State lives in aria-* or data-state attributes, never in ad hoc classes such as .is-open or .active."
+    },
+    {
+      "id": "R-CSS-08",
+      "scope": "house",
+      "check": "lint",
+      "text": "Component classes carry their property's prefix: p- for Pulp, tw2- for Thinkwell, td- for typodojo, u- for utilities."
+    },
+    {
+      "id": "R-CSS-09",
+      "scope": "house",
+      "check": "review",
+      "text": "Layout uses grid and flex with gap, and logical properties (padding-inline, margin-block)."
+    },
+    {
+      "id": "R-CSS-10",
+      "scope": "house",
+      "check": "lint",
+      "text": "Breakpoints are min-width 560, 768, 1024 and 1280 px. Components may use container queries instead."
+    },
+    {
+      "id": "R-CSS-11",
+      "scope": "house",
+      "check": "lint",
+      "text": "z-index and font stacks only through var(--z-*) and var(--f-*)."
+    },
+    {
+      "id": "R-CSS-12",
+      "scope": "house",
+      "check": "review",
+      "text": "No layout shift: plates and images declare their aspect ratio, and fonts swap."
+    },
+    {
+      "id": "R-CSS-13",
+      "scope": "house",
+      "check": "lint",
+      "text": "The host guard. A page sets its ground, type color, color scheme and reading font once more on html and body, outside the layers, because a host page's unlayered styles (a CMS, an embed, the claude.ai artifact frame) beat every layer. Values come only from tokens. It is the one rule allowed outside a layer."
+    },
+    {
+      "id": "R-ANIM-01",
+      "scope": "house",
+      "check": "lint",
+      "text": "Every animation and transition is listed in motion.json with its trigger, what moves, duration, easing, loop and reduced-motion behavior. @keyframes names match motion.json ids."
+    },
+    {
+      "id": "R-ANIM-02",
+      "scope": "house",
+      "check": "lint",
+      "text": "Durations and easings only through var(--dur-*) and var(--ease-*)."
+    },
+    {
+      "id": "R-ANIM-03",
+      "scope": "house",
+      "check": "lint",
+      "text": "Only opacity, transform, colors, box-shadow, background-size, underline thickness and outline color may animate. Never width, height, top, left or margin."
+    },
+    {
+      "id": "R-ANIM-04",
+      "scope": "house",
+      "check": "lint",
+      "text": "Under prefers-reduced-motion, transforms stop and fades stay at 120 ms. Never transition: none."
+    },
+    {
+      "id": "R-ANIM-05",
+      "scope": "house",
+      "check": "review",
+      "text": "Scroll-triggered motion runs once per element per visit, through IntersectionObserver, never a scroll listener. Content is visible without JavaScript."
+    },
+    {
+      "id": "R-ANIM-06",
+      "scope": "house",
+      "check": "review",
+      "text": "The robot blinks at most three times a visit, at least 8 s apart, only while the hero is in view and the page is idle."
+    },
+    {
+      "id": "R-INTX-01",
+      "scope": "house",
+      "check": "review",
+      "text": "Every interactive component is listed in interactions.json with its element, states, keyboard path, touch path, ARIA and motion ids."
+    },
+    {
+      "id": "R-INTX-02",
+      "scope": "house",
+      "check": "review",
+      "text": "Native elements first: a button for actions, a link for navigation, a labeled input for answers. A role only where nothing native fits."
+    },
+    {
+      "id": "R-INTX-03",
+      "scope": "house",
+      "check": "review",
+      "text": "Dialogs and sheets move focus in, trap it, close on Escape, outside click and the close button, and return focus to the control that opened them."
+    },
+    {
+      "id": "R-INTX-04",
+      "scope": "house",
+      "check": "review",
+      "text": "The mode switch is a group of three radios. It follows the system first, then remembers the choice, and changes colors only."
+    },
+    {
+      "id": "R-INTX-05",
+      "scope": "house",
+      "check": "review",
+      "text": "Forms check a field when it is left and when the form is sent, never on every key. Errors say what to do, in words with Akira red beside them; done says what happened, with Alan Green beside it."
+    },
+    {
+      "id": "R-INTX-06",
+      "scope": "house",
+      "check": "review",
+      "text": "Keyboard order follows reading order, and a skip link comes first."
+    },
+    {
+      "id": "R-DATA-01",
+      "scope": "house",
+      "check": "review",
+      "text": "Every number on screen comes from a source file and carries a unit. Builds read numbers from files and never retype them."
+    },
+    {
+      "id": "R-DATA-02",
+      "scope": "house",
+      "check": "review",
+      "text": "Provenance sits under every chart: how many, when, how verified, from where, and Sample data when it is."
+    },
+    {
+      "id": "R-DATA-03",
+      "scope": "house",
+      "check": "layout",
+      "text": "Values are printed as text by every mark. Color never carries meaning alone, so charts survive mono and forced colors."
+    },
+    {
+      "id": "R-DATA-04",
+      "scope": "house",
+      "check": "review",
+      "text": "Chart colors take slots in order: 1 the subject, 2 the comparison, 3 and 4 named others, 5 and up neutral with direct labels."
+    },
+    {
+      "id": "R-DATA-05",
+      "scope": "house",
+      "check": "lint",
+      "text": "Bars start at zero and only the data end is rounded. No pies or donuts; use 100 percent bars."
+    },
+    {
+      "id": "R-DATA-06",
+      "scope": "house",
+      "check": "review",
+      "text": "Simulated and real data never share a series. Simulated is always dashed and always labeled."
+    },
+    {
+      "id": "R-DATA-07",
+      "scope": "house",
+      "check": "layout",
+      "text": "Labels never collide with each other, their marks, or lines, at every checked width and mode."
+    },
+    {
+      "id": "R-DATA-08",
+      "scope": "house",
+      "check": "review",
+      "text": "Middle estimates say so, and their ranges go in the caption."
+    },
+    {
+      "id": "R-TXT-01",
+      "scope": "house",
+      "check": "lint",
+      "text": "No em or en dashes. American spelling. No trademark signs in running text.",
+      "was": "R-TXT-01"
+    },
+    {
+      "id": "R-TXT-02",
+      "scope": "house",
+      "check": "review",
+      "text": "One idea per line. The hook, then a clear benefit, then one plain example of the product doing it.",
+      "was": "R-TXT-02"
+    },
+    {
+      "id": "R-TXT-03",
+      "scope": "house",
+      "check": "lint",
+      "text": "Banned words and phrases: empower, Signal, not noise, trust scores, fidget mode, streetwear, and names of competitors."
+    },
+    {
+      "id": "R-TXT-04",
+      "scope": "house",
+      "check": "lint",
+      "text": "Thinkwell is spelled with a lowercase w, always."
+    },
+    {
+      "id": "R-TXT-05",
+      "scope": "house",
+      "check": "review",
+      "text": "Voice by position: typodojo warm, funny and mildly stern; Pulp matter-of-fact and confident, like an essay; Thinkwell plain and exact."
+    },
+    {
+      "id": "R-TXT-06",
+      "scope": "house",
+      "check": "review",
+      "text": "Never overclaim. A conference acceptance is not peer review. Say Accessible by design until an audit passes."
+    },
+    {
+      "id": "R-TXT-07",
+      "scope": "house",
+      "check": "review",
+      "text": "On AI: never lead with being for AI and never apologize for it. Say what the product helps people get done."
+    },
+    {
+      "id": "R-TXT-08",
+      "scope": "house",
+      "check": "lint",
+      "text": "Copy about people is genderless: no he or she for users, readers or the robot."
+    },
+    {
+      "id": "R-TXT-09",
+      "scope": "house",
+      "check": "review",
+      "text": "Sample data is labeled Sample data. Designed but unbuilt features say Coming."
+    },
+    {
+      "id": "R-SOC-01",
+      "scope": "house",
+      "check": "layout",
+      "text": "Every post is drawn at its platform's native size from pack/social.json, with its text inside the platform's safe area and its art inside its own box."
+    },
+    {
+      "id": "R-SOC-02",
+      "scope": "house",
+      "check": "review",
+      "text": "Five templates a brand. A post keeps its brand's place on the dial: Pulp in caps with one Highlighter word, Thinkwell in sentence case, typodojo in lowercase ending on a period, black and white only."
+    },
+    {
+      "id": "R-SOC-03",
+      "scope": "house",
+      "check": "layout",
+      "text": "Every caption fits its platform's limit, uses no banned words and no dashes, and every post carries alt text."
+    },
+    {
+      "id": "R-SOC-04",
+      "scope": "house",
+      "check": "review",
+      "text": "The first post introduces the brand; the next four follow the schedule in pack/social.json. Brands never post on the same day, and times are New York time."
+    },
+    {
+      "id": "R-PACK-01",
+      "scope": "house",
+      "check": "review",
+      "text": "tokens.json is the only source of values. Builds read it and never retype a value."
+    },
+    {
+      "id": "R-PACK-02",
+      "scope": "house",
+      "check": "lint",
+      "text": "Every build runs brand_lint.py and the layout check. A failing build is rejected."
+    },
+    {
+      "id": "R-PACK-03",
+      "scope": "house",
+      "check": "review",
+      "text": "Reviews, commits and agent prompts cite rules by ID."
+    },
+    {
+      "id": "R-PACK-04",
+      "scope": "house",
+      "check": "review",
+      "text": "Changing a rule bumps the kit version. A retired ID is never reused."
+    }
+  ]
+}
