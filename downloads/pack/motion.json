@@ -148,7 +148,7 @@
     {
       "id": "fold-menu",
       "trigger": "Hover (after 60 ms), focus or a click on the wordmark button",
-      "what": "The menu's opacity 0 to 1, translateY 8 px and scale 0.98 to rest, from the button's corner; it closes 240 ms after the pointer leaves",
+      "what": "The menu's opacity 0 to 1, translateY 8 px and scale 0.98 to rest, from the button's corner; it opens after 60 ms of hover and closes 450 ms after the pointer leaves, with a 16 px bridge across the gap",
       "duration": "quick",
       "easing": "arrive",
       "loop": "never",

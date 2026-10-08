@@ -37,7 +37,11 @@
           "mode-switch",
           "contact-trigger"
         ],
-        "aside_at_footer": true
+        "aside_when_mark_crosses": [
+          "footer wordmark",
+          "robot",
+          "[data-keep-clear]"
+        ]
       }
     },
     "footer": {

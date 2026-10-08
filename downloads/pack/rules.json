@@ -861,7 +861,7 @@
       "id": "R-INT-06",
       "scope": "pulp",
       "check": "review",
-      "text": "The bar has two states. At the top of a page it is the whole bar. Scrolling down folds it into a round glass button at the bottom right, 96 px with the whole wordmark inside at 72 px; a scroll up of 12 px or more brings the whole bar back, and an 8 px dead zone stops it flickering. The button steps aside while the footer's wordmark is in view, so the wordmark is always on screen, at the top or the bottom, and never twice. Hover, focus or a click opens its menu above it: the nav, the mode switch and Get in touch; on touch a tap opens the menu sheet. Reduced motion swaps the two without movement."
+      "text": "The bar has two states. At the top of a page it is the whole bar. Scrolling down folds it into a round glass button at the bottom right, 96 px with the whole wordmark inside at 72 px; a scroll up of 12 px or more brings the whole bar back, and an 8 px dead zone stops it flickering. The button steps aside while a mark crosses its corner, 16 px clear of it: the footer's wordmark (so the wordmark is always on screen, at the top or the bottom, and never twice), the robot, and anything marked data-keep-clear. Marks never sit under it; text and photos may scroll beneath its glass. Hover, focus or a click opens its menu above it: the nav, the mode switch and Get in touch; on touch a tap opens the menu sheet. Reduced motion swaps the two without movement."
     },
     {
       "id": "R-CSS-01",

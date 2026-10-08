@@ -461,7 +461,7 @@ type Shell = {
          phone: ['contact-trigger', 'menu-button'];
          states: ['top', 'peek', 'folded'];      // R-INT-06
          fold: { button: 'pulp-wordmark'; size: 96; place: 'bottom-end';
-                 menu: ['nav', 'mode-switch', 'contact-trigger']; asideAtFooter: true } };
+                 menu: ['nav', 'mode-switch', 'contact-trigger']; asideWhenMarkCrosses: true } };
   footer: { groups: 7; closing: ['pulp-wordmark', 'EST. 2026', 'Brooklyn, New York'];   // two lines under the mark
             modeSwitch: false;            // R-INTX-04
             credits: 'in-caption' };    // each photo credits its photographer in its own caption

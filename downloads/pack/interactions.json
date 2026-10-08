@@ -83,7 +83,7 @@
         "hover",
         "focus-visible",
         "pinned",
-        "aside"
+        "aside (a mark crosses its corner)"
       ],
       "keys": "Tab reaches it; focus shows the menu; Enter or Space pins it; Escape closes it",
       "touch": "Tap opens the menu sheet",
