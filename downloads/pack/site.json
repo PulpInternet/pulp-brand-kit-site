@@ -6,10 +6,10 @@
       "mark": "pulp-wordmark",
       "nav": [
         "Research",
-        "Products",
+        "Laboratory",
         "Platform",
+        "Foundation",
         "What we do",
-        "Pulp101",
         "Company"
       ],
       "right": [
@@ -27,10 +27,10 @@
     "footer": {
       "groups": [
         "Research",
-        "Products",
+        "Laboratory",
         "Platform",
+        "Foundation",
         "What we do",
-        "Pulp101",
         "Company",
         "Trust"
       ],
@@ -78,7 +78,7 @@
         "Docs"
       ]
     },
-    "conversations": "Every action that starts a conversation (Get in touch, Invite us, Apply, Start a partnership, Take part, Contact press, Talk to us, Report a barrier, Report a vulnerability) opens the contact modal with its topic preset; there is one inbox.",
+    "conversations": "Every action that starts a conversation (Get in touch, Invite us, Apply, Partner with the Foundation, Contact press, Talk to us, Report a barrier, Report a vulnerability) opens the contact modal with its topic preset; there is one inbox.",
     "storage": "The saved mode is the only thing the site stores, in localStorage, wrapped in try/catch. No cookies, no third-party scripts, no analytics beacons."
   },
   "sectionKinds": {
@@ -205,6 +205,21 @@
     "not-found": {
       "built": "spec",
       "parts": "the gum robot at rest, one line, search and Home",
+      "photo": null
+    },
+    "doors": {
+      "built": "preview",
+      "parts": "Pulp101's two doors, Letters and Numbers: each a ruled card with its name, one line, and Sign in, which opens the sign-in modal",
+      "photo": null
+    },
+    "steps": {
+      "built": "preview",
+      "parts": "three numbered steps under a 2 px rule: number, title, one line",
+      "photo": null
+    },
+    "cues": {
+      "built": "preview",
+      "parts": "anchors and cues: five anchor glyphs in --c-api and six cue glyphs in --c-dye, each with a name and one line",
       "photo": null
     }
   },
@@ -337,6 +352,15 @@
       ]
     },
     {
+      "id": "doors",
+      "use": "Pulp101: two doors behind a sign-in",
+      "sections": [
+        "page-head",
+        "doors",
+        "form"
+      ]
+    },
+    {
       "id": "not-found",
       "use": "404",
       "sections": [
@@ -366,7 +390,7 @@
       "list",
       "cta"
     ],
-    "/pulp101/apprenticeship": [
+    "/foundation/apprenticeship": [
       "page-head",
       "lede",
       "ledger",
@@ -374,10 +398,28 @@
       "cards",
       "cta"
     ],
-    "/pulp101/campuses": [
+    "/lab": [
       "page-head",
-      "list",
+      "doors",
+      "cards",
+      "steps",
+      "related",
+      "cta"
+    ],
+    "/lab/loosethreads": [
+      "page-head",
+      "modules",
+      "cues",
+      "ledger",
+      "related",
+      "cta"
+    ],
+    "/foundation": [
+      "page-head",
+      "lede",
+      "ledger",
       "photo",
+      "cards",
       "cta"
     ],
     "/company/about": [
@@ -399,7 +441,8 @@
   },
   "childRoutes": {
     "/research/stories/<slug>": "longread",
-    "/pulp101/<slug>": "longread"
+    "/lab/pulp101/letters/<slug>": "longread",
+    "/lab/pulp101/numbers/<slug>": "longread"
   },
   "slots": [
     {
@@ -411,19 +454,25 @@
     {
       "id": "photo-hero",
       "kind": "photo",
-      "pages": "/ (v4)",
-      "spec": "One landscape photo behind the hero, free license, at least 3800 px wide, dark enough at the left third for Newsprint type over --grad-hero. Not from the rejected sets in HANDOFF.md."
+      "pages": "/",
+      "spec": "Filled: stairs, by Jos\u00e9 Mart\u00edn Ram\u00edrez Carrasco (Unsplash License), behind the hero."
     },
     {
       "id": "photo-break",
       "kind": "photo",
-      "pages": "/ (v4), #platform",
-      "spec": "One landscape photo for the break between the Pulp API and Loosethreads, free license, at least 3800 px wide; it runs at three quarters of a band's height."
+      "pages": "/",
+      "spec": "Filled: crowd, by Amir Arabshahi (Unsplash License), the break before the scale of conversation."
+    },
+    {
+      "id": "photo-plan",
+      "kind": "photo",
+      "pages": "every page in PHOTO_PLAN without a photo yet",
+      "spec": "One photograph per page from the approved library, never one already used (R-PHO-08). Shah approves each before it is downloaded; PHOTO_PLAN records where it goes."
     },
     {
       "id": "photos-in-person",
       "kind": "photo",
-      "pages": "/research/talks, /pulp101/*, /company/careers",
+      "pages": "/research/talks, /foundation/apprenticeship, /company/careers",
       "spec": "Real photographs of Pulp events and people, with a signed consent for every face."
     },
     {
@@ -441,8 +490,8 @@
     {
       "id": "posts",
       "kind": "data",
-      "pages": "/pulp101",
-      "spec": "Per post: title, author, date, tag, the text, and its sources."
+      "pages": "/lab/pulp101",
+      "spec": "Per post, behind the sign-in: title, author, date, blog (Letters or Numbers), the text, and its sources."
     },
     {
       "id": "glossary",
@@ -461,18 +510,6 @@
       "kind": "data",
       "pages": "/research/stories",
       "spec": "Per story: title, reading time, sources, data files; From Stone to Screen is the first."
-    },
-    {
-      "id": "campuses",
-      "kind": "data",
-      "pages": "/pulp101/campuses",
-      "spec": "Partner campuses that agreed to be named."
-    },
-    {
-      "id": "campaigns",
-      "kind": "data",
-      "pages": "/pulp101/campaigns",
-      "spec": "Open and closed campaigns with dates and, when closed, results with Provenance."
     },
     {
       "id": "press",
@@ -501,28 +538,60 @@
     {
       "id": "product-media",
       "kind": "photo",
-      "pages": "/products/thinkwell, /pulp101/campaigns",
+      "pages": "/lab/thinkwell",
       "spec": "Screens or a short clip of Thinkwell running, in light and dark."
     },
     {
       "id": "endpoints",
       "kind": "endpoint",
-      "pages": "/company/contact, /platform/api, /products/suade, /pulp101",
-      "spec": "Where the forms send (the contact modal on every page, request access, join the list, subscribe): one HTTPS endpoint that accepts a plain form POST and answers with a redirect to a thank-you state; the script sends the same fields and reads a 2xx."
+      "pages": "/company/contact, /platform/api, /lab/suade, /lab/pulp101",
+      "spec": "Where the forms send (the contact modal on every page, request access, join the list, the Pulp101 sign-in): one HTTPS endpoint that accepts a plain form POST and answers with a redirect to a thank-you state; the script sends the same fields and reads a 2xx."
     },
     {
       "id": "docs-links",
       "kind": "data",
-      "pages": "/platform/*",
+      "pages": "/platform/*, /lab/loosethreads",
       "spec": "The live URLs for pulp.com.ai/docs: API, Loosethreads and MCP."
     },
     {
       "id": "suade",
       "kind": "copy",
-      "pages": "/products/suade",
+      "pages": "/lab/suade",
       "spec": "What Suade is, in two lines."
     }
   ],
+  "photoPlan": {
+    "/": [
+      "stairs",
+      "talk",
+      "crowd",
+      "light"
+    ],
+    "/lab": [
+      "window",
+      "trace"
+    ],
+    "/lab/pulp101": [
+      "blinds"
+    ],
+    "/lab/loosethreads": [
+      "whirl"
+    ],
+    "/platform": [
+      "platform"
+    ],
+    "/foundation": [
+      "halo",
+      "pair"
+    ],
+    "/research": [
+      "shadows"
+    ],
+    "/company/about": [
+      "dusk",
+      "skyline"
+    ]
+  },
   "pages": [
     {
       "path": "/",
@@ -553,6 +622,12 @@
         "photo-hero",
         "photo-break"
       ],
+      "photos": [
+        "stairs",
+        "talk",
+        "crowd",
+        "light"
+      ],
       "details": "page"
     },
     {
@@ -578,6 +653,9 @@
         "copy-pages",
         "papers"
       ],
+      "photos": [
+        "shadows"
+      ],
       "details": "page"
     },
     {
@@ -601,6 +679,7 @@
         "copy-pages",
         "papers"
       ],
+      "photos": [],
       "details": "modal"
     },
     {
@@ -626,6 +705,7 @@
         "copy-pages",
         "stories"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -652,6 +732,7 @@
         "copy-pages",
         "glossary"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -677,35 +758,66 @@
         "photos-in-person",
         "talks"
       ],
+      "photos": [],
       "details": "modal"
     },
     {
-      "path": "/products",
-      "section": "products",
-      "title": "Products",
+      "path": "/lab",
+      "section": "lab",
+      "title": "Laboratory",
       "template": "hub",
       "sections": [
         "page-head",
-        "lede",
+        "doors",
         "cards",
-        "list",
+        "steps",
         "related",
         "cta"
       ],
-      "action": "Choose a product",
+      "action": "Get in touch (opens the contact modal)",
       "meta": {
-        "title": "Products | Pulp",
-        "description": "Show the family on one page, from the most playful to the most precise."
+        "title": "Laboratory | Pulp",
+        "description": "Show everything the Lab makes, Pulp101 first, and how an idea moves from a post to a product."
       },
       "status": "spec",
       "slots": [
         "copy-pages"
       ],
+      "photos": [
+        "window",
+        "trace"
+      ],
       "details": "page"
     },
     {
-      "path": "/products/thinkwell",
-      "section": "products",
+      "path": "/lab/pulp101",
+      "section": "lab",
+      "title": "Pulp101",
+      "template": "doors",
+      "sections": [
+        "page-head",
+        "doors",
+        "form"
+      ],
+      "action": "Sign in",
+      "meta": {
+        "title": "Pulp101 | Pulp",
+        "description": "The two doors to Pulp's blogs: Letters, the interactive blog, and Numbers, the technical blog. Behind a sign-in."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "posts",
+        "endpoints"
+      ],
+      "photos": [
+        "blinds"
+      ],
+      "details": "page"
+    },
+    {
+      "path": "/lab/thinkwell",
+      "section": "lab",
       "title": "Thinkwell",
       "template": "product",
       "sections": [
@@ -725,11 +837,12 @@
         "copy-pages",
         "product-media"
       ],
+      "photos": [],
       "details": "page"
     },
     {
-      "path": "/products/typodojo",
-      "section": "products",
+      "path": "/lab/typodojo",
+      "section": "lab",
       "title": "typodojo",
       "template": "product",
       "sections": [
@@ -748,11 +861,12 @@
       "slots": [
         "copy-pages"
       ],
+      "photos": [],
       "details": "page"
     },
     {
-      "path": "/products/suade",
-      "section": "products",
+      "path": "/lab/suade",
+      "section": "lab",
       "title": "Suade",
       "template": "product",
       "sections": [
@@ -773,6 +887,35 @@
         "endpoints",
         "suade"
       ],
+      "photos": [],
+      "details": "page"
+    },
+    {
+      "path": "/lab/loosethreads",
+      "section": "lab",
+      "title": "Loosethreads",
+      "template": "sdk",
+      "sections": [
+        "page-head",
+        "modules",
+        "cues",
+        "ledger",
+        "related",
+        "cta"
+      ],
+      "action": "Read the docs",
+      "meta": {
+        "title": "Loosethreads | Pulp",
+        "description": "The web SDK: displays, conversations, media, and interactions, on any screen and by any hand, with anchors and cues."
+      },
+      "status": "spec",
+      "slots": [
+        "copy-pages",
+        "docs-links"
+      ],
+      "photos": [
+        "whirl"
+      ],
       "details": "page"
     },
     {
@@ -791,11 +934,14 @@
       "action": "Read the docs",
       "meta": {
         "title": "Platform | Pulp",
-        "description": "Explain the platform: two SDKs on the P.U.L.P. engine, one for the server and one for the web."
+        "description": "Explain the Pulp API and MCP on the Pulp engine; Loosethreads, the web SDK, is one link away in the Laboratory."
       },
       "status": "spec",
       "slots": [
         "copy-pages"
+      ],
+      "photos": [
+        "platform"
       ],
       "details": "page"
     },
@@ -822,30 +968,7 @@
         "endpoints",
         "docs-links"
       ],
-      "details": "page"
-    },
-    {
-      "path": "/platform/loosethreads",
-      "section": "platform",
-      "title": "Loosethreads",
-      "template": "sdk",
-      "sections": [
-        "page-head",
-        "modules",
-        "code",
-        "ledger",
-        "cta"
-      ],
-      "action": "Read the SDK docs",
-      "meta": {
-        "title": "Loosethreads | Pulp",
-        "description": "The web SDK: every interactive, multimedia part, so one experience works on every device."
-      },
-      "status": "spec",
-      "slots": [
-        "copy-pages",
-        "docs-links"
-      ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -870,6 +993,7 @@
         "copy-pages",
         "docs-links"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -893,6 +1017,7 @@
       "slots": [
         "copy-pages"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -917,6 +1042,7 @@
       "slots": [
         "copy-pages"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -941,6 +1067,7 @@
       "slots": [
         "copy-pages"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -965,6 +1092,7 @@
       "slots": [
         "copy-pages"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -989,6 +1117,7 @@
       "slots": [
         "copy-pages"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -1013,6 +1142,7 @@
       "slots": [
         "copy-pages"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -1037,6 +1167,7 @@
       "slots": [
         "copy-pages"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -1061,6 +1192,7 @@
       "slots": [
         "copy-pages"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -1085,6 +1217,7 @@
       "slots": [
         "copy-pages"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -1109,6 +1242,7 @@
       "slots": [
         "copy-pages"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -1133,6 +1267,7 @@
       "slots": [
         "copy-pages"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -1157,6 +1292,7 @@
       "slots": [
         "copy-pages"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -1181,6 +1317,7 @@
       "slots": [
         "copy-pages"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -1205,35 +1342,40 @@
       "slots": [
         "copy-pages"
       ],
+      "photos": [],
       "details": "page"
     },
     {
-      "path": "/pulp101",
-      "section": "pulp101",
-      "title": "Pulp101",
-      "template": "list",
+      "path": "/foundation",
+      "section": "foundation",
+      "title": "The Pulp Foundation",
+      "template": "hub",
       "sections": [
         "page-head",
-        "filter",
-        "list",
+        "lede",
+        "ledger",
+        "photo",
+        "cards",
         "cta"
       ],
-      "action": "Read the newest post",
+      "action": "Partner with the Foundation (opens the contact modal)",
       "meta": {
-        "title": "Pulp101 | Pulp",
-        "description": "The blog: what the team and apprentices are learning, one claim at a time."
+        "title": "The Pulp Foundation | Pulp",
+        "description": "Say what the Foundation is for and who it works with."
       },
       "status": "spec",
       "slots": [
-        "copy-pages",
-        "posts",
-        "endpoints"
+        "copy-pages"
+      ],
+      "photos": [
+        "halo",
+        "pair"
       ],
       "details": "page"
     },
     {
-      "path": "/pulp101/apprenticeship",
-      "section": "pulp101",
+      "path": "/foundation/apprenticeship",
+      "section": "foundation",
       "title": "Apprenticeship",
       "template": "hub",
       "sections": [
@@ -1254,56 +1396,8 @@
         "copy-pages",
         "photos-in-person"
       ],
+      "photos": [],
       "details": "page"
-    },
-    {
-      "path": "/pulp101/campuses",
-      "section": "pulp101",
-      "title": "Campus partners",
-      "template": "list",
-      "sections": [
-        "page-head",
-        "list",
-        "photo",
-        "cta"
-      ],
-      "action": "Start a partnership",
-      "meta": {
-        "title": "Campus partners | Pulp",
-        "description": "List campuses and what partnership involves."
-      },
-      "status": "spec",
-      "slots": [
-        "copy-pages",
-        "photos-in-person",
-        "campuses"
-      ],
-      "details": "modal"
-    },
-    {
-      "path": "/pulp101/campaigns",
-      "section": "pulp101",
-      "title": "Campaigns",
-      "template": "list",
-      "sections": [
-        "page-head",
-        "filter",
-        "list",
-        "cta"
-      ],
-      "action": "Take part",
-      "meta": {
-        "title": "Campaigns | Pulp",
-        "description": "Live Thinkwell engagement campaigns run with the Pulp101 community."
-      },
-      "status": "spec",
-      "slots": [
-        "copy-pages",
-        "photos-in-person",
-        "campaigns",
-        "product-media"
-      ],
-      "details": "modal"
     },
     {
       "path": "/company/about",
@@ -1325,6 +1419,10 @@
       "status": "spec",
       "slots": [
         "copy-pages"
+      ],
+      "photos": [
+        "dusk",
+        "skyline"
       ],
       "details": "page"
     },
@@ -1349,6 +1447,7 @@
         "copy-pages",
         "team"
       ],
+      "photos": [],
       "details": "modal"
     },
     {
@@ -1372,6 +1471,7 @@
       "slots": [
         "copy-pages"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -1396,6 +1496,7 @@
         "copy-pages",
         "press"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -1419,6 +1520,7 @@
         "copy-pages",
         "press"
       ],
+      "photos": [],
       "details": "modal"
     },
     {
@@ -1444,6 +1546,7 @@
         "photos-in-person",
         "roles"
       ],
+      "photos": [],
       "details": "modal"
     },
     {
@@ -1465,6 +1568,7 @@
         "copy-pages",
         "endpoints"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -1489,6 +1593,7 @@
         "copy-pages",
         "policies"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -1513,6 +1618,7 @@
         "copy-pages",
         "policies"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -1537,6 +1643,7 @@
         "copy-pages",
         "policies"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -1564,6 +1671,7 @@
         "policies",
         "sustainability-data"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -1588,6 +1696,7 @@
         "copy-pages",
         "policies"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -1612,6 +1721,7 @@
         "copy-pages",
         "policies"
       ],
+      "photos": [],
       "details": "page"
     },
     {
@@ -1631,6 +1741,7 @@
       "slots": [
         "copy-pages"
       ],
+      "photos": [],
       "details": "page"
     }
   ]

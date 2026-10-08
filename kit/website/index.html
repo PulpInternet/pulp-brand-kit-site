@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>The website · Pulp Brand Kit</title>
-<meta name="description" content="pulp.com.ai, reimagined: 46 pages in 8 sections, plus the views every page shares. Each page has its purpose, audience, contents, action, visual and template.">
+<meta name="description" content="pulp.com.ai, reimagined: 45 pages in 8 sections, plus the views every page shares. Each page has its purpose, audience, contents, action, visual and template.">
 <link rel="icon" href="../../assets/marks/pulp-api-small-noir.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../../tokens.css">
 <link rel="stylesheet" href="../../site.css">
@@ -22,21 +22,21 @@
   </div>
 </div></header>
 <main id="main" tabindex="-1">
-<div class="k-wrap k-doc"><aside class="k-toc" aria-label="On this page"><details open><summary class="k-label">On this page</summary><ol><li><a href="#how-every-page-is-built">How every page is built</a></li><li><a href="#home">Home</a></li><li><a href="#research">Research</a></li><li><a href="#products">Products</a></li><li><a href="#platform">Platform</a></li><li><a href="#what-we-do">What we do</a></li><li><a href="#pulp101">Pulp101</a></li><li><a href="#company">Company</a></li><li><a href="#trust">Trust</a></li><li><a href="#everywhere">Everywhere</a></li><li><a href="#off-the-map">Off the map</a></li><li><a href="#the-landing-page">The landing page</a></li><li><a href="#boards">Boards</a></li></ol></details></aside><article class="k-prose"><p class="k-label">15 · The kit</p><h1 class="k-h1">The website</h1>
-<p>pulp.com.ai, reimagined: 46 pages in 8 sections, plus the views every page shares. Each page has its purpose, audience, contents, action, visual and template.</p>
+<div class="k-wrap k-doc"><aside class="k-toc" aria-label="On this page"><details open><summary class="k-label">On this page</summary><ol><li><a href="#how-every-page-is-built">How every page is built</a></li><li><a href="#home">Home</a></li><li><a href="#research">Research</a></li><li><a href="#laboratory">Laboratory</a></li><li><a href="#platform">Platform</a></li><li><a href="#what-we-do">What we do</a></li><li><a href="#foundation">Foundation</a></li><li><a href="#company">Company</a></li><li><a href="#trust">Trust</a></li><li><a href="#everywhere">Everywhere</a></li><li><a href="#off-the-map">Off the map</a></li><li><a href="#the-landing-page">The landing page</a></li><li><a href="#boards">Boards</a></li></ol></details></aside><article class="k-prose"><p class="k-label">15 · The kit</p><h1 class="k-h1">The website</h1>
+<p>pulp.com.ai, reimagined: 45 pages in 8 sections, plus the views every page shares. Each page has its purpose, audience, contents, action, visual and template.</p>
 <h2 id="how-every-page-is-built">How every page is built</h2>
 <p>Every page is one of twelve templates, and a few pages list their own sections where the template lacks one. A template is an ordered list of section kinds, and every section kind is built from parts that already run on the landing page or are specified below with their interaction record in <code>pack/interactions.json</code>. The machine-readable version, page by page, is <code>pack/site.json</code>; the types are the site block of <code>pack/contracts.ts</code>.</p>
 <h3 id="the-shell">The shell</h3>
 <ul>
-<li><strong>Bar:</strong> the Pulp wordmark, 6 links (Research, Products, Platform, What we do, Pulp101, Company), then the mode switch, search and Get in touch. On phones: Get in touch and the menu sheet.</li>
-<li><strong>Footer:</strong> 7 groups (Research, Products, Platform, What we do, Pulp101, Company, Trust), then the wordmark, EST. 2026, Brooklyn, New York, and the credit for every photo on the page.</li>
+<li><strong>Bar:</strong> the Pulp wordmark, 6 links (Research, Laboratory, Platform, Foundation, What we do, Company), then the mode switch, search and Get in touch. On phones: Get in touch and the menu sheet.</li>
+<li><strong>Footer:</strong> 7 groups (Research, Laboratory, Platform, Foundation, What we do, Company, Trust), then the wordmark, EST. 2026, Brooklyn, New York, and the credit for every photo on the page.</li>
 <li><strong>On every page:</strong> the skip link, the contact modal, search, and the menu sheet.</li>
 <li><strong>Files:</strong> tokens.css, site.css, site.js, and the folders img/, marks/ and plates/, cached across pages.</li>
 <li><strong>Budget:</strong> 200 KB gzip per page, photos excluded. Per page, photos excluded. The single-file landing page is 198 KB gzip with every plate inlined; the multi-page site serves plates, marks and fonts as cached files instead of data URIs.</li>
 <li><strong>Without JavaScript:</strong> Every page reads and navigates without JavaScript: the mode follows the system setting, the contact modal falls back to /company/contact, search falls back to the footer map, records render inline as details elements, and every form posts as a plain HTML form.</li>
 <li><strong>Storage:</strong> The saved mode is the only thing the site stores, in localStorage, wrapped in try/catch. No cookies, no third-party scripts, no analytics beacons.</li>
 <li><strong>Search:</strong> a static index, <code>search.json</code>, written by <code>site_pages.py</code> with title, path, group, summary for every entry, grouped as Pages, Papers, Stories, Docs.</li>
-<li><strong>Conversations:</strong> Every action that starts a conversation (Get in touch, Invite us, Apply, Start a partnership, Take part, Contact press, Talk to us, Report a barrier, Report a vulnerability) opens the contact modal with its topic preset; there is one inbox.</li>
+<li><strong>Conversations:</strong> Every action that starts a conversation (Get in touch, Invite us, Apply, Partner with the Foundation, Contact press, Talk to us, Report a barrier, Report a vulnerability) opens the contact modal with its topic preset; there is one inbox.</li>
 </ul>
 <h3 id="templates">Templates</h3>
 <div class="k-table"><table>
@@ -104,13 +104,18 @@
 <td data-label="Sections, in order">page-head, form</td>
 </tr>
 <tr>
+<td data-label="Template"><code>doors</code></td>
+<td data-label="For">Pulp101: two doors behind a sign-in</td>
+<td data-label="Sections, in order">page-head, doors, form</td>
+</tr>
+<tr>
 <td data-label="Template"><code>not-found</code></td>
 <td data-label="For">404</td>
 <td data-label="Sections, in order">not-found</td>
 </tr>
 </tbody>
 </table></div>
-<p>Pages under a list are long reads: <code>/research/stories/&lt;slug&gt;</code>, <code>/pulp101/&lt;slug&gt;</code>. Papers, talks, roles, campaigns and people are records: each renders inline as a details element and, with script, opens in a floating modal with a shareable hash. A record never has a page of its own.</p>
+<p>Pages under a list are long reads: <code>/research/stories/&lt;slug&gt;</code>, <code>/lab/pulp101/letters/&lt;slug&gt;</code>, <code>/lab/pulp101/numbers/&lt;slug&gt;</code>. Papers, talks, roles, campaigns and people are records: each renders inline as a details element and, with script, opens in a floating modal with a shareable hash. A record never has a page of its own.</p>
 <h3 id="section-kinds">Section kinds</h3>
 <div class="k-table"><table>
 <thead>
@@ -272,6 +277,24 @@
 <td data-label="Parts">the gum robot at rest, one line, search and Home</td>
 <td data-label="Photo"></td>
 </tr>
+<tr>
+<td data-label="Kind"><code>doors</code></td>
+<td data-label="Built as"><code>.preview</code></td>
+<td data-label="Parts">Pulp101's two doors, Letters and Numbers: each a ruled card with its name, one line, and Sign in, which opens the sign-in modal</td>
+<td data-label="Photo"></td>
+</tr>
+<tr>
+<td data-label="Kind"><code>steps</code></td>
+<td data-label="Built as"><code>.preview</code></td>
+<td data-label="Parts">three numbered steps under a 2 px rule: number, title, one line</td>
+<td data-label="Photo"></td>
+</tr>
+<tr>
+<td data-label="Kind"><code>cues</code></td>
+<td data-label="Built as"><code>.preview</code></td>
+<td data-label="Parts">anchors and cues: five anchor glyphs in --c-api and six cue glyphs in --c-dye, each with a name and one line</td>
+<td data-label="Photo"></td>
+</tr>
 </tbody>
 </table></div>
 <h3 id="slots-what-only-shah-supplies">Slots: what only Shah supplies</h3>
@@ -295,19 +318,25 @@
 <tr>
 <td data-label="Slot"><code>photo-hero</code></td>
 <td data-label="Kind">photo</td>
-<td data-label="Pages"><code>/ (v4)</code></td>
-<td data-label="What fills it">One landscape photo behind the hero, free license, at least 3800 px wide, dark enough at the left third for Newsprint type over --grad-hero. Not from the rejected sets in HANDOFF.md.</td>
+<td data-label="Pages"><code>/</code></td>
+<td data-label="What fills it">Filled: stairs, by José Martín Ramírez Carrasco (Unsplash License), behind the hero.</td>
 </tr>
 <tr>
 <td data-label="Slot"><code>photo-break</code></td>
 <td data-label="Kind">photo</td>
-<td data-label="Pages"><code>/ (v4)</code>, #platform</td>
-<td data-label="What fills it">One landscape photo for the break between the Pulp API and Loosethreads, free license, at least 3800 px wide; it runs at three quarters of a band's height.</td>
+<td data-label="Pages"><code>/</code></td>
+<td data-label="What fills it">Filled: crowd, by Amir Arabshahi (Unsplash License), the break before the scale of conversation.</td>
+</tr>
+<tr>
+<td data-label="Slot"><code>photo-plan</code></td>
+<td data-label="Kind">photo</td>
+<td data-label="Pages">every page in PHOTO_PLAN without a photo yet</td>
+<td data-label="What fills it">One photograph per page from the approved library, never one already used (R-PHO-08). Shah approves each before it is downloaded; PHOTO_PLAN records where it goes.</td>
 </tr>
 <tr>
 <td data-label="Slot"><code>photos-in-person</code></td>
 <td data-label="Kind">photo</td>
-<td data-label="Pages"><code>/research/talks</code>, <code>/pulp101/*</code>, <code>/company/careers</code></td>
+<td data-label="Pages"><code>/research/talks</code>, <code>/foundation/apprenticeship</code>, <code>/company/careers</code></td>
 <td data-label="What fills it">Real photographs of Pulp events and people, with a signed consent for every face.</td>
 </tr>
 <tr>
@@ -325,8 +354,8 @@
 <tr>
 <td data-label="Slot"><code>posts</code></td>
 <td data-label="Kind">data</td>
-<td data-label="Pages"><code>/pulp101</code></td>
-<td data-label="What fills it">Per post: title, author, date, tag, the text, and its sources.</td>
+<td data-label="Pages"><code>/lab/pulp101</code></td>
+<td data-label="What fills it">Per post, behind the sign-in: title, author, date, blog (Letters or Numbers), the text, and its sources.</td>
 </tr>
 <tr>
 <td data-label="Slot"><code>glossary</code></td>
@@ -345,18 +374,6 @@
 <td data-label="Kind">data</td>
 <td data-label="Pages"><code>/research/stories</code></td>
 <td data-label="What fills it">Per story: title, reading time, sources, data files; From Stone to Screen is the first.</td>
-</tr>
-<tr>
-<td data-label="Slot"><code>campuses</code></td>
-<td data-label="Kind">data</td>
-<td data-label="Pages"><code>/pulp101/campuses</code></td>
-<td data-label="What fills it">Partner campuses that agreed to be named.</td>
-</tr>
-<tr>
-<td data-label="Slot"><code>campaigns</code></td>
-<td data-label="Kind">data</td>
-<td data-label="Pages"><code>/pulp101/campaigns</code></td>
-<td data-label="What fills it">Open and closed campaigns with dates and, when closed, results with Provenance.</td>
 </tr>
 <tr>
 <td data-label="Slot"><code>press</code></td>
@@ -385,47 +402,46 @@
 <tr>
 <td data-label="Slot"><code>product-media</code></td>
 <td data-label="Kind">photo</td>
-<td data-label="Pages"><code>/products/thinkwell</code>, <code>/pulp101/campaigns</code></td>
+<td data-label="Pages"><code>/lab/thinkwell</code></td>
 <td data-label="What fills it">Screens or a short clip of Thinkwell running, in light and dark.</td>
 </tr>
 <tr>
 <td data-label="Slot"><code>endpoints</code></td>
 <td data-label="Kind">endpoint</td>
-<td data-label="Pages"><code>/company/contact</code>, <code>/platform/api</code>, <code>/products/suade</code>, <code>/pulp101</code></td>
-<td data-label="What fills it">Where the forms send (the contact modal on every page, request access, join the list, subscribe): one HTTPS endpoint that accepts a plain form POST and answers with a redirect to a thank-you state; the script sends the same fields and reads a 2xx.</td>
+<td data-label="Pages"><code>/company/contact</code>, <code>/platform/api</code>, <code>/lab/suade</code>, <code>/lab/pulp101</code></td>
+<td data-label="What fills it">Where the forms send (the contact modal on every page, request access, join the list, the Pulp101 sign-in): one HTTPS endpoint that accepts a plain form POST and answers with a redirect to a thank-you state; the script sends the same fields and reads a 2xx.</td>
 </tr>
 <tr>
 <td data-label="Slot"><code>docs-links</code></td>
 <td data-label="Kind">data</td>
-<td data-label="Pages"><code>/platform/*</code></td>
+<td data-label="Pages"><code>/platform/*</code>, <code>/lab/loosethreads</code></td>
 <td data-label="What fills it">The live URLs for pulp.com.ai/docs: API, Loosethreads and MCP.</td>
 </tr>
 <tr>
 <td data-label="Slot"><code>suade</code></td>
 <td data-label="Kind">copy</td>
-<td data-label="Pages"><code>/products/suade</code></td>
+<td data-label="Pages"><code>/lab/suade</code></td>
 <td data-label="What fills it">What Suade is, in two lines.</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="home">Home</h2>
-<p>The landing page, built as site/index.html (pulp-site3).</p>
+<p>The landing page, built as site/index.html (pulp-site5).</p>
 <h3 id="home_1">Home · <code>/</code></h3>
 <p>Say what Pulp is, why it matters, and where to go next, in the voice of a short essay.</p>
 <ul>
 <li><strong>For:</strong> Everyone: customers, investors, researchers, students, press</li>
 <li><strong>Action:</strong> Get in touch (opens the contact modal)</li>
-<li><strong>Visual:</strong> Gum robot hero, three plates, one Highlighter block</li>
+<li><strong>Visual:</strong> The stairs photograph behind the hero, three plates, one Highlighter block</li>
 <li><strong>Template:</strong> <code>essay</code></li>
 <li><strong>On the page:</strong></li>
-<li>Hero: We help humans understand humans, the one Highlighter block, the gum robot cropped off the edge</li>
-<li>What we do: research, products, publishing</li>
+<li>Hero: We help humans understand humans, the one Highlighter block, over the stairs photograph</li>
 <li>Technology doesn’t make you a better thinker: habits do</li>
 <li>Walking away solves nothing: where we stand on AI</li>
 <li>Three ways we look at people: from afar, up close, from every angle, three plates</li>
 <li>What you can hold us to: quality, reliability, value; data literacy, verified people, credible references</li>
-<li>What we make: Thinkwell, typodojo, the platform, Pulp101</li>
-<li>Research: accepted at INFORMS and ASA in 2026, talks at the University of Florida and Emory</li>
+<li>What we make, in three: the Laboratory, the Pulp API, The Pulp Foundation</li>
+<li>Research: the American Society of Criminology in Chicago this November, the American Sociological Association, seminars at the University of Florida, more coming soon</li>
 <li>From one person to a whole public: reflection, one to one, one to many, many to many</li>
 <li>CTA band with the robot’s peek: tell us what you’re trying to understand</li>
 </ul>
@@ -493,26 +509,43 @@
 <li><strong>Visual:</strong> In Person photographs, real people only, consent on file</li>
 <li><strong>Template:</strong> <code>list</code>, with its own sections: page-head, filter, list, photo, cta</li>
 <li><strong>On the page:</strong></li>
+<li>Coming up: the American Society of Criminology annual meeting, Chicago, November 2026</li>
+<li>Accepted: the American Sociological Association 2026 roundtable</li>
 <li>Seminars at the University of Florida</li>
 <li>Emory MSBA speaking event</li>
-<li>Accepted at INFORMS 2026 and the ASA 2026 roundtable</li>
+<li>Also accepted: INFORMS 2026, listed in the record, never in the lead</li>
+<li>More coming soon</li>
 <li>Invite us to speak</li>
 </ul>
-<h2 id="products">Products</h2>
-<p>Every product placed on the dial, each in its own voice.</p>
-<h3 id="products-products">Products · <code>/products</code></h3>
-<p>Show the family on one page, from the most playful to the most precise.</p>
+<h2 id="laboratory">Laboratory</h2>
+<p>Pulp Laboratory: the Lab, or the Laboratory; Pulplab only where space forces one word. Everything Pulp makes except the Pulp API and The Pulp Foundation, headlined by Pulp101.</p>
+<h3 id="laboratory-lab">Laboratory · <code>/lab</code></h3>
+<p>Show everything the Lab makes, Pulp101 first, and how an idea moves from a post to a product.</p>
 <ul>
-<li><strong>For:</strong> Customers and investors</li>
-<li><strong>Action:</strong> Choose a product</li>
-<li><strong>Visual:</strong> Each product's own mark</li>
-<li><strong>Template:</strong> <code>hub</code></li>
+<li><strong>For:</strong> Everyone: customers, investors, researchers, students</li>
+<li><strong>Action:</strong> Get in touch (opens the contact modal)</li>
+<li><strong>Visual:</strong> Think again plate, one silhouette photograph</li>
+<li><strong>Template:</strong> <code>hub</code>, with its own sections: page-head, doors, cards, steps, related, cta</li>
 <li><strong>On the page:</strong></li>
-<li>The dial: typodojo, Pulp, Thinkwell</li>
-<li>One card per product with its own mark and endorsement</li>
-<li>Suade, marked Coming</li>
+<li>We build to learn: the Pulp Laboratory lockup and the one Highlighter block</li>
+<li>Headlining: Pulp101 and its two doors, Letters and Numbers, members only</li>
+<li>Also in the Lab: Thinkwell, typodojo, Suade, Loosethreads</li>
+<li>How the Lab works: write it up, try it, keep what holds</li>
+<li>Outside the Lab: the Pulp API and The Pulp Foundation</li>
 </ul>
-<h3 id="thinkwell-productsthinkwell">Thinkwell · <code>/products/thinkwell</code></h3>
+<h3 id="pulp101-labpulp101">Pulp101 · <code>/lab/pulp101</code></h3>
+<p>The two doors to Pulp's blogs: Letters, the interactive blog, and Numbers, the technical blog. Behind a sign-in.</p>
+<ul>
+<li><strong>For:</strong> Members: apprentices, mentors, partners</li>
+<li><strong>Action:</strong> Sign in</li>
+<li><strong>Visual:</strong> The Pulp101 lockup, two doors</li>
+<li><strong>Template:</strong> <code>doors</code></li>
+<li><strong>On the page:</strong></li>
+<li>Two doors: Letters and Numbers, each with one line</li>
+<li>Sign in (a floating modal)</li>
+<li>How to get access: through the Pulp AI Apprenticeship</li>
+</ul>
+<h3 id="thinkwell-labthinkwell">Thinkwell · <code>/lab/thinkwell</code></h3>
 <p>Introduce Thinkwell and hand off to its own site.</p>
 <ul>
 <li><strong>For:</strong> Government relations and public affairs teams</li>
@@ -525,7 +558,7 @@
 <li>Plans by name, with what each includes and no prices</li>
 <li>A Pulp product</li>
 </ul>
-<h3 id="typodojo-productstypodojo">typodojo · <code>/products/typodojo</code></h3>
+<h3 id="typodojo-labtypodojo">typodojo · <code>/lab/typodojo</code></h3>
 <p>Introduce the dojo as a Pulp special project and hand off.</p>
 <ul>
 <li><strong>For:</strong> Designers, students, hobbyists</li>
@@ -538,7 +571,7 @@
 <li>typodojo.js, for developers: ships in Loosethreads</li>
 <li>A Pulp special project</li>
 </ul>
-<h3 id="suade-productssuade">Suade · <code>/products/suade</code></h3>
+<h3 id="suade-labsuade">Suade · <code>/lab/suade</code></h3>
 <p>Hold the place for the structured-discussion product.</p>
 <ul>
 <li><strong>For:</strong> Early followers</li>
@@ -550,20 +583,35 @@
 <li>Marked Coming</li>
 <li>Join the list</li>
 </ul>
+<h3 id="loosethreads-labloosethreads">Loosethreads · <code>/lab/loosethreads</code></h3>
+<p>The web SDK: displays, conversations, media, and interactions, on any screen and by any hand, with anchors and cues.</p>
+<ul>
+<li><strong>For:</strong> Front-end developers and partners</li>
+<li><strong>Action:</strong> Read the docs</li>
+<li><strong>Visual:</strong> The cloth, large; the module glyphs</li>
+<li><strong>Template:</strong> <code>sdk</code>, with its own sections: page-head, modules, cues, ledger, related, cta</li>
+<li><strong>On the page:</strong></li>
+<li>Any screen. Any hand.: the loosethreads lockup in Teal</li>
+<li>Four modules, one cloth: WarpDisplays, weftConversations, DyeMedia, BightInteractions, each with its rounded glyph</li>
+<li>Anchors and cues: where a cue shows up, and what shows up</li>
+<li>Every screen we ship to: web, desktop, phone and tablet, watch marked Coming</li>
+<li>Works with: typodojo.js inside, the Pulp API beside</li>
+<li>Start with the docs</li>
+</ul>
 <h2 id="platform">Platform</h2>
 <p>What developers build on. Documentation lives at pulp.com.ai/docs. No prices.</p>
 <h3 id="platform-platform">Platform · <code>/platform</code></h3>
-<p>Explain the platform: two SDKs on the P.U.L.P. engine, one for the server and one for the web.</p>
+<p>Explain the Pulp API and MCP on the Pulp engine; Loosethreads, the web SDK, is one link away in the Laboratory.</p>
 <ul>
 <li><strong>For:</strong> Developers and technical buyers</li>
 <li><strong>Action:</strong> Read the docs</li>
 <li><strong>Visual:</strong> Machine health plate</li>
 <li><strong>Template:</strong> <code>hub</code></li>
 <li><strong>On the page:</strong></li>
-<li>P.U.L.P.: one parameterized language for people and machines</li>
+<li>The Pulp engine: one parameterized language for people and machines</li>
 <li>The Pulp API, the server SDK: Radiance, Windfall, TrueAura, Groundwater</li>
-<li>Loosethreads, the web SDK: weftConversations, WarpDisplays, DyeMedia, BightInteractions, and typodojo.js</li>
 <li>MCP access</li>
+<li>Loosethreads, the web SDK, lives in the Laboratory: one link</li>
 <li>Read the docs</li>
 </ul>
 <h3 id="pulp-api-platformapi">Pulp API · <code>/platform/api</code></h3>
@@ -579,21 +627,6 @@
 <li>TrueAura: stateful persona modeling and persuasive resonance, scored against an objective</li>
 <li>Groundwater, machine health: websoil (SEO, interaction data, the top level), domaincrust, codemantle, servercore</li>
 <li>Request access (form in a floating modal)</li>
-</ul>
-<h3 id="loosethreads-platformloosethreads">Loosethreads · <code>/platform/loosethreads</code></h3>
-<p>The web SDK: every interactive, multimedia part, so one experience works on every device.</p>
-<ul>
-<li><strong>For:</strong> Front-end developers and partners</li>
-<li><strong>Action:</strong> Read the SDK docs</li>
-<li><strong>Visual:</strong> Components running, in all three modes</li>
-<li><strong>Template:</strong> <code>sdk</code></li>
-<li><strong>On the page:</strong></li>
-<li>weftConversations: threads of every kind: comments, chats, email</li>
-<li>WarpDisplays: every media object: video, audio, text, images, PDF</li>
-<li>DyeMedia: AI-generated multimedia</li>
-<li>BightInteractions: shortcuts, bindings and macros, by device and input</li>
-<li>typodojo.js: the dojo's drawing and font tools, documented with typodojo</li>
-<li>Targets: web, desktop, mobile</li>
 </ul>
 <h3 id="mcp-platformmcp">MCP · <code>/platform/mcp</code></h3>
 <p>Explain how AI assistants reach Pulp safely.</p>
@@ -664,21 +697,23 @@
 <li>Products that fit</li>
 <li>Compliance notes where the field needs them</li>
 </ul>
-<h2 id="pulp101">Pulp101</h2>
-<p>The official blog and the apprenticeship showcase.</p>
-<h3 id="pulp101-pulp101">Pulp101 · <code>/pulp101</code></h3>
-<p>The blog: what the team and apprentices are learning, one claim at a time.</p>
+<h2 id="foundation">Foundation</h2>
+<p>The Pulp Foundation, 501(c)(3) pending: a nonprofit preparing an interdisciplinary American workforce for work after AI, home of the Pulp AI Apprenticeship.</p>
+<h3 id="the-pulp-foundation-foundation">The Pulp Foundation · <code>/foundation</code></h3>
+<p>Say what the Foundation is for and who it works with.</p>
 <ul>
-<li><strong>For:</strong> Students, mentors, readers</li>
-<li><strong>Action:</strong> Read the newest post</li>
-<li><strong>Visual:</strong> Published by Pulp</li>
-<li><strong>Template:</strong> <code>list</code></li>
+<li><strong>For:</strong> Companies, universities, students, mentors, funders</li>
+<li><strong>Action:</strong> Partner with the Foundation (opens the contact modal)</li>
+<li><strong>Visual:</strong> The Foundation lockup, one long-exposure photograph</li>
+<li><strong>Template:</strong> <code>hub</code>, with its own sections: page-head, lede, ledger, photo, cards, cta</li>
 <li><strong>On the page:</strong></li>
-<li>Newest posts</li>
-<li>Tags: research, methods, apprenticeship, products, events</li>
-<li>Subscribe</li>
+<li>An interdisciplinary American workforce for work after AI</li>
+<li>501(c)(3) pending, stated exactly</li>
+<li>The Pulp AI Apprenticeship</li>
+<li>Working with companies across industries</li>
+<li>Partner with us</li>
 </ul>
-<h3 id="apprenticeship-pulp101apprenticeship">Apprenticeship · <code>/pulp101/apprenticeship</code></h3>
+<h3 id="apprenticeship-foundationapprenticeship">Apprenticeship · <code>/foundation/apprenticeship</code></h3>
 <p>Show the Pulp AI Apprenticeship: mentors from industry and academia working with students.</p>
 <ul>
 <li><strong>For:</strong> Students, mentors, universities</li>
@@ -686,34 +721,10 @@
 <li><strong>Visual:</strong> In Person photographs</li>
 <li><strong>Template:</strong> <code>hub</code>, with its own sections: page-head, lede, ledger, photo, cards, cta</li>
 <li><strong>On the page:</strong></li>
-<li>How it works</li>
+<li>How it works: mentors, students, real projects</li>
 <li>100+ practitioners across 15+ campuses</li>
-<li>Projects and outcomes</li>
+<li>What apprentices publish, in Pulp101</li>
 <li>Apply or mentor</li>
-</ul>
-<h3 id="campus-partners-pulp101campuses">Campus partners · <code>/pulp101/campuses</code></h3>
-<p>List campuses and what partnership involves.</p>
-<ul>
-<li><strong>For:</strong> University staff</li>
-<li><strong>Action:</strong> Start a partnership</li>
-<li><strong>Visual:</strong> In Person photographs</li>
-<li><strong>Template:</strong> <code>list</code>, with its own sections: page-head, list, photo, cta</li>
-<li><strong>On the page:</strong></li>
-<li>Partner campuses</li>
-<li>What a partner gets and gives</li>
-<li>Start a partnership</li>
-</ul>
-<h3 id="campaigns-pulp101campaigns">Campaigns · <code>/pulp101/campaigns</code></h3>
-<p>Live Thinkwell engagement campaigns run with the Pulp101 community.</p>
-<ul>
-<li><strong>For:</strong> Students and the public</li>
-<li><strong>Action:</strong> Take part</li>
-<li><strong>Visual:</strong> Thinkwell running</li>
-<li><strong>Template:</strong> <code>list</code></li>
-<li><strong>On the page:</strong></li>
-<li>Open campaigns</li>
-<li>How verification works</li>
-<li>Results when a campaign closes</li>
 </ul>
 <h2 id="company">Company</h2>
 <p>Who we are. The gum robot lives on About.</p>
@@ -954,7 +965,7 @@
 <p><img alt="Desktop, light" src="#" /></p>
 <h2 id="boards">Boards</h2>
 <hr />
-<p>Pulp Brand Kit 2026, v6d-LibreFranklin. Generated from <code>generator/</code>; edit the source, then run <code>make</code>.</p><h2 id="boards">Boards</h2><ul class="k-boards"><li class="k-board" id="b-W00-01"><a class="k-board__btn" href="../../img/boards/W00-01-1600.webp" data-board data-title="W00-01 · Site map" data-src="../../img/boards/W00-01-1600.webp"><img src="../../img/boards/W00-01-480.webp" width="480" height="315" loading="lazy" decoding="async" alt="W00-01: Site map"><span class="k-board__label"><span class="k-label">W00-01</span><span>Site map</span></span></a></li><li class="k-board" id="b-W01-01"><a class="k-board__btn" href="../../img/boards/W01-01-1600.webp" data-board data-title="W01-01 · Site map: Home" data-src="../../img/boards/W01-01-1600.webp"><img src="../../img/boards/W01-01-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="W01-01: Site map: Home"><span class="k-board__label"><span class="k-label">W01-01</span><span>Site map: Home</span></span></a></li><li class="k-board" id="b-W01-02"><a class="k-board__btn" href="../../img/boards/W01-02-1600.webp" data-board data-title="W01-02 · Site map: Research" data-src="../../img/boards/W01-02-1600.webp"><img src="../../img/boards/W01-02-480.webp" width="480" height="317" loading="lazy" decoding="async" alt="W01-02: Site map: Research"><span class="k-board__label"><span class="k-label">W01-02</span><span>Site map: Research</span></span></a></li><li class="k-board" id="b-W01-03"><a class="k-board__btn" href="../../img/boards/W01-03-1600.webp" data-board data-title="W01-03 · Site map: Products" data-src="../../img/boards/W01-03-1600.webp"><img src="../../img/boards/W01-03-480.webp" width="480" height="285" loading="lazy" decoding="async" alt="W01-03: Site map: Products"><span class="k-board__label"><span class="k-label">W01-03</span><span>Site map: Products</span></span></a></li><li class="k-board" id="b-W01-04"><a class="k-board__btn" href="../../img/boards/W01-04-1600.webp" data-board data-title="W01-04 · Site map: Platform" data-src="../../img/boards/W01-04-1600.webp"><img src="../../img/boards/W01-04-480.webp" width="480" height="310" loading="lazy" decoding="async" alt="W01-04: Site map: Platform"><span class="k-board__label"><span class="k-label">W01-04</span><span>Site map: Platform</span></span></a></li><li class="k-board" id="b-W01-05"><a class="k-board__btn" href="../../img/boards/W01-05-1600.webp" data-board data-title="W01-05 · Site map: What we do" data-src="../../img/boards/W01-05-1600.webp"><img src="../../img/boards/W01-05-480.webp" width="480" height="308" loading="lazy" decoding="async" alt="W01-05: Site map: What we do"><span class="k-board__label"><span class="k-label">W01-05</span><span>Site map: What we do</span></span></a></li><li class="k-board" id="b-W01-06"><a class="k-board__btn" href="../../img/boards/W01-06-1600.webp" data-board data-title="W01-06 · Site map: Pulp101" data-src="../../img/boards/W01-06-1600.webp"><img src="../../img/boards/W01-06-480.webp" width="480" height="291" loading="lazy" decoding="async" alt="W01-06: Site map: Pulp101"><span class="k-board__label"><span class="k-label">W01-06</span><span>Site map: Pulp101</span></span></a></li><li class="k-board" id="b-W01-07"><a class="k-board__btn" href="../../img/boards/W01-07-1600.webp" data-board data-title="W01-07 · Site map: Company" data-src="../../img/boards/W01-07-1600.webp"><img src="../../img/boards/W01-07-480.webp" width="480" height="398" loading="lazy" decoding="async" alt="W01-07: Site map: Company"><span class="k-board__label"><span class="k-label">W01-07</span><span>Site map: Company</span></span></a></li><li class="k-board" id="b-W01-08"><a class="k-board__btn" href="../../img/boards/W01-08-1600.webp" data-board data-title="W01-08 · Site map: Trust" data-src="../../img/boards/W01-08-1600.webp"><img src="../../img/boards/W01-08-480.webp" width="480" height="276" loading="lazy" decoding="async" alt="W01-08: Site map: Trust"><span class="k-board__label"><span class="k-label">W01-08</span><span>Site map: Trust</span></span></a></li><li class="k-board" id="b-W01-09"><a class="k-board__btn" href="../../img/boards/W01-09-1600.webp" data-board data-title="W01-09 · Site map: Everywhere" data-src="../../img/boards/W01-09-1600.webp"><img src="../../img/boards/W01-09-480.webp" width="480" height="282" loading="lazy" decoding="async" alt="W01-09: Site map: Everywhere"><span class="k-board__label"><span class="k-label">W01-09</span><span>Site map: Everywhere</span></span></a></li><li class="k-board" id="b-W02-desktop-dark"><a class="k-board__btn" href="../../img/boards/W02-desktop-dark-1600.webp" data-board data-title="W02-desktop-dark · Landing, desktop, dark" data-src="../../img/boards/W02-desktop-dark-1600.webp"><img src="../../img/boards/W02-desktop-dark-480.webp" width="480" height="2297" loading="lazy" decoding="async" alt="W02-desktop-dark: Landing, desktop, dark"><span class="k-board__label"><span class="k-label">W02-desktop-dark</span><span>Landing, desktop, dark</span></span></a></li><li class="k-board" id="b-W02-desktop-light"><a class="k-board__btn" href="../../img/boards/W02-desktop-light-1600.webp" data-board data-title="W02-desktop-light · Landing, desktop, light" data-src="../../img/boards/W02-desktop-light-1600.webp"><img src="../../img/boards/W02-desktop-light-480.webp" width="480" height="2297" loading="lazy" decoding="async" alt="W02-desktop-light: Landing, desktop, light"><span class="k-board__label"><span class="k-label">W02-desktop-light</span><span>Landing, desktop, light</span></span></a></li><li class="k-board" id="b-W02-desktop-mono"><a class="k-board__btn" href="../../img/boards/W02-desktop-mono-1600.webp" data-board data-title="W02-desktop-mono · Landing, desktop, mono" data-src="../../img/boards/W02-desktop-mono-1600.webp"><img src="../../img/boards/W02-desktop-mono-480.webp" width="480" height="2297" loading="lazy" decoding="async" alt="W02-desktop-mono: Landing, desktop, mono"><span class="k-board__label"><span class="k-label">W02-desktop-mono</span><span>Landing, desktop, mono</span></span></a></li><li class="k-board" id="b-W02-phone-dark"><a class="k-board__btn" href="../../img/boards/W02-phone-dark-1600.webp" data-board data-title="W02-phone-dark · Landing, phone, dark" data-src="../../img/boards/W02-phone-dark-1600.webp"><img src="../../img/boards/W02-phone-dark-480.webp" width="390" height="10456" loading="lazy" decoding="async" alt="W02-phone-dark: Landing, phone, dark"><span class="k-board__label"><span class="k-label">W02-phone-dark</span><span>Landing, phone, dark</span></span></a></li><li class="k-board" id="b-W02-phone-light"><a class="k-board__btn" href="../../img/boards/W02-phone-light-1600.webp" data-board data-title="W02-phone-light · Landing, phone, light" data-src="../../img/boards/W02-phone-light-1600.webp"><img src="../../img/boards/W02-phone-light-480.webp" width="390" height="10456" loading="lazy" decoding="async" alt="W02-phone-light: Landing, phone, light"><span class="k-board__label"><span class="k-label">W02-phone-light</span><span>Landing, phone, light</span></span></a></li><li class="k-board" id="b-W02-phone-mono"><a class="k-board__btn" href="../../img/boards/W02-phone-mono-1600.webp" data-board data-title="W02-phone-mono · Landing, phone, mono" data-src="../../img/boards/W02-phone-mono-1600.webp"><img src="../../img/boards/W02-phone-mono-480.webp" width="390" height="10456" loading="lazy" decoding="async" alt="W02-phone-mono: Landing, phone, mono"><span class="k-board__label"><span class="k-label">W02-phone-mono</span><span>Landing, phone, mono</span></span></a></li><li class="k-board" id="b-W02-tablet-dark"><a class="k-board__btn" href="../../img/boards/W02-tablet-dark-1600.webp" data-board data-title="W02-tablet-dark · Landing, tablet, dark" data-src="../../img/boards/W02-tablet-dark-1600.webp"><img src="../../img/boards/W02-tablet-dark-480.webp" width="480" height="4648" loading="lazy" decoding="async" alt="W02-tablet-dark: Landing, tablet, dark"><span class="k-board__label"><span class="k-label">W02-tablet-dark</span><span>Landing, tablet, dark</span></span></a></li><li class="k-board" id="b-W02-tablet-light"><a class="k-board__btn" href="../../img/boards/W02-tablet-light-1600.webp" data-board data-title="W02-tablet-light · Landing, tablet, light" data-src="../../img/boards/W02-tablet-light-1600.webp"><img src="../../img/boards/W02-tablet-light-480.webp" width="480" height="4648" loading="lazy" decoding="async" alt="W02-tablet-light: Landing, tablet, light"><span class="k-board__label"><span class="k-label">W02-tablet-light</span><span>Landing, tablet, light</span></span></a></li><li class="k-board" id="b-W02-tablet-mono"><a class="k-board__btn" href="../../img/boards/W02-tablet-mono-1600.webp" data-board data-title="W02-tablet-mono · Landing, tablet, mono" data-src="../../img/boards/W02-tablet-mono-1600.webp"><img src="../../img/boards/W02-tablet-mono-480.webp" width="480" height="4648" loading="lazy" decoding="async" alt="W02-tablet-mono: Landing, tablet, mono"><span class="k-board__label"><span class="k-label">W02-tablet-mono</span><span>Landing, tablet, mono</span></span></a></li><li class="k-board" id="b-W03-01"><a class="k-board__btn" href="../../img/boards/W03-01-1600.webp" data-board data-title="W03-01 · Landing states" data-src="../../img/boards/W03-01-1600.webp"><img src="../../img/boards/W03-01-480.webp" width="480" height="401" loading="lazy" decoding="async" alt="W03-01: Landing states"><span class="k-board__label"><span class="k-label">W03-01</span><span>Landing states</span></span></a></li><li class="k-board" id="b-W04-01"><a class="k-board__btn" href="../../img/boards/W04-01-1600.webp" data-board data-title="W04-01 · Test report" data-src="../../img/boards/W04-01-1600.webp"><img src="../../img/boards/W04-01-480.webp" width="480" height="682" loading="lazy" decoding="async" alt="W04-01: Test report"><span class="k-board__label"><span class="k-label">W04-01</span><span>Test report</span></span></a></li></ul><nav class="k-pager" aria-label="Previous and next"><a href="../code-contracts/index.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg><span><span class="k-label">Previous</span>Code contracts</span></a><span></span></nav></article></div>
+<p>Pulp Brand Kit 2026, v6d-LibreFranklin. Generated from <code>generator/</code>; edit the source, then run <code>make</code>.</p><h2 id="boards">Boards</h2><ul class="k-boards"><li class="k-board" id="b-W00-01"><a class="k-board__btn" href="../../img/boards/W00-01-1600.webp" data-board data-title="W00-01 · Site map" data-src="../../img/boards/W00-01-1600.webp"><img src="../../img/boards/W00-01-480.webp" width="480" height="315" loading="lazy" decoding="async" alt="W00-01: Site map"><span class="k-board__label"><span class="k-label">W00-01</span><span>Site map</span></span></a></li><li class="k-board" id="b-W01-01"><a class="k-board__btn" href="../../img/boards/W01-01-1600.webp" data-board data-title="W01-01 · Site map: Home" data-src="../../img/boards/W01-01-1600.webp"><img src="../../img/boards/W01-01-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="W01-01: Site map: Home"><span class="k-board__label"><span class="k-label">W01-01</span><span>Site map: Home</span></span></a></li><li class="k-board" id="b-W01-02"><a class="k-board__btn" href="../../img/boards/W01-02-1600.webp" data-board data-title="W01-02 · Site map: Research" data-src="../../img/boards/W01-02-1600.webp"><img src="../../img/boards/W01-02-480.webp" width="480" height="334" loading="lazy" decoding="async" alt="W01-02: Site map: Research"><span class="k-board__label"><span class="k-label">W01-02</span><span>Site map: Research</span></span></a></li><li class="k-board" id="b-W01-03"><a class="k-board__btn" href="../../img/boards/W01-03-1600.webp" data-board data-title="W01-03 · Site map: Laboratory" data-src="../../img/boards/W01-03-1600.webp"><img src="../../img/boards/W01-03-480.webp" width="480" height="360" loading="lazy" decoding="async" alt="W01-03: Site map: Laboratory"><span class="k-board__label"><span class="k-label">W01-03</span><span>Site map: Laboratory</span></span></a></li><li class="k-board" id="b-W01-04"><a class="k-board__btn" href="../../img/boards/W01-04-1600.webp" data-board data-title="W01-04 · Site map: Platform" data-src="../../img/boards/W01-04-1600.webp"><img src="../../img/boards/W01-04-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="W01-04: Site map: Platform"><span class="k-board__label"><span class="k-label">W01-04</span><span>Site map: Platform</span></span></a></li><li class="k-board" id="b-W01-05"><a class="k-board__btn" href="../../img/boards/W01-05-1600.webp" data-board data-title="W01-05 · Site map: What we do" data-src="../../img/boards/W01-05-1600.webp"><img src="../../img/boards/W01-05-480.webp" width="480" height="308" loading="lazy" decoding="async" alt="W01-05: Site map: What we do"><span class="k-board__label"><span class="k-label">W01-05</span><span>Site map: What we do</span></span></a></li><li class="k-board" id="b-W01-06"><a class="k-board__btn" href="../../img/boards/W01-06-1600.webp" data-board data-title="W01-06 · Site map: Foundation" data-src="../../img/boards/W01-06-1600.webp"><img src="../../img/boards/W01-06-480.webp" width="480" height="270" loading="lazy" decoding="async" alt="W01-06: Site map: Foundation"><span class="k-board__label"><span class="k-label">W01-06</span><span>Site map: Foundation</span></span></a></li><li class="k-board" id="b-W01-07"><a class="k-board__btn" href="../../img/boards/W01-07-1600.webp" data-board data-title="W01-07 · Site map: Company" data-src="../../img/boards/W01-07-1600.webp"><img src="../../img/boards/W01-07-480.webp" width="480" height="398" loading="lazy" decoding="async" alt="W01-07: Site map: Company"><span class="k-board__label"><span class="k-label">W01-07</span><span>Site map: Company</span></span></a></li><li class="k-board" id="b-W01-08"><a class="k-board__btn" href="../../img/boards/W01-08-1600.webp" data-board data-title="W01-08 · Site map: Trust" data-src="../../img/boards/W01-08-1600.webp"><img src="../../img/boards/W01-08-480.webp" width="480" height="276" loading="lazy" decoding="async" alt="W01-08: Site map: Trust"><span class="k-board__label"><span class="k-label">W01-08</span><span>Site map: Trust</span></span></a></li><li class="k-board" id="b-W01-09"><a class="k-board__btn" href="../../img/boards/W01-09-1600.webp" data-board data-title="W01-09 · Site map: Everywhere" data-src="../../img/boards/W01-09-1600.webp"><img src="../../img/boards/W01-09-480.webp" width="480" height="282" loading="lazy" decoding="async" alt="W01-09: Site map: Everywhere"><span class="k-board__label"><span class="k-label">W01-09</span><span>Site map: Everywhere</span></span></a></li><li class="k-board" id="b-W02-desktop-dark"><a class="k-board__btn" href="../../img/boards/W02-desktop-dark-1600.webp" data-board data-title="W02-desktop-dark · Landing, desktop, dark" data-src="../../img/boards/W02-desktop-dark-1600.webp"><img src="../../img/boards/W02-desktop-dark-480.webp" width="480" height="2314" loading="lazy" decoding="async" alt="W02-desktop-dark: Landing, desktop, dark"><span class="k-board__label"><span class="k-label">W02-desktop-dark</span><span>Landing, desktop, dark</span></span></a></li><li class="k-board" id="b-W02-desktop-light"><a class="k-board__btn" href="../../img/boards/W02-desktop-light-1600.webp" data-board data-title="W02-desktop-light · Landing, desktop, light" data-src="../../img/boards/W02-desktop-light-1600.webp"><img src="../../img/boards/W02-desktop-light-480.webp" width="480" height="2314" loading="lazy" decoding="async" alt="W02-desktop-light: Landing, desktop, light"><span class="k-board__label"><span class="k-label">W02-desktop-light</span><span>Landing, desktop, light</span></span></a></li><li class="k-board" id="b-W02-desktop-mono"><a class="k-board__btn" href="../../img/boards/W02-desktop-mono-1600.webp" data-board data-title="W02-desktop-mono · Landing, desktop, mono" data-src="../../img/boards/W02-desktop-mono-1600.webp"><img src="../../img/boards/W02-desktop-mono-480.webp" width="480" height="2314" loading="lazy" decoding="async" alt="W02-desktop-mono: Landing, desktop, mono"><span class="k-board__label"><span class="k-label">W02-desktop-mono</span><span>Landing, desktop, mono</span></span></a></li><li class="k-board" id="b-W02-phone-dark"><a class="k-board__btn" href="../../img/boards/W02-phone-dark-1600.webp" data-board data-title="W02-phone-dark · Landing, phone, dark" data-src="../../img/boards/W02-phone-dark-1600.webp"><img src="../../img/boards/W02-phone-dark-480.webp" width="390" height="10675" loading="lazy" decoding="async" alt="W02-phone-dark: Landing, phone, dark"><span class="k-board__label"><span class="k-label">W02-phone-dark</span><span>Landing, phone, dark</span></span></a></li><li class="k-board" id="b-W02-phone-light"><a class="k-board__btn" href="../../img/boards/W02-phone-light-1600.webp" data-board data-title="W02-phone-light · Landing, phone, light" data-src="../../img/boards/W02-phone-light-1600.webp"><img src="../../img/boards/W02-phone-light-480.webp" width="390" height="10675" loading="lazy" decoding="async" alt="W02-phone-light: Landing, phone, light"><span class="k-board__label"><span class="k-label">W02-phone-light</span><span>Landing, phone, light</span></span></a></li><li class="k-board" id="b-W02-phone-mono"><a class="k-board__btn" href="../../img/boards/W02-phone-mono-1600.webp" data-board data-title="W02-phone-mono · Landing, phone, mono" data-src="../../img/boards/W02-phone-mono-1600.webp"><img src="../../img/boards/W02-phone-mono-480.webp" width="390" height="10675" loading="lazy" decoding="async" alt="W02-phone-mono: Landing, phone, mono"><span class="k-board__label"><span class="k-label">W02-phone-mono</span><span>Landing, phone, mono</span></span></a></li><li class="k-board" id="b-W02-tablet-dark"><a class="k-board__btn" href="../../img/boards/W02-tablet-dark-1600.webp" data-board data-title="W02-tablet-dark · Landing, tablet, dark" data-src="../../img/boards/W02-tablet-dark-1600.webp"><img src="../../img/boards/W02-tablet-dark-480.webp" width="480" height="4718" loading="lazy" decoding="async" alt="W02-tablet-dark: Landing, tablet, dark"><span class="k-board__label"><span class="k-label">W02-tablet-dark</span><span>Landing, tablet, dark</span></span></a></li><li class="k-board" id="b-W02-tablet-light"><a class="k-board__btn" href="../../img/boards/W02-tablet-light-1600.webp" data-board data-title="W02-tablet-light · Landing, tablet, light" data-src="../../img/boards/W02-tablet-light-1600.webp"><img src="../../img/boards/W02-tablet-light-480.webp" width="480" height="4718" loading="lazy" decoding="async" alt="W02-tablet-light: Landing, tablet, light"><span class="k-board__label"><span class="k-label">W02-tablet-light</span><span>Landing, tablet, light</span></span></a></li><li class="k-board" id="b-W02-tablet-mono"><a class="k-board__btn" href="../../img/boards/W02-tablet-mono-1600.webp" data-board data-title="W02-tablet-mono · Landing, tablet, mono" data-src="../../img/boards/W02-tablet-mono-1600.webp"><img src="../../img/boards/W02-tablet-mono-480.webp" width="480" height="4718" loading="lazy" decoding="async" alt="W02-tablet-mono: Landing, tablet, mono"><span class="k-board__label"><span class="k-label">W02-tablet-mono</span><span>Landing, tablet, mono</span></span></a></li><li class="k-board" id="b-W03-01"><a class="k-board__btn" href="../../img/boards/W03-01-1600.webp" data-board data-title="W03-01 · Landing states" data-src="../../img/boards/W03-01-1600.webp"><img src="../../img/boards/W03-01-480.webp" width="480" height="401" loading="lazy" decoding="async" alt="W03-01: Landing states"><span class="k-board__label"><span class="k-label">W03-01</span><span>Landing states</span></span></a></li><li class="k-board" id="b-W04-01"><a class="k-board__btn" href="../../img/boards/W04-01-1600.webp" data-board data-title="W04-01 · Test report" data-src="../../img/boards/W04-01-1600.webp"><img src="../../img/boards/W04-01-480.webp" width="480" height="682" loading="lazy" decoding="async" alt="W04-01: Test report"><span class="k-board__label"><span class="k-label">W04-01</span><span>Test report</span></span></a></li></ul><nav class="k-pager" aria-label="Previous and next"><a href="../code-contracts/index.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg><span><span class="k-label">Previous</span>Code contracts</span></a><span></span></nav></article></div>
 </main>
 <footer class="k-foot"><div class="k-wrap">
   <nav class="k-foot__nav" aria-label="Footer"><a href="../../kit/">Kit</a><a href="../../boards/">Boards</a><a href="../../rules/">Rules</a><a href="../../colors/">Colors</a><a href="../../social/">Social</a><a href="../../downloads/">Downloads</a><a href="../../search/index.html">Search</a></nav>

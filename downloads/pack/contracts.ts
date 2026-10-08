@@ -269,7 +269,7 @@ type Gradient = {
 };
 
 type Photo = {
-  key: 'talk' | 'crowd' | 'light' | 'hero' | 'break';
+  key: string;                   // a key in assets/source/photos.json
   license: 'Unsplash License';   // in assets/source/photos.json
   credit: { caption: boolean; footer: true };   // hero: footer only
   place: 'hero' | 'band' | 'break' | 'feature'; // full bleed
@@ -429,7 +429,16 @@ type CopyCheck =
   | 'genderless' | 'numbers-have-units'
   | 'sample-data-labeled' | 'no-tm-in-running-text';
 
-const BANNED = ['empower', 'Signal, not noise', 'trust scores', 'fidget mode', 'streetwear'];
+const BANNED = [
+  'empower',
+  'Signal, not noise',
+  'trust scores',
+  'fidget mode',
+  'streetwear',
+  'P.U.L.P.',
+  'Pulp Labs',
+  'the Forge',
+];
 
 // ---------------------------------------------------------------- site
 // pulp.com.ai, every page. Records in pack/site.json and pack/sitemap.json.

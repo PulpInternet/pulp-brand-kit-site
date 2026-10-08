@@ -258,6 +258,661 @@
       }
     ]
   },
+  "culture": {
+    "linkedin": {
+      "who": "Professionals, buyers, recruiters, partners.",
+      "works": "A clear point in the first two lines, short paragraphs, one real example, a named person in the comments.",
+      "native": "Document posts that read like a short deck; comments from people on the team.",
+      "avoid": "Engagement bait, emoji bullets, a wall of hashtags.",
+      "reply": "Same business day."
+    },
+    "x": {
+      "who": "Press, policy people, builders, people arguing in real time.",
+      "works": "One idea a post. Short. Specific. Threads of three to six when it needs more.",
+      "native": "Threads and quote posts.",
+      "avoid": "Dunking, hashtag stacks, replying to everyone.",
+      "reply": "Within hours, or not at all."
+    },
+    "bluesky": {
+      "who": "Researchers, journalists, early adopters.",
+      "works": "Plain, candid notes with sources. Alt text on every image. Links are welcome.",
+      "native": "Short threads and quotes that add a source.",
+      "avoid": "Hype and marketing voice.",
+      "reply": "Within the day."
+    },
+    "reddit": {
+      "who": "Communities with their own rules and long memories.",
+      "works": "Answering the question in full, in the comment. Disclosing who you are. Linking only when asked.",
+      "native": "Comments in communities, and the occasional question thread on our own profile.",
+      "avoid": "Pitching, posting the same link in many communities, speaking as a logo.",
+      "reply": "Within the day, signed by a person."
+    },
+    "threads": {
+      "who": "A broad, casual audience that comes for the replies.",
+      "works": "Thinking out loud. A question at the end. Replying to the replies.",
+      "native": "Text posts and reply chains.",
+      "avoid": "Corporate tone, long links.",
+      "reply": "Within hours."
+    },
+    "instagram": {
+      "who": "People who come for pictures, and makers.",
+      "works": "The picture first, one line under it, carousels that teach.",
+      "native": "Carousels, Reels, Stories that reshare people\u2019s work with credit.",
+      "avoid": "Text-heavy images, reposting work without asking.",
+      "reply": "Within the day."
+    },
+    "facebook": {
+      "who": "Communities, groups, families, local life.",
+      "works": "Events, plain how-tos, longer captions that explain.",
+      "native": "Events and group posts, where groups allow them.",
+      "avoid": "Posting into groups that do not want brands.",
+      "reply": "Within the day."
+    },
+    "youtube": {
+      "who": "People searching for an explanation.",
+      "works": "One idea, explained well. A title that says what you learn. Sources on screen.",
+      "native": "Explainers, Shorts, a pinned comment with the links.",
+      "avoid": "Clickbait titles, intros longer than ten seconds.",
+      "reply": "Answer the top comments in the first two days."
+    },
+    "tiktok": {
+      "who": "A young, fast audience that rewards showing over telling.",
+      "works": "A hook in the first two seconds, hands or a screen doing the thing, words on screen.",
+      "native": "Short video, replies made as video, stitches.",
+      "avoid": "Ads that look like ads, chasing every trend.",
+      "reply": "Within hours, as a video when it is worth one."
+    },
+    "substack": {
+      "who": "Readers who subscribe to people and ideas.",
+      "works": "Signed essays, a steady rhythm, notes between issues.",
+      "native": "Posts, notes and restacks of other writers.",
+      "avoid": "Selling in the essay.",
+      "reply": "Within the week, in the comments."
+    }
+  },
+  "voices": {
+    "pulp": {
+      "linkedin": {
+        "voice": "The essayist at work: a point, the evidence, what it means for your team.",
+        "firstLine": "Most meetings end with two different memories of what was agreed. We study that gap."
+      },
+      "x": {
+        "voice": "One sharp sentence, then stop.",
+        "firstLine": "Technology doesn\u2019t make you a better thinker. Habits do."
+      },
+      "bluesky": {
+        "voice": "The researcher in the hallway: methods, sources, open questions.",
+        "firstLine": "Method note: when a measure can\u2019t tell, it should stay empty, not zero."
+      },
+      "reddit": {
+        "voice": "A named person from the team, answering in full, no pitch.",
+        "firstLine": "Disclosure: I work at Pulp. Short answer first, then the details."
+      },
+      "threads": {
+        "voice": "Thinking out loud, with a question at the end.",
+        "firstLine": "What\u2019s a conversation that changed your mind? Not one you won."
+      },
+      "instagram": {
+        "voice": "Pictures first: plates, silhouettes, one line.",
+        "firstLine": "From afar, up close, from every angle."
+      },
+      "facebook": {
+        "voice": "The neighbor: events, Pulp101, Brooklyn.",
+        "firstLine": "Pulp101 apprentices present this Thursday. Come see what they built."
+      },
+      "youtube": {
+        "voice": "The explainer: one idea, sources on screen.",
+        "firstLine": "How we measure an argument without judging the person making it."
+      },
+      "tiktok": {
+        "voice": "Show the gap: what was said, what was meant, on screen.",
+        "firstLine": "Said: \u201cSounds great.\u201d Meant: \u201cNever.\u201d We study the gap."
+      },
+      "substack": {
+        "voice": "Letters and Numbers: signed essays and technical notes.",
+        "firstLine": "Letters, No. 1: Walking away solves nothing."
+      }
+    },
+    "thinkwell": {
+      "linkedin": {
+        "voice": "The colleague who was in the room: one workflow, one outcome.",
+        "firstLine": "After the hearing, the memo was already drafted, with who said what."
+      },
+      "x": {
+        "voice": "Short and timely, tied to the public affairs calendar.",
+        "firstLine": "Hearing season. Every commitment made on the record, in one place."
+      },
+      "bluesky": {
+        "voice": "Plain notes for policy people.",
+        "firstLine": "A small thing Thinkwell Lite does: it learns each voice, so the notes say who said what."
+      },
+      "reddit": {
+        "voice": "Only where asked: answer the workflow question, disclose, no link unless asked.",
+        "firstLine": "Disclosure: I work on Thinkwell. Here is what has worked for teams like yours."
+      },
+      "threads": {
+        "voice": "Lighter, still exact.",
+        "firstLine": "Your next conversation, remembered."
+      },
+      "instagram": {
+        "voice": "Product moments: the capsule on a real desk.",
+        "firstLine": "The capsule is the ground floor."
+      },
+      "facebook": {
+        "voice": "For small organizations and associations: plain how-tos.",
+        "firstLine": "How a five-person advocacy shop keeps track of every meeting."
+      },
+      "youtube": {
+        "voice": "Walkthroughs, three to five minutes.",
+        "firstLine": "Thinkwell Lite, start to finish."
+      },
+      "tiktok": {
+        "voice": "Rarely, and only to show one workflow.",
+        "firstLine": "The meeting ended. The notes are already done."
+      },
+      "substack": {
+        "voice": "Field notes for public affairs, monthly.",
+        "firstLine": "Field notes: what public affairs teams asked us this month."
+      }
+    },
+    "typodojo": {
+      "linkedin": {
+        "voice": "rare; the craft behind it, for designers.",
+        "firstLine": "we\u2019re building a dojo for drawing letters. here\u2019s what curves taught us."
+      },
+      "x": {
+        "voice": "drills and one-liners.",
+        "firstLine": "today\u2019s drill: one a, ten times."
+      },
+      "bluesky": {
+        "voice": "type nerds welcome; process notes.",
+        "firstLine": "kerning is just manners between letters."
+      },
+      "reddit": {
+        "voice": "share the process, ask for critique, never pitch.",
+        "firstLine": "drew this a with one round pen. what would you fix first?"
+      },
+      "threads": {
+        "voice": "playful; typo talks.",
+        "firstLine": "typo says: lift the pen less."
+      },
+      "instagram": {
+        "voice": "carousels of drills; student work reshared with credit.",
+        "firstLine": "swipe: ten a\u2019s. the tenth one is yours."
+      },
+      "facebook": {
+        "voice": "teachers and hobby groups.",
+        "firstLine": "a five-minute lettering warmup for your class."
+      },
+      "youtube": {
+        "voice": "drills in real time, and Shorts.",
+        "firstLine": "draw a lowercase g with me. no edits."
+      },
+      "tiktok": {
+        "voice": "hands on paper, a stern dog.",
+        "firstLine": "you\u2019re holding the pen too tight. typo noticed."
+      },
+      "substack": {
+        "voice": "a monthly letter from the dojo.",
+        "firstLine": "the dojo letter: on slowness."
+      }
+    }
+  },
+  "engagement": [
+    {
+      "kind": "Post",
+      "when": "Something we have to say, in the channel\u2019s own voice.",
+      "how": "One idea. The picture follows the kit; the words follow the voice branch.",
+      "never": "Never the same words pasted on every channel."
+    },
+    {
+      "kind": "Thread",
+      "when": "When one idea needs three to six steps.",
+      "how": "Each part stands alone; the first says why to keep reading; the last holds the link.",
+      "never": "Never a thread to pad a thin point."
+    },
+    {
+      "kind": "Reply",
+      "when": "Someone wrote to us, or asked a question we can answer.",
+      "how": "Answer what was asked, add one fact, one link at most. Criticism gets thanks, one correction with a source, then we stop.",
+      "never": "Never argue twice. Never reply to bait."
+    },
+    {
+      "kind": "Quote",
+      "when": "We add something real: a fact, a method, a credit.",
+      "how": "Say what we add in the first line, and credit the person.",
+      "never": "Never to dunk on anyone."
+    },
+    {
+      "kind": "Repost",
+      "when": "Someone else\u2019s work speaks for itself: partners, apprentices, researchers, our own brands.",
+      "how": "Repost as is, or with one line that says why it matters.",
+      "never": "Never repost a post we have not read to the end."
+    },
+    {
+      "kind": "Comment",
+      "when": "Someone else\u2019s thread where we can help.",
+      "how": "As a named person from the team, disclosed, useful on its own.",
+      "never": "Never a logo in a community that asks for people."
+    },
+    {
+      "kind": "Native share",
+      "when": "Stories, stitches, restacks: the channel\u2019s own way to pass something on.",
+      "how": "Credit the maker; ask before resharing a person\u2019s work.",
+      "never": "Never reshare a person\u2019s work without asking."
+    },
+    {
+      "kind": "Message",
+      "when": "A question that needs privacy, or a request that needs details.",
+      "how": "Move it to a message, answer, close the loop in public if it was asked in public.",
+      "never": "Never sell in a message nobody asked for."
+    }
+  ],
+  "amplify": [
+    {
+      "who": "Pulp",
+      "reposts": "Reposts Thinkwell, typodojo, Pulp101 and the Foundation, and the work of apprentices and partners."
+    },
+    {
+      "who": "Thinkwell",
+      "reposts": "Reposts customers and partners, and Pulp\u2019s research when it backs a feature. It does not lead with Pulp."
+    },
+    {
+      "who": "typodojo",
+      "reposts": "Reshares student work with credit and permission. Pulp stays in the endorsement line."
+    },
+    {
+      "who": "People on the team",
+      "reposts": "Repost with one line of their own. Personal accounts are theirs; we suggest, never script."
+    }
+  ],
+  "conversations": [
+    {
+      "id": "01",
+      "platform": "x",
+      "brand": "pulp",
+      "title": "A stance, a worried reply, and the house quoting its product.",
+      "items": [
+        {
+          "kind": "Post",
+          "who": "pulp",
+          "text": "Technology doesn\u2019t make you a better thinker. It never has. Habits do.",
+          "post": [
+            "pulp",
+            1
+          ]
+        },
+        {
+          "kind": "Reply",
+          "who": [
+            "sample",
+            "Sample reader",
+            "@sample_reader"
+          ],
+          "depth": 1,
+          "text": "Easy to say. It feels like AI is making everyone lazier."
+        },
+        {
+          "kind": "Reply",
+          "who": "pulp",
+          "depth": 1,
+          "text": "Fair worry. Tools change what\u2019s easy, not what\u2019s good. People who check sources still check them with AI in the loop. We\u2019re measuring which habits hold up: pulp.com.ai/research"
+        },
+        {
+          "kind": "Quote",
+          "who": "pulp",
+          "text": "Our first product is out. Thinkwell is for the people whose work runs on conversation.",
+          "quoted": [
+            "thinkwell",
+            "See the world through conversation. Thinkwell keeps every call, hearing and meeting, and writes down what was promised."
+          ]
+        }
+      ],
+      "why": [
+        "The reply takes the worry seriously and answers it with one idea and one link. It does not argue a second time.",
+        "The quote adds the house\u2019s context to the product\u2019s launch. Pulp amplifies Thinkwell; Thinkwell does not lead with Pulp.",
+        "Every post is one idea, under 280 characters."
+      ],
+      "rules": [
+        "R-SOC-06",
+        "R-SOC-07"
+      ]
+    },
+    {
+      "id": "02",
+      "platform": "linkedin",
+      "brand": "thinkwell",
+      "title": "A product post, a hard question in the comments, and a repost from the house.",
+      "items": [
+        {
+          "kind": "Post",
+          "who": "thinkwell",
+          "text": "Every hearing, call and coalition meeting ends with a list of who said they\u2019d do what. By Friday, some of it is gone. Thinkwell keeps the conversation, writes down what was promised, and checks claims against the record.",
+          "post": [
+            "thinkwell",
+            0
+          ]
+        },
+        {
+          "kind": "Comment",
+          "who": [
+            "sample",
+            "Sample public affairs director",
+            "Sample commenter"
+          ],
+          "depth": 1,
+          "text": "Does it record closed-door meetings?"
+        },
+        {
+          "kind": "Reply",
+          "who": "thinkwell",
+          "depth": 1,
+          "text": "Only when you ask it to, and everyone in the room can see that it is on. Keeping and sharing are separate choices, and you can delete a session at any time."
+        },
+        {
+          "kind": "Repost",
+          "who": "pulp",
+          "text": "Built on research we publish in the open, for the people whose work runs on conversation."
+        }
+      ],
+      "why": [
+        "The comment is the question every buyer has. The reply answers it plainly, with the consent rules, and no sales line.",
+        "The house reposts with one line that adds what only Pulp can add: the research underneath.",
+        "The post opens on the reader\u2019s problem, so the first two lines work above the fold."
+      ],
+      "rules": [
+        "R-SOC-05",
+        "R-SOC-06"
+      ]
+    },
+    {
+      "id": "03",
+      "platform": "reddit",
+      "brand": "pulp",
+      "title": "A person from the team, answering in a community, link only when asked.",
+      "items": [
+        {
+          "kind": "Post",
+          "who": [
+            "sample",
+            "A social science community (sample)",
+            "u/sample_poster"
+          ],
+          "text": "Is there a good way to measure how persuasive an argument is without just asking people whether they agree?"
+        },
+        {
+          "kind": "Comment",
+          "who": [
+            "person",
+            "Named researcher, Pulp",
+            "u/pulp_research"
+          ],
+          "depth": 1,
+          "text": "Disclosure: I work at Pulp, and this is our day job. Three things that help: measure change from a stated starting point instead of agreement; score the argument\u2019s structure apart from its delivery; and let the measure abstain when it can\u2019t tell. Happy to share papers if useful."
+        },
+        {
+          "kind": "Reply",
+          "who": [
+            "sample",
+            "Sample poster",
+            "u/sample_poster"
+          ],
+          "depth": 2,
+          "text": "Why abstain instead of scoring zero?"
+        },
+        {
+          "kind": "Reply",
+          "who": [
+            "person",
+            "Named researcher, Pulp",
+            "u/pulp_research"
+          ],
+          "depth": 2,
+          "text": "Zero says \u201cno effect.\u201d Empty says \u201cwe couldn\u2019t tell.\u201d Average the zeros in and the cases you couldn\u2019t read disappear, so results look calmer than they are. The methods paper is at pulp.com.ai/research/methods, since you asked."
+        }
+      ],
+      "why": [
+        "A named person speaks, not a logo, and says who they work for in the first sentence.",
+        "The answer is useful on its own. The link comes only after the poster asks a follow-up.",
+        "It follows the community\u2019s rules first; the brand second."
+      ],
+      "rules": [
+        "R-SOC-06",
+        "R-SOC-07"
+      ]
+    },
+    {
+      "id": "04",
+      "platform": "bluesky",
+      "brand": "pulp",
+      "title": "A short method thread, then a quote that credits someone else\u2019s work.",
+      "items": [
+        {
+          "kind": "Thread 1 of 3",
+          "who": "pulp",
+          "text": "A note on method, since a few people asked. We describe an argument on 48 parameters, 8 channels by 6 dimensions, each from -1 to +1."
+        },
+        {
+          "kind": "Thread 2 of 3",
+          "who": "pulp",
+          "depth": 1,
+          "text": "When a parameter can\u2019t be read from what was said, it stays empty. Never zero. Zero is a claim; empty is honest."
+        },
+        {
+          "kind": "Thread 3 of 3",
+          "who": "pulp",
+          "depth": 1,
+          "text": "Rules run first and models second, so the cheap, checkable steps happen before any model call. Methods: pulp.com.ai/research/methods"
+        },
+        {
+          "kind": "Quote",
+          "who": "pulp",
+          "text": "Careful work on why agreement isn\u2019t the same as persuasion. Worth your time.",
+          "quoted": [
+            "sample",
+            "Sample researcher: new paper on measuring opinion change, with open data."
+          ]
+        }
+      ],
+      "why": [
+        "Each part stands on its own; the first says why to keep reading; the link waits for the last.",
+        "The quote exists to credit someone else, with a reason in one line.",
+        "Bluesky\u2019s researchers expect sources, so the thread ends on one."
+      ],
+      "rules": [
+        "R-SOC-05",
+        "R-SOC-06"
+      ]
+    },
+    {
+      "id": "05",
+      "platform": "instagram",
+      "brand": "typodojo",
+      "title": "A drill carousel, a comment, and a student\u2019s drawing reshared with credit.",
+      "items": [
+        {
+          "kind": "Post \u00b7 carousel, 1 of 5",
+          "who": "typodojo",
+          "text": "swipe: ten a\u2019s. the tenth one is yours.",
+          "post": [
+            "typodojo",
+            1
+          ]
+        },
+        {
+          "kind": "Comment",
+          "who": [
+            "sample",
+            "Sample letterer",
+            "@sample_letterer"
+          ],
+          "depth": 1,
+          "text": "mine look like potatoes"
+        },
+        {
+          "kind": "Reply",
+          "who": "typodojo",
+          "depth": 1,
+          "text": "potatoes are a fine start. ten more, slower. typo is watching."
+        },
+        {
+          "kind": "Story reshare",
+          "who": "typodojo",
+          "text": "day four from @sample_letterer. reshared with their ok."
+        }
+      ],
+      "why": [
+        "The drill teaches in the carousel itself; the caption is one line.",
+        "The reply keeps typodojo\u2019s voice: warm, funny, mildly stern.",
+        "Student work is reshared only after asking, with the maker named."
+      ],
+      "rules": [
+        "R-SOC-05",
+        "R-SOC-07"
+      ]
+    },
+    {
+      "id": "06",
+      "platform": "tiktok",
+      "brand": "typodojo",
+      "title": "A short video, a question in the comments, and a reply made as a video.",
+      "items": [
+        {
+          "kind": "Video",
+          "who": "typodojo",
+          "text": "you\u2019re holding the pen too tight. typo noticed.",
+          "post": [
+            "typodojo",
+            2
+          ]
+        },
+        {
+          "kind": "Comment",
+          "who": [
+            "sample",
+            "Sample viewer",
+            "@sample_viewer"
+          ],
+          "depth": 1,
+          "text": "how do i stop my lines wobbling"
+        },
+        {
+          "kind": "Reply as video",
+          "who": "typodojo",
+          "depth": 1,
+          "text": "replying to @sample_viewer: wobbles get fixed. breaks get noticed. one pass, then clean it up."
+        }
+      ],
+      "why": [
+        "The hook is in the first line and the first two seconds of video.",
+        "A good question earns a video reply, which is how TikTok answers.",
+        "Hands on paper, words on screen, no ad voice."
+      ],
+      "rules": [
+        "R-SOC-05",
+        "R-SOC-06"
+      ]
+    },
+    {
+      "id": "07",
+      "platform": "threads",
+      "brand": "pulp",
+      "title": "A question post, two replies, and the house answering each in kind.",
+      "items": [
+        {
+          "kind": "Post",
+          "who": "pulp",
+          "text": "What\u2019s a conversation that changed your mind? Not one you won. One that changed you.",
+          "photo": "dusk"
+        },
+        {
+          "kind": "Reply",
+          "who": [
+            "sample",
+            "Sample neighbor",
+            "@sample_neighbor"
+          ],
+          "depth": 1,
+          "text": "My dad and I argued about a zoning vote for a year. He came to the hearing with me and it changed my mind, not his."
+        },
+        {
+          "kind": "Reply",
+          "who": "pulp",
+          "depth": 2,
+          "text": "That\u2019s the good kind. Changed by showing up, not by being out-argued."
+        },
+        {
+          "kind": "Reply",
+          "who": [
+            "sample",
+            "Sample skeptic",
+            "@sample_skeptic"
+          ],
+          "depth": 1,
+          "text": "Honestly can\u2019t think of one."
+        },
+        {
+          "kind": "Reply",
+          "who": "pulp",
+          "depth": 2,
+          "text": "Same for most people. It\u2019s rarer than winning, which is why we study it."
+        }
+      ],
+      "why": [
+        "Threads rewards replies, so the post is a question people can answer from their own life.",
+        "Each reply is short, warm and specific to what the person said.",
+        "The house never turns a reply into a pitch."
+      ],
+      "rules": [
+        "R-SOC-05",
+        "R-SOC-06"
+      ]
+    },
+    {
+      "id": "08",
+      "platform": "substack",
+      "brand": "pulp",
+      "title": "A note for the first Letter, a restack from the house, and a reader\u2019s question.",
+      "items": [
+        {
+          "kind": "Note",
+          "who": "pulp101",
+          "text": "Letters, No. 1 is out: Walking away solves nothing. On why we study how people decide, and what we\u2019re building next.",
+          "photo": "blinds"
+        },
+        {
+          "kind": "Restack",
+          "who": "pulp",
+          "text": "The first of our Letters. Numbers, the technical blog, follows next week."
+        },
+        {
+          "kind": "Reply",
+          "who": [
+            "sample",
+            "Sample subscriber",
+            "Sample subscriber"
+          ],
+          "depth": 1,
+          "text": "Will Numbers include the code?"
+        },
+        {
+          "kind": "Reply",
+          "who": "pulp101",
+          "depth": 1,
+          "text": "Methods, data and code where we can share them. Each post says which."
+        }
+      ],
+      "why": [
+        "Pulp101 publishes; Pulp restacks with one line that points to what is next.",
+        "The answer is exact about what will and will not be shared.",
+        "Letters and Numbers each get named once, so readers learn the two blogs."
+      ],
+      "rules": [
+        "R-SOC-05",
+        "R-SOC-07"
+      ]
+    }
+  ],
   "posts": [
     {
       "brand": "pulp",
@@ -273,7 +928,7 @@
         1350
       ],
       "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
-      "caption": "We help humans understand humans.\n\nPulp is a research company in Brooklyn. We study how people talk, argue and make up their minds, and we build tools around what we learn: Thinkwell for the people whose work runs on conversation, typodojo for anyone who wants to draw letters, and a platform underneath both.\n\nRead what we are working on at pulp.com.ai.\n\n#research #persuasion #Brooklyn"
+      "caption": "Most disagreements aren\u2019t about facts. They\u2019re about what each side heard.\n\nPulp is a research company in Brooklyn. We study how people talk, argue and make up their minds, and we build tools from what we learn: Thinkwell for teams whose work runs on conversation, typodojo for anyone who wants to draw letters, and a platform underneath both.\n\nIf your work depends on being understood, tell us what you\u2019re trying to understand. pulp.com.ai\n\n#research #persuasion #Brooklyn"
     },
     {
       "brand": "pulp",
@@ -289,7 +944,7 @@
         900
       ],
       "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
-      "caption": "We help humans understand humans.\n\nA research company in Brooklyn. We study how people talk, argue and make up their minds.\n\npulp.com.ai"
+      "caption": "We help humans understand humans.\n\nA research company in Brooklyn, studying how people talk, argue and decide.\n\npulp.com.ai"
     },
     {
       "brand": "pulp",
@@ -305,7 +960,7 @@
         675
       ],
       "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
-      "caption": "We help humans understand humans.\n\nA research company in Brooklyn. We study how people talk, argue and make up their minds.\n\npulp.com.ai"
+      "caption": "Hello, Bluesky. We\u2019re Pulp, a research company in Brooklyn. We study argument, persuasion and how people make up their minds, and we\u2019ll post methods and papers here as they go up.\n\npulp.com.ai"
     },
     {
       "brand": "pulp",
@@ -321,7 +976,7 @@
         900
       ],
       "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
-      "caption": "Title: Pulp: we help humans understand humans\n\nPulp is a research company in Brooklyn. We study how people talk, argue and make up their minds, and we build tools around what we learn: Thinkwell for the people whose work runs on conversation, typodojo for anyone who wants to draw letters, and a platform underneath both.\n\nRead what we are working on at pulp.com.ai."
+      "caption": "Title: We\u2019re Pulp, a small research company in Brooklyn that studies how people argue and decide. Questions about the methods are welcome.\n\nWe measure conversation without scoring people: rules first, models second, and an empty value when we can\u2019t tell, never a zero. Papers and data stories are going up at pulp.com.ai/research. We answer in the comments, signed by name."
     },
     {
       "brand": "pulp",
@@ -337,7 +992,7 @@
         1350
       ],
       "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
-      "caption": "We help humans understand humans.\n\nPulp is a research company in Brooklyn. We study how people talk, argue and make up their minds, and we build tools around what we learn: Thinkwell for the people whose work runs on conversation, typodojo for anyone who wants to draw letters, and a platform underneath both."
+      "caption": "Hi, Threads. A question to start: what\u2019s a conversation that changed your mind? Not one you won. One that changed you.\n\nWe\u2019re Pulp. We study exactly that, in Brooklyn."
     },
     {
       "brand": "pulp",
@@ -353,7 +1008,7 @@
         1350
       ],
       "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
-      "caption": "We help humans understand humans.\n\nPulp is a research company in Brooklyn. We study how people talk, argue and make up their minds, and we build tools around what we learn: Thinkwell for the people whose work runs on conversation, typodojo for anyone who wants to draw letters, and a platform underneath both.\n\nLink in bio.\n\n#research #persuasion #Brooklyn"
+      "caption": "We help humans understand humans.\n\nA research company in Brooklyn. Plates, prints and the occasional robot.\n\nLink in bio.\n\n#research #Brooklyn #design"
     },
     {
       "brand": "pulp",
@@ -369,7 +1024,7 @@
         1350
       ],
       "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
-      "caption": "We help humans understand humans.\n\nPulp is a research company in Brooklyn. We study how people talk, argue and make up their minds, and we build tools around what we learn: Thinkwell for the people whose work runs on conversation, typodojo for anyone who wants to draw letters, and a platform underneath both.\n\nRead what we are working on at pulp.com.ai."
+      "caption": "Hello from Brooklyn. Pulp is a research company that studies how people talk, argue and make up their minds. Follow along for Pulp101 events, apprentice showcases and the research as it\u2019s published.\n\npulp.com.ai"
     },
     {
       "brand": "pulp",
@@ -385,7 +1040,7 @@
         720
       ],
       "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
-      "caption": "Title: Pulp: we help humans understand humans\n\nWe help humans understand humans. Pulp is a research company in Brooklyn. We study how people talk, argue and make up their minds, and we build tools around what we learn: Thinkwell for the people whose work runs on conversation, typodojo for anyone who wants to draw letters, and a platform underneath both.\n\nRead what we are working on at pulp.com.ai."
+      "caption": "Title: What Pulp studies, in two minutes\n\nWe help humans understand humans. This short explains how we measure an argument without judging the person making it, and where to read the methods.\n\npulp.com.ai/research"
     },
     {
       "brand": "pulp",
@@ -401,7 +1056,7 @@
         1920
       ],
       "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
-      "caption": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds. #research #persuasion #Brooklyn"
+      "caption": "Said: \u201cSounds great.\u201d Meant: \u201cNever.\u201d We study the gap. #research #communication #persuasion"
     },
     {
       "brand": "pulp",
@@ -417,7 +1072,7 @@
         630
       ],
       "alt": "We help humans understand humans. A research company in Brooklyn. We study how people talk, argue and make up their minds.",
-      "caption": "Title: Pulp: we help humans understand humans\nSubtitle: A research company in Brooklyn. We study how people talk, argue and make up their minds.\n\nPulp is a research company in Brooklyn. We study how people talk, argue and make up their minds, and we build tools around what we learn: Thinkwell for the people whose work runs on conversation, typodojo for anyone who wants to draw letters, and a platform underneath both."
+      "caption": "Title: Letters, No. 1: Walking away solves nothing\nSubtitle: The first letter from Pulp, on why we study how people decide.\n\nTechnology doesn\u2019t make you a better thinker. It never has. Habits do. This is the first of Letters, Pulp\u2019s interactive blog, where we write about how people talk, argue and decide, and what we\u2019re learning as we build."
     },
     {
       "brand": "thinkwell",
@@ -433,7 +1088,7 @@
         1350
       ],
       "alt": "See the world through conversation. A workstation for the conversations that run public life.",
-      "caption": "See the world through conversation.\n\nThinkwell is a workstation for teams whose work runs on conversation: government relations, public affairs, campaigns. It keeps every call, hearing and meeting, writes down what was promised, and checks it against the morning\u2019s news.\n\nMeet Thinkwell at aithinkwell.com.\n\n#governmentRelations #publicAffairs #Thinkwell"
+      "caption": "Every hearing, call and coalition meeting ends with a list of who said they\u2019d do what. By Friday, some of it is gone.\n\nThinkwell is a workstation for government relations and public affairs teams. It keeps the conversation, writes down what was promised, and checks claims against the record.\n\nMeet it at aithinkwell.com\n\n#GovernmentRelations #PublicAffairs #Thinkwell"
     },
     {
       "brand": "thinkwell",
@@ -449,7 +1104,7 @@
         900
       ],
       "alt": "See the world through conversation. A workstation for the conversations that run public life.",
-      "caption": "See the world through conversation.\n\nA workstation for the conversations that run public life.\n\naithinkwell.com"
+      "caption": "See the world through conversation.\n\nThinkwell keeps every call, hearing and meeting, and writes down what was promised.\n\naithinkwell.com"
     },
     {
       "brand": "thinkwell",
@@ -465,7 +1120,7 @@
         675
       ],
       "alt": "See the world through conversation. A workstation for the conversations that run public life.",
-      "caption": "See the world through conversation.\n\nA workstation for the conversations that run public life.\n\naithinkwell.com"
+      "caption": "Thinkwell is for people whose work is conversations: hearings, calls, coalition meetings. It keeps them, notes who promised what, and checks claims against the record.\n\naithinkwell.com"
     },
     {
       "brand": "thinkwell",
@@ -481,7 +1136,7 @@
         900
       ],
       "alt": "See the world through conversation. A workstation for the conversations that run public life.",
-      "caption": "Title: Thinkwell: see the world through conversation\n\nThinkwell is a workstation for teams whose work runs on conversation: government relations, public affairs, campaigns. It keeps every call, hearing and meeting, writes down what was promised, and checks it against the morning\u2019s news.\n\nMeet Thinkwell at aithinkwell.com."
+      "caption": "Title: How does your GR or public affairs team keep track of commitments across hearings and calls?\n\nDisclosure: this is the Thinkwell team, and we build a workstation for exactly this. We\u2019d like to hear what you use today, what breaks, and what you\u2019d never give up. No links in the replies unless you ask."
     },
     {
       "brand": "thinkwell",
@@ -497,7 +1152,7 @@
         1350
       ],
       "alt": "See the world through conversation. A workstation for the conversations that run public life.",
-      "caption": "See the world through conversation.\n\nThinkwell is a workstation for teams whose work runs on conversation: government relations, public affairs, campaigns. It keeps every call, hearing and meeting, writes down what was promised, and checks it against the morning\u2019s news."
+      "caption": "Your next conversation, remembered. That\u2019s the whole idea behind Thinkwell."
     },
     {
       "brand": "thinkwell",
@@ -513,7 +1168,7 @@
         1350
       ],
       "alt": "See the world through conversation. A workstation for the conversations that run public life.",
-      "caption": "See the world through conversation.\n\nThinkwell is a workstation for teams whose work runs on conversation: government relations, public affairs, campaigns. It keeps every call, hearing and meeting, writes down what was promised, and checks it against the morning\u2019s news.\n\nLink in bio.\n\n#governmentRelations #publicAffairs #Thinkwell"
+      "caption": "See the world through conversation.\n\nA workstation for the conversations that run public life.\n\nLink in bio.\n\n#PublicAffairs #GovernmentRelations #Thinkwell"
     },
     {
       "brand": "thinkwell",
@@ -529,7 +1184,7 @@
         1350
       ],
       "alt": "See the world through conversation. A workstation for the conversations that run public life.",
-      "caption": "See the world through conversation.\n\nThinkwell is a workstation for teams whose work runs on conversation: government relations, public affairs, campaigns. It keeps every call, hearing and meeting, writes down what was promised, and checks it against the morning\u2019s news.\n\nMeet Thinkwell at aithinkwell.com."
+      "caption": "For associations, advocacy groups and public affairs teams: Thinkwell keeps every call, hearing and meeting, writes down what was promised, and checks claims against the record.\n\naithinkwell.com"
     },
     {
       "brand": "thinkwell",
@@ -545,7 +1200,7 @@
         720
       ],
       "alt": "See the world through conversation. A workstation for the conversations that run public life.",
-      "caption": "Title: Thinkwell: see the world through conversation\n\nSee the world through conversation. Thinkwell is a workstation for teams whose work runs on conversation: government relations, public affairs, campaigns. It keeps every call, hearing and meeting, writes down what was promised, and checks it against the morning\u2019s news.\n\nMeet Thinkwell at aithinkwell.com."
+      "caption": "Title: Thinkwell in two minutes\n\nWhat Thinkwell does for a public affairs team, start to finish, through one real meeting.\n\naithinkwell.com"
     },
     {
       "brand": "thinkwell",
@@ -561,7 +1216,7 @@
         1920
       ],
       "alt": "See the world through conversation. A workstation for the conversations that run public life.",
-      "caption": "See the world through conversation. A workstation for the conversations that run public life. #governmentRelations #publicAffairs #Thinkwell"
+      "caption": "The meeting ended. The notes are already done, with who said what. #PublicAffairs #Policy #Thinkwell"
     },
     {
       "brand": "thinkwell",
@@ -577,7 +1232,7 @@
         630
       ],
       "alt": "See the world through conversation. A workstation for the conversations that run public life.",
-      "caption": "Title: Thinkwell: see the world through conversation\nSubtitle: A workstation for the conversations that run public life.\n\nThinkwell is a workstation for teams whose work runs on conversation: government relations, public affairs, campaigns. It keeps every call, hearing and meeting, writes down what was promised, and checks it against the morning\u2019s news."
+      "caption": "Title: Field notes, No. 1\nSubtitle: What public affairs teams ask us, every month.\n\nThinkwell is a workstation for the conversations that run public life. Each month we write up what teams asked, what worked and what didn\u2019t."
     },
     {
       "brand": "pulp",
@@ -753,7 +1408,7 @@
         1350
       ],
       "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
-      "caption": "draw a typeface.\n\ntypodojo is a dojo for drawing letters by hand. Draw them, clean them up, and turn them into a real font you can install, share or sell. Mastery takes time. Your first font takes five minutes.\n\nJoin the list at typodojo.com.\n\n#typography #lettering #fonts"
+      "caption": "we\u2019re building typodojo, a dojo for drawing letters by hand.\n\ndraw your letters, clean them up, and turn them into a real font you can install, share or sell. a pulp special project, in preview now.\n\ntypodojo.com\n\n#typography #lettering #fonts"
     },
     {
       "brand": "typodojo",
@@ -769,7 +1424,7 @@
         900
       ],
       "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
-      "caption": "draw a typeface.\n\nMastery takes time. Your first font takes five minutes.\n\ntypodojo.com"
+      "caption": "draw a typeface.\n\nyour first font takes five minutes. mastery takes longer.\n\ntypodojo.com"
     },
     {
       "brand": "typodojo",
@@ -785,7 +1440,7 @@
         675
       ],
       "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
-      "caption": "draw a typeface.\n\nMastery takes time. Your first font takes five minutes.\n\ntypodojo.com"
+      "caption": "kerning is just manners between letters. we\u2019re typodojo, a dojo for drawing them by hand and turning them into fonts.\n\ntypodojo.com"
     },
     {
       "brand": "typodojo",
@@ -801,7 +1456,7 @@
         900
       ],
       "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
-      "caption": "Title: typodojo: draw a typeface\n\ntypodojo is a dojo for drawing letters by hand. Draw them, clean them up, and turn them into a real font you can install, share or sell. Mastery takes time. Your first font takes five minutes.\n\nJoin the list at typodojo.com."
+      "caption": "Title: we made a tool that turns hand-drawn letters into an installable font. looking for lettering folks to break it\n\nfull disclosure, we built it. you draw with one round pen, it cleans the curves and keeps your hand in them. we\u2019d rather hear what\u2019s wrong than what\u2019s nice."
     },
     {
       "brand": "typodojo",
@@ -817,7 +1472,7 @@
         1350
       ],
       "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
-      "caption": "draw a typeface.\n\ntypodojo is a dojo for drawing letters by hand. Draw them, clean them up, and turn them into a real font you can install, share or sell. Mastery takes time. Your first font takes five minutes."
+      "caption": "typo, the dojo\u2019s dog, says: slow is smooth. smooth is fast. lift the pen less."
     },
     {
       "brand": "typodojo",
@@ -833,7 +1488,7 @@
         1350
       ],
       "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
-      "caption": "draw a typeface.\n\ntypodojo is a dojo for drawing letters by hand. Draw them, clean them up, and turn them into a real font you can install, share or sell. Mastery takes time. Your first font takes five minutes.\n\nLink in bio.\n\n#typography #lettering #fonts"
+      "caption": "swipe: ten a\u2019s. the tenth one is yours.\n\ntypodojo, a dojo for drawing letters. link in bio.\n\n#lettering #typography #handlettering"
     },
     {
       "brand": "typodojo",
@@ -849,7 +1504,7 @@
         1350
       ],
       "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
-      "caption": "draw a typeface.\n\ntypodojo is a dojo for drawing letters by hand. Draw them, clean them up, and turn them into a real font you can install, share or sell. Mastery takes time. Your first font takes five minutes.\n\nJoin the list at typodojo.com."
+      "caption": "a five-minute lettering warmup for your class or club: one a, ten times, slowly. typodojo turns the best one into a font.\n\ntypodojo.com"
     },
     {
       "brand": "typodojo",
@@ -865,7 +1520,7 @@
         720
       ],
       "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
-      "caption": "Title: typodojo: draw a typeface\n\ndraw a typeface. typodojo is a dojo for drawing letters by hand. Draw them, clean them up, and turn them into a real font you can install, share or sell. Mastery takes time. Your first font takes five minutes.\n\nJoin the list at typodojo.com."
+      "caption": "Title: draw a lowercase a with me (no edits)\n\nfive minutes, one round pen, ten a\u2019s.\n\ntypodojo.com"
     },
     {
       "brand": "typodojo",
@@ -881,7 +1536,7 @@
         1920
       ],
       "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
-      "caption": "draw a typeface. Mastery takes time. Your first font takes five minutes. #typography #lettering #fonts"
+      "caption": "you\u2019re holding the pen too tight. typo noticed. #lettering #typography #handlettering"
     },
     {
       "brand": "typodojo",
@@ -897,7 +1552,7 @@
         630
       ],
       "alt": "draw a typeface. Mastery takes time. Your first font takes five minutes.",
-      "caption": "Title: typodojo: draw a typeface\nSubtitle: Mastery takes time. Your first font takes five minutes.\n\ntypodojo is a dojo for drawing letters by hand. Draw them, clean them up, and turn them into a real font you can install, share or sell. Mastery takes time. Your first font takes five minutes."
+      "caption": "Title: the dojo letter, no. 1\nSubtitle: on slowness.\n\na monthly letter from typodojo about drawing letters by hand: drills, mistakes worth keeping, and the fonts you make."
     },
     {
       "brand": "typodojo",
@@ -2192,8 +2847,8 @@
         1080,
         1350
       ],
-      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
-      "caption": "Our research was accepted at INFORMS and the ASA roundtable in 2026.\n\nWe have also given seminars at the University of Florida and spoken to Emory\u2019s MSBA program. Papers, data stories and the methods behind them are going up on the site, so you can check our work.\n\nRead the research at pulp.com.ai/research.\n\n#INFORMS #ASA #research"
+      "alt": "See us in Chicago this November. We\u2019re presenting at the American Society of Criminology\u2019s annual meeting.",
+      "caption": "We\u2019re presenting at the American Society of Criminology in Chicago this November.\n\nOur work was also accepted at the American Sociological Association, and we have given seminars at the University of Florida. More is coming soon. Papers, data stories and the methods behind them are going up on the site, so you can check our work.\n\nRead the research at pulp.com.ai/research.\n\n#ASC #research #Chicago"
     },
     {
       "brand": "pulp",
@@ -2208,8 +2863,8 @@
         1600,
         900
       ],
-      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
-      "caption": "Our research was accepted at INFORMS and the ASA roundtable in 2026.\n\nOur work on persuasion and reasoning, out in the open where it can be checked.\n\npulp.com.ai"
+      "alt": "See us in Chicago this November. We\u2019re presenting at the American Society of Criminology\u2019s annual meeting.",
+      "caption": "We\u2019re presenting at the American Society of Criminology in Chicago this November.\n\nWe\u2019re presenting at the American Society of Criminology\u2019s annual meeting.\n\npulp.com.ai"
     },
     {
       "brand": "pulp",
@@ -2224,8 +2879,8 @@
         1200,
         675
       ],
-      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
-      "caption": "Our research was accepted at INFORMS and the ASA roundtable in 2026.\n\nOur work on persuasion and reasoning, out in the open where it can be checked.\n\npulp.com.ai"
+      "alt": "See us in Chicago this November. We\u2019re presenting at the American Society of Criminology\u2019s annual meeting.",
+      "caption": "We\u2019re presenting at the American Society of Criminology in Chicago this November.\n\nWe\u2019re presenting at the American Society of Criminology\u2019s annual meeting.\n\npulp.com.ai"
     },
     {
       "brand": "pulp",
@@ -2240,8 +2895,8 @@
         1200,
         900
       ],
-      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
-      "caption": "Title: Our research, accepted at INFORMS and the ASA 2026 roundtable\n\nWe have also given seminars at the University of Florida and spoken to Emory\u2019s MSBA program. Papers, data stories and the methods behind them are going up on the site, so you can check our work.\n\nRead the research at pulp.com.ai/research."
+      "alt": "See us in Chicago this November. We\u2019re presenting at the American Society of Criminology\u2019s annual meeting.",
+      "caption": "Title: Our research, at the American Society of Criminology this November\n\nOur work was also accepted at the American Sociological Association, and we have given seminars at the University of Florida. More is coming soon. Papers, data stories and the methods behind them are going up on the site, so you can check our work.\n\nRead the research at pulp.com.ai/research."
     },
     {
       "brand": "pulp",
@@ -2256,8 +2911,8 @@
         1080,
         1350
       ],
-      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
-      "caption": "Our research was accepted at INFORMS and the ASA roundtable in 2026.\n\nWe have also given seminars at the University of Florida and spoken to Emory\u2019s MSBA program. Papers, data stories and the methods behind them are going up on the site, so you can check our work."
+      "alt": "See us in Chicago this November. We\u2019re presenting at the American Society of Criminology\u2019s annual meeting.",
+      "caption": "We\u2019re presenting at the American Society of Criminology in Chicago this November.\n\nOur work was also accepted at the American Sociological Association, and we have given seminars at the University of Florida. More is coming soon. Papers, data stories and the methods behind them are going up on the site, so you can check our work."
     },
     {
       "brand": "pulp",
@@ -2272,8 +2927,8 @@
         1080,
         1350
       ],
-      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
-      "caption": "Our research was accepted at INFORMS and the ASA roundtable in 2026.\n\nWe have also given seminars at the University of Florida and spoken to Emory\u2019s MSBA program. Papers, data stories and the methods behind them are going up on the site, so you can check our work.\n\nLink in bio.\n\n#INFORMS #ASA #research"
+      "alt": "See us in Chicago this November. We\u2019re presenting at the American Society of Criminology\u2019s annual meeting.",
+      "caption": "We\u2019re presenting at the American Society of Criminology in Chicago this November.\n\nOur work was also accepted at the American Sociological Association, and we have given seminars at the University of Florida. More is coming soon. Papers, data stories and the methods behind them are going up on the site, so you can check our work.\n\nLink in bio.\n\n#ASC #research #Chicago"
     },
     {
       "brand": "pulp",
@@ -2288,8 +2943,8 @@
         1080,
         1350
       ],
-      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
-      "caption": "Our research was accepted at INFORMS and the ASA roundtable in 2026.\n\nWe have also given seminars at the University of Florida and spoken to Emory\u2019s MSBA program. Papers, data stories and the methods behind them are going up on the site, so you can check our work.\n\nRead the research at pulp.com.ai/research."
+      "alt": "See us in Chicago this November. We\u2019re presenting at the American Society of Criminology\u2019s annual meeting.",
+      "caption": "We\u2019re presenting at the American Society of Criminology in Chicago this November.\n\nOur work was also accepted at the American Sociological Association, and we have given seminars at the University of Florida. More is coming soon. Papers, data stories and the methods behind them are going up on the site, so you can check our work.\n\nRead the research at pulp.com.ai/research."
     },
     {
       "brand": "pulp",
@@ -2304,8 +2959,8 @@
         1280,
         720
       ],
-      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
-      "caption": "Title: Our research, accepted at INFORMS and the ASA 2026 roundtable\n\nOur research was accepted at INFORMS and the ASA roundtable in 2026. We have also given seminars at the University of Florida and spoken to Emory\u2019s MSBA program. Papers, data stories and the methods behind them are going up on the site, so you can check our work.\n\nRead the research at pulp.com.ai/research."
+      "alt": "See us in Chicago this November. We\u2019re presenting at the American Society of Criminology\u2019s annual meeting.",
+      "caption": "Title: Our research, at the American Society of Criminology this November\n\nWe\u2019re presenting at the American Society of Criminology in Chicago this November. Our work was also accepted at the American Sociological Association, and we have given seminars at the University of Florida. More is coming soon. Papers, data stories and the methods behind them are going up on the site, so you can check our work.\n\nRead the research at pulp.com.ai/research."
     },
     {
       "brand": "pulp",
@@ -2320,8 +2975,8 @@
         1080,
         1920
       ],
-      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
-      "caption": "Our research was accepted at INFORMS and the ASA roundtable in 2026. Our work on persuasion and reasoning, out in the open where it can be checked. #INFORMS #ASA #research"
+      "alt": "See us in Chicago this November. We\u2019re presenting at the American Society of Criminology\u2019s annual meeting.",
+      "caption": "We\u2019re presenting at the American Society of Criminology in Chicago this November. We\u2019re presenting at the American Society of Criminology\u2019s annual meeting. #ASC #research #Chicago"
     },
     {
       "brand": "pulp",
@@ -2336,8 +2991,8 @@
         1200,
         630
       ],
-      "alt": "Accepted at INFORMS and ASA in 2026. Our work on persuasion and reasoning, out in the open where it can be checked.",
-      "caption": "Title: Our research, accepted at INFORMS and the ASA 2026 roundtable\nSubtitle: Our work on persuasion and reasoning, out in the open where it can be checked.\n\nWe have also given seminars at the University of Florida and spoken to Emory\u2019s MSBA program. Papers, data stories and the methods behind them are going up on the site, so you can check our work."
+      "alt": "See us in Chicago this November. We\u2019re presenting at the American Society of Criminology\u2019s annual meeting.",
+      "caption": "Title: Our research, at the American Society of Criminology this November\nSubtitle: We\u2019re presenting at the American Society of Criminology\u2019s annual meeting.\n\nOur work was also accepted at the American Sociological Association, and we have given seminars at the University of Florida. More is coming soon. Papers, data stories and the methods behind them are going up on the site, so you can check our work."
     },
     {
       "brand": "thinkwell",

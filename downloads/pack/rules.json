@@ -1,7 +1,7 @@
 {
   "kit": "Pulp Brand Kit 2026",
   "version": "v6d-LibreFranklin",
-  "count": 186,
+  "count": 191,
   "rules": [
     {
       "id": "R-HOUSE-01",
@@ -130,7 +130,7 @@
       "id": "R-BOT-03",
       "scope": "pulp",
       "check": "review",
-      "text": "Places: the hero, one CTA peek, Company > About, the 404, merch, and Plate 11. One per screen at most. Its world (the headphones, the gum, the sparkles, the cloud) may appear without it, on Plates 12 and 13 and the Robot weather print. Never beside a face, never as a persona or an avatar."
+      "text": "Places: the hero, one CTA peek, Company > About, the 404, merch, Plate 11, the home share card, and the favicon (its head and gum alone, on a Noir tile). One per screen at most. Its world (the headphones, the gum, the sparkles, the cloud) may appear without it, on Plates 12 and 13 and the Robot weather print. Never beside a face, never as a persona or an avatar."
     },
     {
       "id": "R-BOT-04",
@@ -259,7 +259,7 @@
       "id": "R-PHO-01",
       "scope": "pulp",
       "check": "review",
-      "text": "Photos are free to use under a license recorded in assets/source/photos.json with the photographer and the source page. Each band credits its photographer and license in its caption (R-IMG-12), the feature block in its corner, and the footer lists them all. Originals stay out of git."
+      "text": "Photos are free to use under a license recorded in assets/source/photos.json with the photographer and the source page. Each band credits its photographer by name only in its caption (R-IMG-12), the feature block in its corner, and the footer lists them all, with no license line on the page. Originals stay out of git."
     },
     {
       "id": "R-PHO-02",
@@ -290,6 +290,12 @@
       "scope": "pulp",
       "check": "layout",
       "text": "Parallax you can see: a photo travels 24 percent of the screen height against its band (40 to 240 px) as the band crosses the screen, so it moves at about two thirds of the scroll. Scroll-driven CSS first, a per-frame script only where scroll timelines are missing. Never on text, never on a plate. With reduced motion the photo stands still."
+    },
+    {
+      "id": "R-PHO-08",
+      "scope": "pulp",
+      "check": "review",
+      "text": "One photograph, one place: across every page of the site, each photograph appears once. The footer credits only the photographs on its own page, each photographer once. site5.py stops the build on a repeat, and PHOTO_PLAN in site_data.py gives every page its own."
     },
     {
       "id": "R-TYPE-12",
@@ -1061,7 +1067,7 @@
       "id": "R-TXT-03",
       "scope": "house",
       "check": "lint",
-      "text": "Banned words and phrases: empower, Signal, not noise, trust scores, fidget mode, streetwear, and names of competitors."
+      "text": "Banned words and phrases: empower, Signal, not noise, trust scores, fidget mode, streetwear, P.U.L.P., Pulp Labs, the Forge, and names of competitors."
     },
     {
       "id": "R-TXT-04",
@@ -1100,6 +1106,12 @@
       "text": "Sample data is labeled Sample data. Designed but unbuilt features say Coming."
     },
     {
+      "id": "R-TXT-10",
+      "scope": "house",
+      "check": "review",
+      "text": "The Laboratory: Pulp Laboratory the first time, then the Lab or the Laboratory. Pulplab, one word, only where space forces it. Never Pulp Labs, the Forge, or the Studio."
+    },
+    {
       "id": "R-SOC-01",
       "scope": "house",
       "check": "layout",
@@ -1122,6 +1134,24 @@
       "scope": "house",
       "check": "review",
       "text": "The first post introduces the brand; the next four follow the schedule in pack/social.json. Brands never post on the same day, and times are New York time."
+    },
+    {
+      "id": "R-SOC-05",
+      "scope": "house",
+      "check": "review",
+      "text": "Each brand bends its voice to the channel without breaking it (pack/social.json, voices): Pulp stays an essay, Thinkwell stays exact, typodojo stays warm and lowercase. The introduction is written natively for every channel; nothing is pasted unchanged across channels."
+    },
+    {
+      "id": "R-SOC-06",
+      "scope": "house",
+      "check": "review",
+      "text": "Engagement: answer what was asked with one fact and one link at most. Criticism gets thanks and one correction with a source, then we stop. Quote only to add something real, repost what speaks for itself, and reply as a video where the channel answers that way. Pulp amplifies its brands; Thinkwell does not lead with Pulp."
+    },
+    {
+      "id": "R-SOC-07",
+      "scope": "house",
+      "check": "review",
+      "text": "In communities a named person speaks and discloses who they work for in the first sentence; links come when asked. A person's work is reshared only with permission and credit. No paid engagement and no accounts pretending to be someone else. Examples use labeled samples, never real accounts."
     },
     {
       "id": "R-PACK-01",

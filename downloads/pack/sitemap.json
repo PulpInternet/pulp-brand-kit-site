@@ -1,12 +1,12 @@
 {
   "kit": "Pulp Brand Kit 2026",
   "version": "v6d-LibreFranklin",
-  "site": "pulp-site3",
+  "site": "pulp-site5",
   "sections": [
     {
       "id": "home",
       "title": "Home",
-      "note": "The landing page, built as site/index.html (pulp-site3).",
+      "note": "The landing page, built as site/index.html (pulp-site5).",
       "pages": [
         {
           "path": "/",
@@ -14,19 +14,18 @@
           "purpose": "Say what Pulp is, why it matters, and where to go next, in the voice of a short essay.",
           "audience": "Everyone: customers, investors, researchers, students, press",
           "modules": [
-            "Hero: We help humans understand humans, the one Highlighter block, the gum robot cropped off the edge",
-            "What we do: research, products, publishing",
+            "Hero: We help humans understand humans, the one Highlighter block, over the stairs photograph",
             "Technology doesn\u2019t make you a better thinker: habits do",
             "Walking away solves nothing: where we stand on AI",
             "Three ways we look at people: from afar, up close, from every angle, three plates",
             "What you can hold us to: quality, reliability, value; data literacy, verified people, credible references",
-            "What we make: Thinkwell, typodojo, the platform, Pulp101",
-            "Research: accepted at INFORMS and ASA in 2026, talks at the University of Florida and Emory",
+            "What we make, in three: the Laboratory, the Pulp API, The Pulp Foundation",
+            "Research: the American Society of Criminology in Chicago this November, the American Sociological Association, seminars at the University of Florida, more coming soon",
             "From one person to a whole public: reflection, one to one, one to many, many to many",
             "CTA band with the robot\u2019s peek: tell us what you\u2019re trying to understand"
           ],
           "action": "Get in touch (opens the contact modal)",
-          "visual": "Gum robot hero, three plates, one Highlighter block"
+          "visual": "The stairs photograph behind the hero, three plates, one Highlighter block"
         }
       ]
     },
@@ -99,9 +98,12 @@
           "purpose": "Where the team has spoken and where it will speak next.",
           "audience": "Universities, conference organizers, press",
           "modules": [
+            "Coming up: the American Society of Criminology annual meeting, Chicago, November 2026",
+            "Accepted: the American Sociological Association 2026 roundtable",
             "Seminars at the University of Florida",
             "Emory MSBA speaking event",
-            "Accepted at INFORMS 2026 and the ASA 2026 roundtable",
+            "Also accepted: INFORMS 2026, listed in the record, never in the lead",
+            "More coming soon",
             "Invite us to speak"
           ],
           "action": "Invite us",
@@ -110,25 +112,40 @@
       ]
     },
     {
-      "id": "products",
-      "title": "Products",
-      "note": "Every product placed on the dial, each in its own voice.",
+      "id": "lab",
+      "title": "Laboratory",
+      "note": "Pulp Laboratory: the Lab, or the Laboratory; Pulplab only where space forces one word. Everything Pulp makes except the Pulp API and The Pulp Foundation, headlined by Pulp101.",
       "pages": [
         {
-          "path": "/products",
-          "title": "Products",
-          "purpose": "Show the family on one page, from the most playful to the most precise.",
-          "audience": "Customers and investors",
+          "path": "/lab",
+          "title": "Laboratory",
+          "purpose": "Show everything the Lab makes, Pulp101 first, and how an idea moves from a post to a product.",
+          "audience": "Everyone: customers, investors, researchers, students",
           "modules": [
-            "The dial: typodojo, Pulp, Thinkwell",
-            "One card per product with its own mark and endorsement",
-            "Suade, marked Coming"
+            "We build to learn: the Pulp Laboratory lockup and the one Highlighter block",
+            "Headlining: Pulp101 and its two doors, Letters and Numbers, members only",
+            "Also in the Lab: Thinkwell, typodojo, Suade, Loosethreads",
+            "How the Lab works: write it up, try it, keep what holds",
+            "Outside the Lab: the Pulp API and The Pulp Foundation"
           ],
-          "action": "Choose a product",
-          "visual": "Each product's own mark"
+          "action": "Get in touch (opens the contact modal)",
+          "visual": "Think again plate, one silhouette photograph"
         },
         {
-          "path": "/products/thinkwell",
+          "path": "/lab/pulp101",
+          "title": "Pulp101",
+          "purpose": "The two doors to Pulp's blogs: Letters, the interactive blog, and Numbers, the technical blog. Behind a sign-in.",
+          "audience": "Members: apprentices, mentors, partners",
+          "modules": [
+            "Two doors: Letters and Numbers, each with one line",
+            "Sign in (a floating modal)",
+            "How to get access: through the Pulp AI Apprenticeship"
+          ],
+          "action": "Sign in",
+          "visual": "The Pulp101 lockup, two doors"
+        },
+        {
+          "path": "/lab/thinkwell",
           "title": "Thinkwell",
           "purpose": "Introduce Thinkwell and hand off to its own site.",
           "audience": "Government relations and public affairs teams",
@@ -142,7 +159,7 @@
           "visual": "Thinkwell running, never a drawing of it"
         },
         {
-          "path": "/products/typodojo",
+          "path": "/lab/typodojo",
           "title": "typodojo",
           "purpose": "Introduce the dojo as a Pulp special project and hand off.",
           "audience": "Designers, students, hobbyists",
@@ -156,7 +173,7 @@
           "visual": "typodojo's own ink prints"
         },
         {
-          "path": "/products/suade",
+          "path": "/lab/suade",
           "title": "Suade",
           "purpose": "Hold the place for the structured-discussion product.",
           "audience": "Early followers",
@@ -167,6 +184,22 @@
           ],
           "action": "Join the list",
           "visual": "None until designed"
+        },
+        {
+          "path": "/lab/loosethreads",
+          "title": "Loosethreads",
+          "purpose": "The web SDK: displays, conversations, media, and interactions, on any screen and by any hand, with anchors and cues.",
+          "audience": "Front-end developers and partners",
+          "modules": [
+            "Any screen. Any hand.: the loosethreads lockup in Teal",
+            "Four modules, one cloth: WarpDisplays, weftConversations, DyeMedia, BightInteractions, each with its rounded glyph",
+            "Anchors and cues: where a cue shows up, and what shows up",
+            "Every screen we ship to: web, desktop, phone and tablet, watch marked Coming",
+            "Works with: typodojo.js inside, the Pulp API beside",
+            "Start with the docs"
+          ],
+          "action": "Read the docs",
+          "visual": "The cloth, large; the module glyphs"
         }
       ]
     },
@@ -178,13 +211,13 @@
         {
           "path": "/platform",
           "title": "Platform",
-          "purpose": "Explain the platform: two SDKs on the P.U.L.P. engine, one for the server and one for the web.",
+          "purpose": "Explain the Pulp API and MCP on the Pulp engine; Loosethreads, the web SDK, is one link away in the Laboratory.",
           "audience": "Developers and technical buyers",
           "modules": [
-            "P.U.L.P.: one parameterized language for people and machines",
+            "The Pulp engine: one parameterized language for people and machines",
             "The Pulp API, the server SDK: Radiance, Windfall, TrueAura, Groundwater",
-            "Loosethreads, the web SDK: weftConversations, WarpDisplays, DyeMedia, BightInteractions, and typodojo.js",
             "MCP access",
+            "Loosethreads, the web SDK, lives in the Laboratory: one link",
             "Read the docs"
           ],
           "action": "Read the docs",
@@ -204,22 +237,6 @@
           ],
           "action": "Request access",
           "visual": "Code shown as text, never a picture of code"
-        },
-        {
-          "path": "/platform/loosethreads",
-          "title": "Loosethreads",
-          "purpose": "The web SDK: every interactive, multimedia part, so one experience works on every device.",
-          "audience": "Front-end developers and partners",
-          "modules": [
-            "weftConversations: threads of every kind: comments, chats, email",
-            "WarpDisplays: every media object: video, audio, text, images, PDF",
-            "DyeMedia: AI-generated multimedia",
-            "BightInteractions: shortcuts, bindings and macros, by device and input",
-            "typodojo.js: the dojo's drawing and font tools, documented with typodojo",
-            "Targets: web, desktop, mobile"
-          ],
-          "action": "Read the SDK docs",
-          "visual": "Components running, in all three modes"
         },
         {
           "path": "/platform/mcp",
@@ -300,62 +317,38 @@
       ]
     },
     {
-      "id": "pulp101",
-      "title": "Pulp101",
-      "note": "The official blog and the apprenticeship showcase.",
+      "id": "foundation",
+      "title": "Foundation",
+      "note": "The Pulp Foundation, 501(c)(3) pending: a nonprofit preparing an interdisciplinary American workforce for work after AI, home of the Pulp AI Apprenticeship.",
       "pages": [
         {
-          "path": "/pulp101",
-          "title": "Pulp101",
-          "purpose": "The blog: what the team and apprentices are learning, one claim at a time.",
-          "audience": "Students, mentors, readers",
+          "path": "/foundation",
+          "title": "The Pulp Foundation",
+          "purpose": "Say what the Foundation is for and who it works with.",
+          "audience": "Companies, universities, students, mentors, funders",
           "modules": [
-            "Newest posts",
-            "Tags: research, methods, apprenticeship, products, events",
-            "Subscribe"
+            "An interdisciplinary American workforce for work after AI",
+            "501(c)(3) pending, stated exactly",
+            "The Pulp AI Apprenticeship",
+            "Working with companies across industries",
+            "Partner with us"
           ],
-          "action": "Read the newest post",
-          "visual": "Published by Pulp"
+          "action": "Partner with the Foundation (opens the contact modal)",
+          "visual": "The Foundation lockup, one long-exposure photograph"
         },
         {
-          "path": "/pulp101/apprenticeship",
+          "path": "/foundation/apprenticeship",
           "title": "Apprenticeship",
           "purpose": "Show the Pulp AI Apprenticeship: mentors from industry and academia working with students.",
           "audience": "Students, mentors, universities",
           "modules": [
-            "How it works",
+            "How it works: mentors, students, real projects",
             "100+ practitioners across 15+ campuses",
-            "Projects and outcomes",
+            "What apprentices publish, in Pulp101",
             "Apply or mentor"
           ],
           "action": "Apply",
           "visual": "In Person photographs"
-        },
-        {
-          "path": "/pulp101/campuses",
-          "title": "Campus partners",
-          "purpose": "List campuses and what partnership involves.",
-          "audience": "University staff",
-          "modules": [
-            "Partner campuses",
-            "What a partner gets and gives",
-            "Start a partnership"
-          ],
-          "action": "Start a partnership",
-          "visual": "In Person photographs"
-        },
-        {
-          "path": "/pulp101/campaigns",
-          "title": "Campaigns",
-          "purpose": "Live Thinkwell engagement campaigns run with the Pulp101 community.",
-          "audience": "Students and the public",
-          "modules": [
-            "Open campaigns",
-            "How verification works",
-            "Results when a campaign closes"
-          ],
-          "action": "Take part",
-          "visual": "Thinkwell running"
         }
       ]
     },
