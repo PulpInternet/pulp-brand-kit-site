@@ -157,7 +157,7 @@
     {
       "id": "scroll-light",
       "trigger": "Touch: a photo crosses the screen",
-      "what": "The photo light drifts from one edge to the other with scroll, at half strength, rising and falling with the photo's place on screen; no tilt",
+      "what": "The photo light drifts from one edge to the other with scroll, at 70 percent, rising and falling with the photo's place on screen; no tilt",
       "duration": "scroll",
       "easing": "scroll",
       "loop": "never",

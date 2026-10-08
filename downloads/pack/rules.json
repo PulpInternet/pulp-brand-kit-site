@@ -567,7 +567,7 @@
       "id": "R-IMG-04",
       "scope": "pulp",
       "check": "review",
-      "text": "Plates are one-ink prints: one bold shape, a coarse halftone for every tone, cropped type, and a press mark. Halftone on Newsprint, Bubble on Noir, Smudge on Carbon Copy. On hover, focus or tap a plain label says what it means. No Highlighter on a plate.",
+      "text": "Plates are one-ink prints: one bold shape, a coarse halftone for every tone, cropped type, and a press mark. Under its foot rule one tag at the left says what it is about; no plate number on the print. Halftone on Newsprint, Bubble on Noir, Smudge on Carbon Copy. On hover, focus or tap a plain label says what it means. No Highlighter on a plate.",
       "was": "R-PLATE-01"
     },
     {
@@ -867,7 +867,7 @@
       "id": "R-INT-07",
       "scope": "house",
       "check": "review",
-      "text": "Every hover effect has a touch version, and none of them ever blocks scrolling: listeners are passive and nothing calls preventDefault. Photos get a scroll light at half strength that drifts across them as they cross the screen, with no tilt; a finger lights where it lands and is followed while it moves, a sideways drag adds the full tilt, and a tap blooms and fades over about 1.2 s. Tapping a robot frosts its glass and makes it blink. A sideways swipe along a reel row scrubs the reel like a playhead and settles on the nearest frame when let go; a tap still opens it inline. Vertical swipes and pinch-zoom stay the browser's (touch-action: pan-y pinch-zoom), the first 10 px decide the direction, and touches that start within 24 px of the screen's edges are left to the system. No device-motion tilt. Reduced motion turns it all off."
+      "text": "Every hover effect has a touch version, and none of them ever blocks scrolling: listeners are passive and nothing calls preventDefault. On touch screens the light blends harder (overlay rather than soft-light), because a phone screen takes it in smaller. Photos get a scroll light at 70 percent that drifts across them as they cross the screen, with no tilt; a finger lights where it lands and is followed while it moves, a sideways drag adds the full tilt, and a tap blooms and fades over about 1.2 s. Tapping a robot, or clicking it with a mouse, frosts its glass and makes it blink. A sideways swipe along a reel row scrubs the reel like a playhead and settles on the nearest frame when let go; a tap still opens it inline. Vertical swipes and pinch-zoom stay the browser's (touch-action: pan-y pinch-zoom), the first 10 px decide the direction, and touches that start within 24 px of the screen's edges are left to the system. No device-motion tilt. Reduced motion turns it all off."
     },
     {
       "id": "R-CSS-01",
