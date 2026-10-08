@@ -567,7 +567,7 @@
       "id": "R-IMG-04",
       "scope": "pulp",
       "check": "review",
-      "text": "Plates are one-ink prints: one bold shape, a coarse halftone for every tone, cropped type, and a press mark. Under its foot rule one tag at the left says what it is about; no plate number on the print. Halftone on Newsprint, Bubble on Noir, Smudge on Carbon Copy. On hover, focus or tap a plain label says what it means. No Highlighter on a plate.",
+      "text": "Plates are one-ink prints: one bold shape, a coarse halftone for every tone, cropped type, and a press mark. Under its foot rule one tag at the left says what it is about; no plate number on the print. On the site a plate may be cut into its layers (plate_layers.py; at rest the stack is the print, checked) and given one depth move drawn from what it shows: the modeled rooms open out of the person, light fans through the prism, the public tips back under its line. Small, pointer-driven, never autoplayed, never the same move twice. Halftone on Newsprint, Bubble on Noir, Smudge on Carbon Copy. On hover, focus or tap a plain label says what it means. No Highlighter on a plate.",
       "was": "R-PLATE-01"
     },
     {

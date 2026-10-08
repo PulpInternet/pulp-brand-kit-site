@@ -191,6 +191,15 @@
       "reduced": "None: the inline reel with buttons"
     },
     {
+      "id": "plate-depth",
+      "trigger": "Hover, focus or a finger on a layered plate; on touch, also the plate crossing the screen",
+      "what": "One move per plate from its layers: persona engine, the rooms translate out of the person up to 12 px; persuasive intelligence, the statement turns up to 3 degrees, the prism 1.5, the rays fan; data storytelling, the public tips back up to 9 degrees and the line lifts 6 px",
+      "duration": "settle",
+      "easing": "arrive",
+      "loop": "never",
+      "reduced": "Still"
+    },
+    {
       "id": "form-status",
       "trigger": "The form finishes sending or finds an error",
       "what": "The status line's opacity 0 to 1",
