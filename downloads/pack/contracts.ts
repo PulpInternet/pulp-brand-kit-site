@@ -458,9 +458,13 @@ type Template = { id: TemplateId; use: string; sections: SectionKind[] };
 type Shell = {
   bar: { mark: 'pulp-wordmark'; nav: 6; sticky: true;
          right: ['mode-switch', 'search-trigger', 'contact-trigger'];
-         phone: ['contact-trigger', 'menu-button'] };
-  footer: { groups: 7; closing: ['pulp-wordmark', 'EST. 2026', 'Brooklyn, New York'];
-            credits: 'every photo on the page' };
+         phone: ['contact-trigger', 'menu-button'];
+         states: ['top', 'peek', 'folded'];      // R-INT-06
+         fold: { button: 'pulp-wordmark'; size: 96; place: 'bottom-end';
+                 menu: ['nav', 'mode-switch', 'contact-trigger']; asideAtFooter: true } };
+  footer: { groups: 7; closing: ['pulp-wordmark', 'EST. 2026', 'Brooklyn, New York'];   // two lines under the mark
+            modeSwitch: false;            // R-INTX-04
+            credits: 'in-caption' };    // each photo credits its photographer in its own caption
   always: ['skip-link', 'contact-modal', 'search', 'sheet'];
   storage: 'saved mode only';    // no cookies, no third-party scripts
   noJs: 'reads and navigates';   // dialogs fall back to pages

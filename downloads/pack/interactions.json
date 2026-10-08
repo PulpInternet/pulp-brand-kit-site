@@ -74,6 +74,43 @@
       ]
     },
     {
+      "id": "fold-button",
+      "element": "button",
+      "purpose": "The bar, folded: the wordmark at the bottom right that opens the menu",
+      "states": [
+        "hidden",
+        "rest",
+        "hover",
+        "focus-visible",
+        "pinned",
+        "aside"
+      ],
+      "keys": "Tab reaches it; focus shows the menu; Enter or Space pins it; Escape closes it",
+      "touch": "Tap opens the menu sheet",
+      "aria": "aria-haspopup, aria-expanded while pinned, aria-controls the sheet",
+      "motion": [
+        "bar-fold",
+        "bar-peek",
+        "fold-menu"
+      ]
+    },
+    {
+      "id": "fold-menu",
+      "element": "div role=group above the fold button",
+      "purpose": "The bar's contents while it is folded: nav, mode switch, Get in touch",
+      "states": [
+        "closed",
+        "previewed",
+        "pinned"
+      ],
+      "keys": "Tab moves through it; Escape closes it and returns focus to the button",
+      "touch": "Not used: touch opens the sheet",
+      "aria": "group named Menu; its nav named Main, folded",
+      "motion": [
+        "fold-menu"
+      ]
+    },
+    {
       "id": "sheet",
       "element": "dialog",
       "purpose": "The full map on phones",

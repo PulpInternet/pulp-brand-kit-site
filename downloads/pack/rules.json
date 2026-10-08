@@ -1,7 +1,7 @@
 {
   "kit": "Pulp Brand Kit 2026",
   "version": "v6d-LibreFranklin",
-  "count": 191,
+  "count": 193,
   "rules": [
     {
       "id": "R-HOUSE-01",
@@ -259,7 +259,7 @@
       "id": "R-PHO-01",
       "scope": "pulp",
       "check": "review",
-      "text": "Photos are free to use under a license recorded in assets/source/photos.json with the photographer and the source page. Each band credits its photographer by name only in its caption (R-IMG-12), the feature block in its corner, and the footer lists them all, with no license line on the page. Originals stay out of git."
+      "text": "Photos are free to use under a license recorded in assets/source/photos.json with the photographer and the source page. Each band credits its photographer by name only in its caption (R-IMG-12), the hero and the feature block in their corners. Each photo is credited once: no footer list, no license line on the page. Originals stay out of git."
     },
     {
       "id": "R-PHO-02",
@@ -289,13 +289,19 @@
       "id": "R-PHO-06",
       "scope": "pulp",
       "check": "layout",
-      "text": "Parallax you can see: a photo travels 24 percent of the screen height against its band (40 to 240 px) as the band crosses the screen, so it moves at about two thirds of the scroll. Scroll-driven CSS first, a per-frame script only where scroll timelines are missing. Never on text, never on a plate. With reduced motion the photo stands still."
+      "text": "Parallax you can see: a photo travels 24 percent of the screen height against its band (40 to 240 px) as the band crosses the screen, so it moves at about two thirds of the scroll. Scroll-driven CSS first, a per-frame script only where scroll timelines are missing. Never on text. Plates, symbols and figures drift gently with data-drift, 28 px at most. With reduced motion everything stands still."
     },
     {
       "id": "R-PHO-08",
       "scope": "pulp",
       "check": "review",
-      "text": "One photograph, one place: across every page of the site, each photograph appears once. The footer credits only the photographs on its own page, each photographer once. site5.py stops the build on a repeat, and PHOTO_PLAN in site_data.py gives every page its own."
+      "text": "One photograph, one place: across every page of the site, each photograph appears once. site5.py stops the build on a repeat, and PHOTO_PLAN in site_data.py gives every page its own."
+    },
+    {
+      "id": "R-PHO-09",
+      "scope": "pulp",
+      "check": "review",
+      "text": "Photo tilt, photos only: on a fine pointer with hover, the picture leans away from the cursor inside its frame (1 degree on bands, the hero and the call to action; 3 degrees on a small figure), shifts up to 12 px the other way, and a soft light in the photo type color follows the cursor. It eases in over about a second and settles flat when the pointer leaves. Never on plates, symbols, icons, text or the reels. Touch and reduced motion: still."
     },
     {
       "id": "R-TYPE-12",
@@ -849,7 +855,13 @@
       "id": "R-INT-05",
       "scope": "house",
       "check": "review",
-      "text": "Jumps take about 400 ms and land below the top bar. Reduced motion makes them instant."
+      "text": "Jumps take about 400 ms and land below where the bar sits, whether it is showing or folded. Reduced motion makes them instant."
+    },
+    {
+      "id": "R-INT-06",
+      "scope": "pulp",
+      "check": "review",
+      "text": "The bar has two states. At the top of a page it is the whole bar. Scrolling down folds it into a round glass button at the bottom right, 96 px with the whole wordmark inside at 72 px; a scroll up of 12 px or more brings the whole bar back, and an 8 px dead zone stops it flickering. The button steps aside while the footer's wordmark is in view, so the wordmark is always on screen, at the top or the bottom, and never twice. Hover, focus or a click opens its menu above it: the nav, the mode switch and Get in touch; on touch a tap opens the menu sheet. Reduced motion swaps the two without movement."
     },
     {
       "id": "R-CSS-01",
@@ -987,7 +999,7 @@
       "id": "R-INTX-04",
       "scope": "house",
       "check": "review",
-      "text": "The mode switch is a group of three radios. It follows the system first, then remembers the choice, and changes colors only."
+      "text": "The mode switch is a group of three radios. It follows the system first, then remembers the choice, and changes colors only. It lives in the bar and its menus, never in the footer."
     },
     {
       "id": "R-INTX-05",

@@ -174,6 +174,33 @@
 <td data-label="Reduced motion">Still</td>
 </tr>
 <tr>
+<td data-label="ID"><code>bar-fold</code></td>
+<td data-label="Trigger">Scrolling down 8 px past twice the bar's height</td>
+<td data-label="What moves">The bar translateY 0 to minus 100 percent; the wordmark button rises from below the screen and fades in</td>
+<td data-label="Duration">settle</td>
+<td data-label="Easing">leave</td>
+<td data-label="Loop">never</td>
+<td data-label="Reduced motion">Swap, no movement</td>
+</tr>
+<tr>
+<td data-label="ID"><code>bar-peek</code></td>
+<td data-label="Trigger">A scroll up of 12 px or more, or the top of the page</td>
+<td data-label="What moves">The reverse of bar-fold: the whole bar slides back in; the button sinks away</td>
+<td data-label="Duration">settle</td>
+<td data-label="Easing">arrive</td>
+<td data-label="Loop">never</td>
+<td data-label="Reduced motion">Swap, no movement</td>
+</tr>
+<tr>
+<td data-label="ID"><code>fold-menu</code></td>
+<td data-label="Trigger">Hover (after 60 ms), focus or a click on the wordmark button</td>
+<td data-label="What moves">The menu's opacity 0 to 1, translateY 8 px and scale 0.98 to rest, from the button's corner; it closes 240 ms after the pointer leaves</td>
+<td data-label="Duration">quick</td>
+<td data-label="Easing">arrive</td>
+<td data-label="Loop">never</td>
+<td data-label="Reduced motion">Swap, no movement</td>
+</tr>
+<tr>
 <td data-label="ID"><code>form-status</code></td>
 <td data-label="Trigger">The form finishes sending or finds an error</td>
 <td data-label="What moves">The status line's opacity 0 to 1</td>
@@ -240,6 +267,26 @@
 <td data-label="Touch">Tap</td>
 <td data-label="ARIA">aria-expanded, aria-controls the sheet</td>
 <td data-label="Motion">dialog-open, dialog-close</td>
+</tr>
+<tr>
+<td data-label="ID"><code>fold-button</code></td>
+<td data-label="Element">button</td>
+<td data-label="Purpose">The bar, folded: the wordmark at the bottom right that opens the menu</td>
+<td data-label="States">hidden, rest, hover, focus-visible, pinned, aside</td>
+<td data-label="Keyboard">Tab reaches it; focus shows the menu; Enter or Space pins it; Escape closes it</td>
+<td data-label="Touch">Tap opens the menu sheet</td>
+<td data-label="ARIA">aria-haspopup, aria-expanded while pinned, aria-controls the sheet</td>
+<td data-label="Motion">bar-fold, bar-peek, fold-menu</td>
+</tr>
+<tr>
+<td data-label="ID"><code>fold-menu</code></td>
+<td data-label="Element">div role=group above the fold button</td>
+<td data-label="Purpose">The bar's contents while it is folded: nav, mode switch, Get in touch</td>
+<td data-label="States">closed, previewed, pinned</td>
+<td data-label="Keyboard">Tab moves through it; Escape closes it and returns focus to the button</td>
+<td data-label="Touch">Not used: touch opens the sheet</td>
+<td data-label="ARIA">group named Menu; its nav named Main, folded</td>
+<td data-label="Motion">fold-menu</td>
 </tr>
 <tr>
 <td data-label="ID"><code>sheet</code></td>
@@ -475,7 +522,13 @@
 <td data-label="ID"><code>R-INT-05</code></td>
 <td data-label="Scope">house</td>
 <td data-label="Checked by">review</td>
-<td data-label="Rule">Jumps take about 400 ms and land below the top bar. Reduced motion makes them instant.</td>
+<td data-label="Rule">Jumps take about 400 ms and land below where the bar sits, whether it is showing or folded. Reduced motion makes them instant.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-INT-06</code></td>
+<td data-label="Scope">pulp</td>
+<td data-label="Checked by">review</td>
+<td data-label="Rule">The bar has two states. At the top of a page it is the whole bar. Scrolling down folds it into a round glass button at the bottom right, 96 px with the whole wordmark inside at 72 px; a scroll up of 12 px or more brings the whole bar back, and an 8 px dead zone stops it flickering. The button steps aside while the footer's wordmark is in view, so the wordmark is always on screen, at the top or the bottom, and never twice. Hover, focus or a click opens its menu above it: the nav, the mode switch and Get in touch; on touch a tap opens the menu sheet. Reduced motion swaps the two without movement.</td>
 </tr>
 <tr>
 <td data-label="ID"><code>R-ANIM-01</code></td>
@@ -535,7 +588,7 @@
 <td data-label="ID"><code>R-INTX-04</code></td>
 <td data-label="Scope">house</td>
 <td data-label="Checked by">review</td>
-<td data-label="Rule">The mode switch is a group of three radios. It follows the system first, then remembers the choice, and changes colors only.</td>
+<td data-label="Rule">The mode switch is a group of three radios. It follows the system first, then remembers the choice, and changes colors only. It lives in the bar and its menus, never in the footer.</td>
 </tr>
 <tr>
 <td data-label="ID"><code>R-INTX-05</code></td>

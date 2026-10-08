@@ -128,6 +128,33 @@
       "reduced": "Still"
     },
     {
+      "id": "bar-fold",
+      "trigger": "Scrolling down 8 px past twice the bar's height",
+      "what": "The bar translateY 0 to minus 100 percent; the wordmark button rises from below the screen and fades in",
+      "duration": "settle",
+      "easing": "leave",
+      "loop": "never",
+      "reduced": "Swap, no movement"
+    },
+    {
+      "id": "bar-peek",
+      "trigger": "A scroll up of 12 px or more, or the top of the page",
+      "what": "The reverse of bar-fold: the whole bar slides back in; the button sinks away",
+      "duration": "settle",
+      "easing": "arrive",
+      "loop": "never",
+      "reduced": "Swap, no movement"
+    },
+    {
+      "id": "fold-menu",
+      "trigger": "Hover (after 60 ms), focus or a click on the wordmark button",
+      "what": "The menu's opacity 0 to 1, translateY 8 px and scale 0.98 to rest, from the button's corner; it closes 240 ms after the pointer leaves",
+      "duration": "quick",
+      "easing": "arrive",
+      "loop": "never",
+      "reduced": "Swap, no movement"
+    },
+    {
       "id": "form-status",
       "trigger": "The form finishes sending or finds an error",
       "what": "The status line's opacity 0 to 1",

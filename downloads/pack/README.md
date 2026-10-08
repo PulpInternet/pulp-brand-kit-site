@@ -5,13 +5,13 @@ The machine-readable half of the Pulp brand kit. The design canvas and these fil
 ## What
 
 - `tokens.json`: every value. Colors by tier with roles and owners, mode tokens for Pulp, typodojo and Thinkwell, the dial and its twelve parameters, text roles, spacing, radii, widths, motion, symbols and banned words.
-- `rules.json`: 191 rules. Each has an ID, a scope (house or one property), a check (`lint`, `layout` or `review`) and its text. Rules carried over from v5a or from Thinkwell's component contract name the ID they replace.
+- `rules.json`: 193 rules. Each has an ID, a scope (house or one property), a check (`lint`, `layout` or `review`) and its text. Rules carried over from v5a or from Thinkwell's component contract name the ID they replace.
 - `contracts.ts`: the types a build must satisfy, one block per section of the kit. It compiles under strict TypeScript.
 - `motion.json` and `interactions.json`: every motion and every interactive part, with its states, keyboard and touch paths and ARIA.
 - `sitemap.json`: every page with its purpose, audience, contents, action and visual.
 - `social.json`: every platform's native size and safe area, its culture, each brand's voice on it, the kinds of engagement and who reposts whom, worked conversations, five templates a brand, and the first five posts on each platform with date, time, caption and alt text.
 - `site.json`: how every page is built: the shell, section kinds, templates, each page's sections and the slots only Shah fills.
-- `brand_lint.py`: a checker for every rule marked `lint` (59 rules). The other 29 are checked in the rendered layout pass and 103 by a person, by ID.
+- `brand_lint.py`: a checker for every rule marked `lint` (59 rules). The other 29 are checked in the rendered layout pass and 105 by a person, by ID.
 
 ## How
 

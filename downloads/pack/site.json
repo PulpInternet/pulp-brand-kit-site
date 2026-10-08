@@ -22,7 +22,23 @@
         "menu-button"
       ],
       "sticky": true,
-      "z": "--z-bar"
+      "z": "--z-bar",
+      "states": [
+        "top",
+        "peek",
+        "folded"
+      ],
+      "fold": {
+        "button": "pulp-wordmark",
+        "size": 96,
+        "place": "bottom-end",
+        "menu": [
+          "nav",
+          "mode-switch",
+          "contact-trigger"
+        ],
+        "aside_at_footer": true
+      }
     },
     "footer": {
       "groups": [
@@ -39,7 +55,8 @@
         "EST. 2026",
         "Brooklyn, New York"
       ],
-      "credits": "Every photo on the page, with its license"
+      "mode_switch": false,
+      "credits": "None: each photo credits its photographer in its caption"
     },
     "always": [
       "skip-link",
