@@ -201,6 +201,42 @@
 <td data-label="Reduced motion">Swap, no movement</td>
 </tr>
 <tr>
+<td data-label="ID"><code>scroll-light</code></td>
+<td data-label="Trigger">Touch: a photo crosses the screen</td>
+<td data-label="What moves">The photo light drifts from one edge to the other with scroll, at half strength, rising and falling with the photo's place on screen; no tilt</td>
+<td data-label="Duration">scroll</td>
+<td data-label="Easing">scroll</td>
+<td data-label="Loop">never</td>
+<td data-label="Reduced motion">None</td>
+</tr>
+<tr>
+<td data-label="ID"><code>finger-light</code></td>
+<td data-label="Trigger">Touch: a finger lands on or moves over a photo</td>
+<td data-label="What moves">The photo light at full strength under the finger with a light tilt; a tap blooms and fades back over about 1.2 s</td>
+<td data-label="Duration">settle</td>
+<td data-label="Easing">arrive</td>
+<td data-label="Loop">never</td>
+<td data-label="Reduced motion">None</td>
+</tr>
+<tr>
+<td data-label="ID"><code>drag-light</code></td>
+<td data-label="Trigger">Touch: a sideways drag across a photo</td>
+<td data-label="What moves">The light and the full tilt follow the finger, as a mouse would; letting go eases back to the scroll light</td>
+<td data-label="Duration">settle</td>
+<td data-label="Easing">arrive</td>
+<td data-label="Loop">never</td>
+<td data-label="Reduced motion">None</td>
+</tr>
+<tr>
+<td data-label="ID"><code>reel-scrub</code></td>
+<td data-label="Trigger">Touch: a sideways swipe along a reel row</td>
+<td data-label="What moves">The reel's frame and its pieces follow the finger like a playhead, forward and back; letting go settles on the nearest frame and plays on</td>
+<td data-label="Duration">scroll</td>
+<td data-label="Easing">scroll</td>
+<td data-label="Loop">never</td>
+<td data-label="Reduced motion">None: the inline reel with buttons</td>
+</tr>
+<tr>
 <td data-label="ID"><code>form-status</code></td>
 <td data-label="Trigger">The form finishes sending or finds an error</td>
 <td data-label="What moves">The status line's opacity 0 to 1</td>
@@ -297,6 +333,26 @@
 <td data-label="Touch">Tap outside or the close button</td>
 <td data-label="ARIA">aria-modal, labelled by its title</td>
 <td data-label="Motion">dialog-open, dialog-close</td>
+</tr>
+<tr>
+<td data-label="ID"><code>photo-light</code></td>
+<td data-label="Element">figure or section with data-photo</td>
+<td data-label="Purpose">The photo tilt and its light (R-PHO-09), and the robot's glass</td>
+<td data-label="States">rest, lit, tilted</td>
+<td data-label="Keyboard">None: decoration only, never needed to read or act</td>
+<td data-label="Touch">Scroll light as it crosses the screen; a finger lights and follows; a sideways drag tilts; a tap blooms; tapping a robot frosts its glass and blinks it (R-INT-07)</td>
+<td data-label="ARIA">aria-hidden light layer; the photo keeps its alt text</td>
+<td data-label="Motion">scroll-light, finger-light, drag-light</td>
+</tr>
+<tr>
+<td data-label="ID"><code>reel-row</code></td>
+<td data-label="Element">table row with data-reel</td>
+<td data-label="Purpose">A hover reel: a short animated design board for the row</td>
+<td data-label="States">rest, hot, inline, scrubbing</td>
+<td data-label="Keyboard">Focus shows it beside the row; Enter or Space opens it inline on touch or reduced motion</td>
+<td data-label="Touch">Tap opens it inline with buttons; a sideways swipe scrubs it like a playhead (R-INT-07)</td>
+<td data-label="ARIA">role=button and aria-expanded when inline</td>
+<td data-label="Motion">reel-scrub</td>
 </tr>
 <tr>
 <td data-label="ID"><code>button</code></td>
@@ -529,6 +585,12 @@
 <td data-label="Scope">pulp</td>
 <td data-label="Checked by">review</td>
 <td data-label="Rule">The bar has two states. At the top of a page it is the whole bar. Scrolling down folds it into a round glass button at the bottom right, 96 px with the whole wordmark inside at 72 px; a scroll up of 12 px or more brings the whole bar back, and an 8 px dead zone stops it flickering. The button steps aside while a mark crosses its corner, 16 px clear of it: the footer's wordmark (so the wordmark is always on screen, at the top or the bottom, and never twice), the robot, and anything marked data-keep-clear. Marks never sit under it; text and photos may scroll beneath its glass. Hover, focus or a click opens its menu above it: the nav, the mode switch and Get in touch; on touch a tap opens the menu sheet. Reduced motion swaps the two without movement.</td>
+</tr>
+<tr>
+<td data-label="ID"><code>R-INT-07</code></td>
+<td data-label="Scope">house</td>
+<td data-label="Checked by">review</td>
+<td data-label="Rule">Every hover effect has a touch version, and none of them ever blocks scrolling: listeners are passive and nothing calls preventDefault. Photos get a scroll light at half strength that drifts across them as they cross the screen, with no tilt; a finger lights where it lands and is followed while it moves, a sideways drag adds the full tilt, and a tap blooms and fades over about 1.2 s. Tapping a robot frosts its glass and makes it blink. A sideways swipe along a reel row scrubs the reel like a playhead and settles on the nearest frame when let go; a tap still opens it inline. Vertical swipes and pinch-zoom stay the browser's (touch-action: pan-y pinch-zoom), the first 10 px decide the direction, and touches that start within 24 px of the screen's edges are left to the system. No device-motion tilt. Reduced motion turns it all off.</td>
 </tr>
 <tr>
 <td data-label="ID"><code>R-ANIM-01</code></td>

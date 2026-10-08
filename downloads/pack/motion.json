@@ -155,6 +155,42 @@
       "reduced": "Swap, no movement"
     },
     {
+      "id": "scroll-light",
+      "trigger": "Touch: a photo crosses the screen",
+      "what": "The photo light drifts from one edge to the other with scroll, at half strength, rising and falling with the photo's place on screen; no tilt",
+      "duration": "scroll",
+      "easing": "scroll",
+      "loop": "never",
+      "reduced": "None"
+    },
+    {
+      "id": "finger-light",
+      "trigger": "Touch: a finger lands on or moves over a photo",
+      "what": "The photo light at full strength under the finger with a light tilt; a tap blooms and fades back over about 1.2 s",
+      "duration": "settle",
+      "easing": "arrive",
+      "loop": "never",
+      "reduced": "None"
+    },
+    {
+      "id": "drag-light",
+      "trigger": "Touch: a sideways drag across a photo",
+      "what": "The light and the full tilt follow the finger, as a mouse would; letting go eases back to the scroll light",
+      "duration": "settle",
+      "easing": "arrive",
+      "loop": "never",
+      "reduced": "None"
+    },
+    {
+      "id": "reel-scrub",
+      "trigger": "Touch: a sideways swipe along a reel row",
+      "what": "The reel's frame and its pieces follow the finger like a playhead, forward and back; letting go settles on the nearest frame and plays on",
+      "duration": "scroll",
+      "easing": "scroll",
+      "loop": "never",
+      "reduced": "None: the inline reel with buttons"
+    },
+    {
       "id": "form-status",
       "trigger": "The form finishes sending or finds an error",
       "what": "The status line's opacity 0 to 1",

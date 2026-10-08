@@ -127,6 +127,41 @@
       ]
     },
     {
+      "id": "photo-light",
+      "element": "figure or section with data-photo",
+      "purpose": "The photo tilt and its light (R-PHO-09), and the robot's glass",
+      "states": [
+        "rest",
+        "lit",
+        "tilted"
+      ],
+      "keys": "None: decoration only, never needed to read or act",
+      "touch": "Scroll light as it crosses the screen; a finger lights and follows; a sideways drag tilts; a tap blooms; tapping a robot frosts its glass and blinks it (R-INT-07)",
+      "aria": "aria-hidden light layer; the photo keeps its alt text",
+      "motion": [
+        "scroll-light",
+        "finger-light",
+        "drag-light"
+      ]
+    },
+    {
+      "id": "reel-row",
+      "element": "table row with data-reel",
+      "purpose": "A hover reel: a short animated design board for the row",
+      "states": [
+        "rest",
+        "hot",
+        "inline",
+        "scrubbing"
+      ],
+      "keys": "Focus shows it beside the row; Enter or Space opens it inline on touch or reduced motion",
+      "touch": "Tap opens it inline with buttons; a sideways swipe scrubs it like a playhead (R-INT-07)",
+      "aria": "role=button and aria-expanded when inline",
+      "motion": [
+        "reel-scrub"
+      ]
+    },
+    {
       "id": "button",
       "element": "button or a styled as one",
       "purpose": "One primary action per view; secondary as outline",
